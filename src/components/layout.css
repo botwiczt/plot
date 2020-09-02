@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #215f00;
 }
 a:active,
 a:hover {
@@ -66,7 +67,7 @@ h1 {
 }
 mark {
   background-color: #ff0;
-  color: #000;
+  color: #215f00;
 }
 small {
   font-size: 80%;
