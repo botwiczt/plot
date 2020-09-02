@@ -7,6 +7,8 @@ import "./layout.css"
 
 const Background = styled.header`
   height: 100vh;
+  margin: 0;
+  padding: 0;
   color: #215f00;
   margin: 0;
   background: linear-gradient(to right, #215f00, #e4e4d9);
@@ -52,31 +54,16 @@ const Logo = styled.img`
   margin-right: auto;
   width: 58%;
   @media only screen and (max-width: 767px) {
-    content:url("/logosmall.png");
     position: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
+    width: 65%;
+  }
+  @media only screen and (min-width: 1200px) {
+    position: auto;
+    width: 50%;
+  }
 `;
 
-const Title = styled.h1`
-text-align: center;
-max-width: 200px;
-font-size: 200px;
-margin-left: 50%;
-display: block;
-color: #215f00;
-  transition: all 300ms ease;
-  transform: translateX(-50%);
-  &:hover {
-    opacity: 0.8;
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 150px;
-  }
-`;
+{/*content:url("/logosmall.png");*/}
 
 const Img = styled.img`
   display:block;
@@ -205,7 +192,7 @@ const Header = ({ siteTitle }) => (
     params={{
       particles: {
         number: {
-          value: 600,
+          value: 300,
         },
         size: {
           value: 5,
@@ -220,13 +207,13 @@ const Header = ({ siteTitle }) => (
         },
         move: {
           random: true,
-          speed: 15,
+          speed: 8,
           direction: "bottom",
           out_mode: "out"
         }
       },
     }}
-  /></ParticleContainer>
+  /></ParticleContainer><br/><br/><br/>
     <Container><Link
       to="/"
       style={{
@@ -234,7 +221,7 @@ const Header = ({ siteTitle }) => (
         textDecoration: `none`
       }}
     >
-      <Title className="title">plot</Title>
+      <Logo src="/logo.png" />
     </Link></Container>
     <Tagline> The Future of Living </Tagline>
     <SubTagline>Join the community that's right for you.</SubTagline>
