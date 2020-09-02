@@ -73,10 +73,9 @@ color: #215f00;
   &:hover {
     opacity: 0.8;
   }
-  {/*@media only screen and (max-width: 1024px) {
-    font-size: 56px;
-    top: 0;
-  }*/}
+  @media only screen and (max-width: 1024px) {
+    font-size: 150px;
+  }
 `;
 
 const Img = styled.img`
