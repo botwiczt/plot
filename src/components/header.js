@@ -214,15 +214,15 @@ const Header = ({ siteTitle }) => (
       },
     }}
   /></ParticleContainer><br/><br/><br/>
-    <Container><Link
+    <Container><Logo src="/logo.png" />{/*<Link
       to="/"
       style={{
         color: `white`,
         textDecoration: `none`
       }}
     >
-      <Logo src="/logo.png" />
-    </Link></Container>
+
+    </Link>*/}</Container>
     <Tagline> The Future of Living </Tagline>
     <SubTagline>Join the community that's right for you.</SubTagline>
     <br></br>
