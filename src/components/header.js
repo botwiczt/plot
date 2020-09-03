@@ -53,13 +53,17 @@ const Logo = styled.img`
   margin-left: auto;
   margin-right: auto;
   width: 58%;
+  @media only screen and (min-width: 1250px) {
+    position: auto;
+    width: 40%;
+  }
   @media only screen and (max-width: 767px) {
     position: auto;
     width: 65%;
   }
   @media only screen and (min-width: 1200px) {
     position: auto;
-    width: 50%;
+    width: 40%;
   }
   @media only screen and (max-width: 100px) {
     content:url("/logosmall.png");
