@@ -61,9 +61,14 @@ const Logo = styled.img`
     position: auto;
     width: 50%;
   }
+  @media only screen and (max-width: 100px) {
+    content:url("/logosmall.png");
+    position: auto;
+    width: 65%;
+  }
 `;
 
-{/*content:url("/logosmall.png");*/}
+
 
 const Img = styled.img`
   display:block;
