@@ -52,6 +52,8 @@ const Logo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 444px;
+  width: 444px;
   width: 58%;
   @media only screen and (min-width: 1250px) {
     position: auto;
@@ -66,13 +68,11 @@ const Logo = styled.img`
     width: 40%;
   }
   @media only screen and (max-width: 100px) {
-    content:url("/logosmall.png");
+  {/*content:url("/logosmall.png");*/}
     position: auto;
     width: 65%;
   }
 `;
-
-
 
 const Img = styled.img`
   display:block;
@@ -223,7 +223,7 @@ const Header = ({ siteTitle }) => (
       },
     }}
   /></ParticleContainer><br/><br/><br/>
-    <Container><Logo src="/logo.png" />{/*<Link
+    <Container><Logo src="/logo.svg" />{/*<Link
       to="/"
       style={{
         color: `white`,
