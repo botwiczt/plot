@@ -427,60 +427,6 @@ const Header = ({ siteTitle }) => (
       <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
       <ArrowImage src="/downarrow.png"/>
   </DesktopHeader>
-  <MobileHeader>
-  <br/><br/>
-    <Row>
-      <Col sm={4}/>
-      <Col sm={4}>
-      <MobileLogo src="/logo.png" />{/*<Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`
-        }}
-      >
-      </Link>*/}
-      </Col>
-    <Col sm={4}/>
-    </Row>
-    <Row>
-      <Col sm={4}/>
-      <Col sm={4}>
-      <MobileTitle>plöt: the future of living.</MobileTitle>
-
-      </Col>
-    <Col sm={4}/>
-    </Row>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <div class="overall">
-        <MobileSmallLogo src="/house.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div>
-        </div></Col>
-        <Col sm={4}/>
-      </Row><br/><br/><br/>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <div class="overall">
-        <MobileSmallLogo src="/school.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div>
-        </div></Col>
-        <Col sm={4}/>
-      </Row><br/><br/><br/>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <div class="overall">
-        <MobileSmallLogo src="/store.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
-        </div></Col>
-        <Col sm={4}/>
-      </Row><br/><br/><br/>
-            <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
-      <ArrowImage src="/downarrow.png"/>
-  </MobileHeader>
     {/*<Container>
       <a href="" target="_blank" rel="noreferrer">
       </a>
