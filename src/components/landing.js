@@ -95,26 +95,23 @@ const FAQSpacerContainer = styled.div`
 
 const Landing = () => (
   <div className="landing">
-    {/*<Row>
+    <Site><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
-          learn. make. innovate.
+          welcome to plöt.
         </Call>
         <Description color="#333" size="28px" className="center">
-          MakeSPP virtually brings together over 400 innovative young minds for a three-day
-          hackathon and technology conference. we're a diverse and creative
-          community of students dedicated to solving some of the most
-          challenging problems with technology.{" "}
+          representing the future of living. eco-utilitarian infrastructure melded with community-based living to seed the first utopia.{" "}
           <b>
             <u>
-              <a href="https://makespp.typeform.com/to/ZzGcLGKb" target="_blank" rel="noreferrer">join us</a>
+              <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist</a>
             </u>
           </b>.
         </Description>
       </Col>
     </Row>
-    <br />
-    <Site>
+    <br /></Site>
+    {/*<Site>
       <Row>
         <Col sm={4}>
           <Img height="250px" src="/1.jpg" />
