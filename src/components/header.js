@@ -237,7 +237,7 @@ const MobileSubHoverText = styled.h1`
   }
 `;
 
-const SubTagline = styled.h1`
+const SubTitle = styled.h1`
   text-align: center;
   max-width: 700px;
   font-size: 24px;
@@ -258,106 +258,59 @@ const SubTagline = styled.h1`
   }
 `;
 
-const Date = styled.h1`
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: #215f00;
-  @media only screen and (max-width: 1024px) {
-    font-size: 25px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 20px;
-  }
-  animation: 1s Zoom linear infinite,
-  2s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.15);}
-  }
-`;
-
-const Register = styled.h1`
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-  padding: 10px;
-  border: 10px solid #215f00;
-  border-radius: 40px;
-  font-size: 40px;
-  color: #215f00;
-  transition: all 300ms ease;
-  &:hover {
-    background: #98ccb0;
-    transform: scale(1.2);
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 24px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 20px;
-  }
-
-
-
-`;
-
-const ButtonSpacerContainer = styled.div`
-@media only screen and (max-width: 1024px) {
-  ;
-}
-`;
-
 const Header = ({ siteTitle }) => (
   <Background>
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
-    <div class="headercontent"><Row>
-      <Col sm={4}/>
-      <Col sm={4}>
-      <a href="/home" rel="noreferrer"><div class="overall">
-      <SubLogo src="/house.png"/>
-      <div class="overlay"><a href="/home" rel="noreferrer"/><SubHoverText>plöt │ home</SubHoverText></div>
-      </div></a></Col>
-      <Col sm={4}/>
-    </Row>
-    <br/><br/><br/><br/>
-    <Row>
-      <Col sm={4}>
-      <a href="/school" rel="noreferrer"><div class="overall">
-      <SubLogo src="/school.png"/>
-      <div class="overlay"><SubHoverText>plöt │ school</SubHoverText></div>
-      </div></a>
-      </Col>
-      <Col sm={4}>
-      <Logo src="/logo.png" />{/*<Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`
-        }}
-      >
-      </Link>*/}
-      </Col>
-      <Col sm={4}>
-      <a href="/store" rel="noreferrer"><div class="overall">
-      <SubLogo src="/store.png"/>
-      <div class="overlay"><SubHoverText>plöt │ store</SubHoverText></div>
-      </div></a>
-      </Col>
-    </Row>
+      <Row>
+        <Col sm={4}/>
+        <Col sm={4}>
+          <a href="/home" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/house.png"/>
+              <div class="overlay">
+                  <SubHoverText>plöt │ home</SubHoverText>
+              </div>
+            </div>
+          </a>
+        </Col>
+        <Col sm={4}/>
+      </Row>
+  <br/><br/><br/><br/>
+      <Row>
+        <Col sm={4}>
+          <a href="/school" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/school.png"/>
+              <div class="overlay">
+                <SubHoverText>plöt │ school</SubHoverText></div>
+            </div>
+          </a>
+        </Col>
+        <Col sm={4}>
+          <a href="/" rel="noreferrer">
+            <Logo src="/logo.png" />
+          </a>
+        </Col>
+        <Col sm={4}>
+          <a href="/store" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/store.png"/>
+              <div class="overlay">
+                <SubHoverText>plöt │ store</SubHoverText>
+              </div>
+            </div>
+          </a>
+        </Col>
+      </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
-      <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline></div>
-      <ArrowImage src="/downarrow.png"/>
+      <SubTitle>under construction.</SubTitle>
+
+    <ArrowImage src="/downarrow.png"/>
+
   </DesktopHeader>
+
   <MobileHeader>
   <br/><br/>
     <Row>
@@ -409,18 +362,10 @@ const Header = ({ siteTitle }) => (
         </div></Col>
         <Col sm={4}/>
       </Row><br/><br/><br/>
-            <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
+            <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
       <ArrowImage src="/downarrow.png"/>
   </MobileHeader>
-    {/*<Container>
-      <a href="" target="_blank" rel="noreferrer">
-      </a>
-    </Container>
-    <Register></Register>
-      <ButtonSpacerContainer><br></br></ButtonSpacerContainer>
-      <footer>
-        © 2020, plot corporation
-      </footer>*/}
+
   </Background>
 );
 
