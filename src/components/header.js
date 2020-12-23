@@ -262,16 +262,46 @@ const Header = ({ siteTitle }) => (
   <Background>
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
-      
-  <br/><br/><br/><br/>
       <Row>
         <Col sm={4}/>
+        <Col sm={4}>
+          <a href="/home" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/house.png"/>
+              <div class="overlay">
+                  <SubHoverText>plöt │ home</SubHoverText>
+              </div>
+            </div>
+          </a>
+        </Col>
+        <Col sm={4}/>
+      </Row>
+  <br/><br/><br/><br/>
+      <Row>
+        <Col sm={4}>
+          <a href="/school" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/school.png"/>
+              <div class="overlay">
+                <SubHoverText>plöt │ school</SubHoverText></div>
+            </div>
+          </a>
+        </Col>
         <Col sm={4}>
           <a href="/" rel="noreferrer">
             <Logo src="/logo.png" />
           </a>
         </Col>
-        <Col sm={4}/>
+        <Col sm={4}>
+          <a href="/store" rel="noreferrer">
+            <div class="overall">
+              <SubLogo src="/store.png"/>
+              <div class="overlay">
+                <SubHoverText>plöt │ store</SubHoverText>
+              </div>
+            </div>
+          </a>
+        </Col>
       </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
