@@ -54,16 +54,23 @@ const Sponsor = styled.img`
 `;
 
 const Img = styled.img`
-  margin-left: auto;
-  margin-right: auto;
   display: block;
-  box-shadow: rgba(0, 0, 0, 0.125) 0px 8px 16px;
-  border-radius: 10px;
-  @media only screen and (max-width: 1024px) {
-    height: 250px;
-    max-width: 100%;
+  width: 100%;
+  @media only screen and (max-width: 575px) {
+    width: 60%;
   }
 `;
+
+const LineImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  @media only screen and (max-width: 575px) {
+    width: 60%;
+  }
+`;
+
 
 const Profile = styled.img`
   margin-left: auto;
@@ -101,40 +108,51 @@ const Landing = () => (
           welcome to plöt.
         </Call>
         <Description color="#333" size="28px" className="center">
-          representing the future of living. eco-utilitarian infrastructure melded with community-based living to seed the first successful utopia.{" "}
+          representing the future of living. eco-utilitarian infrastructure melded with community-focused living to seed the first successful utopia.{" "}
           <b>
             <u>
               <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist</a>
-            </u>
-          </b>.
+            </u><LineImg src="/line.png" />
+          </b>
         </Description>
       </Col>
     </Row>
-    <br /></Site>
-    {/*<Site>
+    <br/><br/>
       <Row>
-        <Col sm={4}>
-          <Img height="250px" src="/1.jpg" />
-        </Col>
-        <Col sm={4}>
+        <Col sm={6}>
         <CardSpacerContainer><br/></CardSpacerContainer>
           <Card bg="#F9BEBE;">
             <Call size="24px" color="#333">
-              beginner focused. expert welcomed.
+              what is a plöt?
             </Call>
             <CardText size="18px" color="#333">
-              learn to code websites and applications with fun project-based
-              workshops & skilled mentors. <b>no experience necessary!</b>
+              a plöt is a largely self-contained community of ~300 individuals, all living together in a shared space designed for <b>sustainability</b>.
               <br/><br/>
-              regardless if you're a entrepreneur, designer, or engineer, we all
-              have one thing in common: <b>we make things</b>.
+              each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
             </CardText>
           </Card></Col>
-          <Col sm={4}>
-            <Img height="250px" src="/2.jpg" />
+          <Col sm={6}>
+            <Img src="/naturehome.png" />
           </Col>
-      </Row>
-      <CardSpacerContainer><br/></CardSpacerContainer>
+      </Row><br/>
+      <Row>
+          <Col sm={6}>
+            <Img width="20%" src="/movein.png" />
+          </Col>
+          <Col sm={6}>
+          <CardSpacerContainer><br/></CardSpacerContainer>
+            <Card bg="#F9BEBE;">
+              <Call size="24px" color="#333">
+                how does it work?
+              </Call>
+              <CardText size="18px" color="#333">
+                you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
+                <br/><br/>
+                in the first week, we guide you through the functioning of our community and our values.
+              </CardText>
+            </Card></Col>
+      </Row><br/><br/>
+      {/*<CardSpacerContainer><br/></CardSpacerContainer>
       <br/>
       <Row>
       <Col sm={4}>
@@ -936,6 +954,6 @@ TBD      </Call>
       <a href="https://makespp.com">
        <b>2020</b>
       </a>
-    </div>*/}</div>
+    </div>*/}</Site></div>
 );
 export default Landing;
