@@ -101,7 +101,7 @@ const Landing = () => (
           welcome to plöt.
         </Call>
         <Description color="#333" size="28px" className="center">
-          representing the future of living. eco-utilitarian infrastructure melded with community-based living to seed the first utopia.{" "}
+          representing the future of living. eco-utilitarian infrastructure melded with community-based living to seed the first successful utopia.{" "}
           <b>
             <u>
               <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist</a>

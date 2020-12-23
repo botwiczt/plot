@@ -80,7 +80,7 @@ const plotHome = () => (
     <SEO title="plot home" keywords={[`plot`, `home`, `house`]}/>
     <Art src="/houseart.png" />
     <Call color="#333" className="center" size="30px">
-      we're 3D-printing recycled, expertly-designed homes built for sustainable life...
+      we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
     <a href="/" rel="noreferrer">
     <ScheduleButton>back</ScheduleButton></a>
