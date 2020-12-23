@@ -266,12 +266,12 @@ const Header = ({ siteTitle }) => (
         <Col sm={4}/>
         <Col sm={4}>
           <a href="/home" rel="noreferrer">
-            <div class="overall">
+            <article class="overall">
               <SubLogo src="/house.png"/>
-              <div class="overlay">
+              <article class="overlay">
                   <SubHoverText>plöt │ home</SubHoverText>
-              </div>
-            </div>
+              </article>
+            </article>
           </a>
         </Col>
         <Col sm={4}/>
@@ -280,11 +280,11 @@ const Header = ({ siteTitle }) => (
       <Row>
         <Col sm={4}>
           <a href="/school" rel="noreferrer">
-            <div class="overall">
+            <article class="overall">
               <SubLogo src="/school.png"/>
-              <div class="overlay">
-                <SubHoverText>plöt │ school</SubHoverText></div>
-            </div>
+              <article class="overlay">
+                <SubHoverText>plöt │ school</SubHoverText></article>
+            </article>
           </a>
         </Col>
         <Col sm={4}>
@@ -294,12 +294,12 @@ const Header = ({ siteTitle }) => (
         </Col>
         <Col sm={4}>
           <a href="/store" rel="noreferrer">
-            <div class="overall">
+            <article class="overall">
               <SubLogo src="/store.png"/>
-              <div class="overlay">
+              <article class="overlay">
                 <SubHoverText>plöt │ store</SubHoverText>
-              </div>
-            </div>
+              </article>
+            </article>
           </a>
         </Col>
       </Row>
@@ -331,28 +331,28 @@ const Header = ({ siteTitle }) => (
       <Row>
         <Col sm={4}/>
         <Col sm={4}>
-        <div class="overall">
+        <article class="overall">
         <MobileSubLogo src="/house.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div>
-        </div></Col>
+        <article class="overlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></article>
+        </article></Col>
         <Col sm={4}/>
       </Row><br/><br/><br/>
       <Row>
         <Col sm={4}/>
         <Col sm={4}>
-        <div class="overall">
+        <article class="overall">
         <MobileSubLogo src="/school.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div>
-        </div></Col>
+        <article class="overlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></article>
+        </article></Col>
         <Col sm={4}/>
       </Row><br/><br/><br/>
       <Row>
         <Col sm={4}/>
         <Col sm={4}>
-        <div class="overall">
+        <article class="overall">
         <MobileSubLogo src="/store.png"/>
-        <div class="overlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
-        </div></Col>
+        <article class="overlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></article>
+        </article></Col>
         <Col sm={4}/>
       </Row><br/><br/><br/>
             <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
