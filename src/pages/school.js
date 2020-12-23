@@ -77,7 +77,7 @@ const Counter = styled.h1`
 
 const plotSchool = () => (
   <Layout>
-    <SEO title="Plot School" keywords={[`plot`, `school`]}/>
+    <SEO title="plot school" keywords={[`plot`, `school`]}/>
     <Art src="/schoolart.png" />
     <Call color="#333" className="center" size="30px">
       we're reimagining the industrial-era education system for the 21st century...
