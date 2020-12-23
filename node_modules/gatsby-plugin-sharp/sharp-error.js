@@ -14,9 +14,12 @@ class SharpError extends Error {
     let fullErrorMessage = message;
 
     if (err) {
+      var _err$shortMessage;
+
       fullErrorMessage += `
 
 Original error:
+${(_err$shortMessage = err.shortMessage) !== null && _err$shortMessage !== void 0 ? _err$shortMessage : ``}
 ${err.message}`;
     }
 
