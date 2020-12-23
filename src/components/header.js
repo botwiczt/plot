@@ -307,6 +307,7 @@ const Header = ({ siteTitle }) => (
       <Title>plöt: the future of living.</Title>
       <SubTitle>under construction.</SubTitle>
 
+    <ArrowImage src="/downarrow.png"/>
 
   </DesktopHeader>
 
@@ -362,6 +363,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={4}/>
       </Row><br/><br/><br/>
             <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
+      <ArrowImage src="/downarrow.png"/>
   </MobileHeader>
 
   </Background>
