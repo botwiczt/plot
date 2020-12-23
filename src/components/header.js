@@ -9,36 +9,6 @@ const Background = styled.header`
   height: 100vh;
   color: #215f00;
   background: linear-gradient(to right, #FFFFFF);
-  {/*@media only screen and (max-width: 1280px) {
-  height: 105vh;
-  }
-  @media only screen and (max-width: 1024px) {
-  height: 78vh;
-  }
-  @media only screen and (max-width: 768px) {
-    height: 75vh;
-  }
-  @media only screen and (max-width: 540px) {
-  height: 80vh;
-  }
-  @media only screen and (max-width: 414px) {
-  height: 73vh;
-  }
-  @media only screen and (max-width: 411px) {
-  height: 72vh;
-  }
-  @media only screen and (max-width: 400px) {
-  height: 90vh;
-  }
-  @media only screen and (max-width: 375px) {
-  height: 83vh;
-  }
-  @media only screen and (max-width: 320px) {
-  height: 125vh;
-  }
-  @media only screen and (max-width: 280px) {
-  height: 92vh;
-  }*/}
 `;
 
 const DesktopHeader = styled.header`
@@ -46,6 +16,7 @@ const DesktopHeader = styled.header`
    display:none;
   }
 `;
+
 //768px was original mobileheader value.
 const MobileHeader = styled.header`
   @media (min-width: 575px) {
@@ -56,106 +27,50 @@ const MobileHeader = styled.header`
   }
 `;
 
-const SmallLogo = styled.img`
+const Logo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  max-width: 40%;
-  padding: 10px;
-  border: 6px solid #000000;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: all 300ms ease;
-  &:hover {
-    background: #CCCCCC;
-    transform: scale(1.2);
-    opacity: 0.45;
-`;
-
-const MobileSmallLogo = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  max-width: 18%;
-  padding: 10px;
-  border: 6px solid #000000;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: all 300ms ease;
-  &:hover {
-    background: #CCCCCC;
-    transform: scale(1.2);
-    opacity: 0.45;
+  width: 90%;
 `;
 
 const MobileLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: auto;
-  width: 90%;
-  @media only screen and (max-width: 575px) {
-    width: 40%;
+  width: 40%;
 `;
 
-const Logo = styled.img`
+const SubLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  @media only screen and (max-width: 575px) {
-    position: auto;
-    width: 40%;
-  {/*@media only screen and (min-width: 1250px) {
-    position: auto;
-    width: 40%;
-  }
-  @media only screen and (max-width: 767px) {
-    position: auto;
-    width: 65%;
-  }
-  @media only screen and (min-width: 1200px) {
-    position: auto;
-    width: 40%;
-  }
-  @media only screen and (max-width: 100px) {
-  content:url("/logosmall.png");
-    position: auto;
-    width: 65%;
-  }*/}
+  width: 40%;
+  padding: 10px;
+  border: 6px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover {
+    background: #CCCCCC;
+    transform: scale(1.2);
+    opacity: 0.45;
 `;
 
-const ArrowImage = styled.img`
+const MobileSubLogo = styled.img`
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 47%;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.15);}
-  }
-
-`;
-
-const Img = styled.img`
-  display:block;
-  max-width:100px;
-  min-width:60px;
-  position:fixed;
-  right:50px;
-  top:0;
-  width:7%;
-  z-index:10000;
+  width: 18%;
+  padding: 10px;
+  border: 6px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover {
+    background: #CCCCCC;
+    transform: scale(1.2);
+    opacity: 0.45;
 `;
 
 const Title = styled.h1`
@@ -191,7 +106,6 @@ const Title = styled.h1`
   }
 `;
 
-// BIG ISSUES HERE WITH RENDERING OF TYPING ON MOBILE SCREENS...CURSOR GOES OVER
 const MobileTitle = styled.h1`
   text-align: left;
   max-width: 900px;
@@ -211,9 +125,6 @@ const MobileTitle = styled.h1`
   @keyframes animated-cursor{
     from{border-right-color: #000000;}
     to{border-right-color: transparent;}
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 48px;
   }
   @media only screen and (max-width: 768px) {
     font-size: 33px;
@@ -243,6 +154,26 @@ const Tagline = styled.h1`
     font-size: 33px;
     padding: 14px;
   }
+`;
+
+const ArrowImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.15);}
+  }
+
 `;
 
 const SubText = styled.h1`
@@ -388,11 +319,11 @@ const Header = ({ siteTitle }) => (
   <Background>
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
-    <Row>
+    <div class="headercontent"><Row>
       <Col sm={4}/>
       <Col sm={4}>
       <a href="/home" rel="noreferrer"><div class="overall">
-      <SmallLogo src="/house.png"/>
+      <SubLogo src="/house.png"/>
       <div class="overlay"><a href="/home" target="_blank" rel="noreferrer"/><SubHoverText>plöt │ home</SubHoverText></div>
       </div></a></Col>
       <Col sm={4}/>
@@ -401,7 +332,7 @@ const Header = ({ siteTitle }) => (
     <Row>
       <Col sm={4}>
       <a href="/school" rel="noreferrer"><div class="overall">
-      <SmallLogo src="/school.png"/>
+      <SubLogo src="/school.png"/>
       <div class="overlay"><SubHoverText>plöt │ school</SubHoverText></div>
       </div></a>
       </Col>
@@ -417,14 +348,14 @@ const Header = ({ siteTitle }) => (
       </Col>
       <Col sm={4}>
       <a href="/store" rel="noreferrer"><div class="overall">
-      <SmallLogo src="/store.png"/>
+      <SubLogo src="/store.png"/>
       <div class="overlay"><SubHoverText>plöt │ store</SubHoverText></div>
       </div></a>
       </Col>
     </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
-      <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
+      <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline></div>
       <ArrowImage src="/downarrow.png"/>
   </DesktopHeader>
   <MobileHeader>
@@ -455,7 +386,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={4}/>
         <Col sm={4}>
         <div class="overall">
-        <MobileSmallLogo src="/house.png"/>
+        <MobileSubLogo src="/house.png"/>
         <div class="overlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div>
         </div></Col>
         <Col sm={4}/>
@@ -464,7 +395,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={4}/>
         <Col sm={4}>
         <div class="overall">
-        <MobileSmallLogo src="/school.png"/>
+        <MobileSubLogo src="/school.png"/>
         <div class="overlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div>
         </div></Col>
         <Col sm={4}/>
@@ -473,7 +404,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={4}/>
         <Col sm={4}>
         <div class="overall">
-        <MobileSmallLogo src="/store.png"/>
+        <MobileSubLogo src="/store.png"/>
         <div class="overlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
         </div></Col>
         <Col sm={4}/>
