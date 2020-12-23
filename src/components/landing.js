@@ -95,7 +95,7 @@ const FAQSpacerContainer = styled.div`
 
 const Landing = () => (
   <div className="landing">
-    {/*<Site><Row>
+    <Site><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
           welcome to plöt.
@@ -111,7 +111,7 @@ const Landing = () => (
       </Col>
     </Row>
     <br /></Site>
-    <Site>
+    {/*<Site>
       <Row>
         <Col sm={4}>
           <Img height="250px" src="/1.jpg" />

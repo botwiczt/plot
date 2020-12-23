@@ -304,8 +304,6 @@ const Header = ({ siteTitle }) => (
         </Col>
       </Row>
     <br/><br/>
-      <Title>plöt: the future of living.</Title>
-      <SubTitle>under construction.</SubTitle>
 
     <ArrowImage src="/downarrow.png"/>
 
@@ -330,7 +328,6 @@ const Header = ({ siteTitle }) => (
     <Row>
       <Col sm={4}/>
       <Col sm={4}>
-      <MobileTitle>plöt: the future of living.</MobileTitle>
 
       </Col>
     <Col sm={4}/>
@@ -362,7 +359,6 @@ const Header = ({ siteTitle }) => (
         </div></Col>
         <Col sm={4}/>
       </Row><br/><br/><br/>
-            <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
       <ArrowImage src="/downarrow.png"/>
   </MobileHeader>
 
