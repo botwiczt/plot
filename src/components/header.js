@@ -324,7 +324,7 @@ const Header = ({ siteTitle }) => (
       <Col sm={4}>
       <a href="/home" rel="noreferrer"><div class="overall">
       <SubLogo src="/house.png"/>
-      <div class="overlay"><a href="/home" target="_blank" rel="noreferrer"/><SubHoverText>plöt │ home</SubHoverText></div>
+      <div class="overlay"><a href="/home" rel="noreferrer"/><SubHoverText>plöt │ home</SubHoverText></div>
       </div></a></Col>
       <Col sm={4}/>
     </Row>
