@@ -391,19 +391,19 @@ const Header = ({ siteTitle }) => (
     <Row>
       <Col sm={4}/>
       <Col sm={4}>
-      <a href="/home" rel="noreferrer"><div class="overall">
+      <div class="overall">
       <SmallLogo src="/house.png"/>
-      <div class="overlay"><a href="/home" target="_blank" rel="noreferrer"/><SubHoverText>plöt │ home</SubHoverText></div>
-      </div></a></Col>
+      <div class="overlay"><SubHoverText>plöt │ home</SubHoverText></div>
+      </div></Col>
       <Col sm={4}/>
     </Row>
     <br/><br/><br/><br/>
     <Row>
       <Col sm={4}>
-      <a href="/school" rel="noreferrer"><div class="overall">
+      <div class="overall">
       <SmallLogo src="/school.png"/>
       <div class="overlay"><SubHoverText>plöt │ school</SubHoverText></div>
-      </div></a>
+      </div>
       </Col>
       <Col sm={4}>
       <Logo src="/logo.png" />{/*<Link
@@ -416,10 +416,10 @@ const Header = ({ siteTitle }) => (
       </Link>*/}
       </Col>
       <Col sm={4}>
-      <a href="/store" rel="noreferrer"><div class="overall">
+      <div class="overall">
       <SmallLogo src="/store.png"/>
       <div class="overlay"><SubHoverText>plöt │ store</SubHoverText></div>
-      </div></a>
+      </div>
       </Col>
     </Row>
     <br/><br/>
