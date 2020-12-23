@@ -42,16 +42,16 @@ const Background = styled.header`
 `;
 
 const DesktopHeader = styled.header`
-  @media (max-width: 768px) {
+  @media (max-width: 575px) {
    display:none;
   }
 `;
-
+//768px was original mobileheader value.
 const MobileHeader = styled.header`
-  @media (min-width: 768px) {
+  @media (min-width: 575px) {
    display:none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 575px) {
    display:initial;
   }
 `;
@@ -62,6 +62,23 @@ const SmallLogo = styled.img`
   margin-right: auto;
   height: auto;
   max-width: 40%;
+  padding: 10px;
+  border: 6px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  &:hover {
+    background: #CCCCCC;
+    transform: scale(1.2);
+    opacity: 0.45;
+`;
+
+const MobileSmallLogo = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 18%;
   padding: 10px;
   border: 6px solid #000000;
   border-radius: 40px;
@@ -179,17 +196,18 @@ const MobileTitle = styled.h1`
   text-align: left;
   max-width: 900px;
   font-size: 3rem;
-  margin-left: 3%;
+  margin-left: auto;
+  margin-right: auto;
   color: #000000;
   border-right: solid 3px #000000;
   white-space: nowrap;
   overflow: hidden;
-  animation: animated-text 3s steps(29) 1s 1 normal both,
+  animation: animated-textmobile 3s steps(29) 1s 1 normal both,
              animated-cursor 600ms steps(29) infinite;
-  {/*@keyframes animated-text{
+  @keyframes animated-textmobile{
   from{width: 0;}
   to{width: 390px;}
-}*/}
+  }
   @keyframes animated-cursor{
     from{border-right-color: #000000;}
     to{border-right-color: transparent;}
@@ -236,16 +254,6 @@ const SubText = styled.h1`
   color: #000000;
 `;
 
-const MobileSubHoverText = styled.h1`
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  @media only screen and (max-width: 768px) {
-    font-size: 17px;
-  }
-`;
-
 const SubHoverText = styled.h1`
   color: #000000;
   font-size: 24px;
@@ -277,6 +285,24 @@ const SubHoverText = styled.h1`
   }
   @media only screen and (max-width: 575px) {
     font-size: 30px;
+  }
+`;
+
+const MobileSubHoverText = styled.h1`
+  color: #000000;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  @media only screen and (max-width: 800px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 15px;
+  }
+  @media only screen and (max-width: 575px) {
+    font-size: 15px;
   }
 `;
 
@@ -402,15 +428,6 @@ const Header = ({ siteTitle }) => (
       <ArrowImage src="/downarrow.png"/>
   </DesktopHeader>
   <MobileHeader>
-      <div class="reference" tabindex="0">
-        <div class="hamburger-menu">
-          <div class="bar top"></div>
-          <div class="bar bottom"></div>
-        </div>
-        <div class="popout-menu"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div><br/>
-        <div class="popout-menu"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div><br/>
-        <div class="popout-menu"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
-      </div>
   <br/><br/>
     <Row>
       <Col sm={4}/>
@@ -426,16 +443,42 @@ const Header = ({ siteTitle }) => (
       </Col>
     <Col sm={4}/>
     </Row>
-    <br/><br/>
     <Row>
       <Col sm={4}/>
       <Col sm={4}>
       <MobileTitle>plöt: the future of living.</MobileTitle>
+
       </Col>
     <Col sm={4}/>
     </Row>
-
-      <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
+      <Row>
+        <Col sm={4}/>
+        <Col sm={4}>
+        <div class="overall">
+        <MobileSmallLogo src="/house.png"/>
+        <div class="overlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div>
+        </div></Col>
+        <Col sm={4}/>
+      </Row><br/><br/><br/>
+      <Row>
+        <Col sm={4}/>
+        <Col sm={4}>
+        <div class="overall">
+        <MobileSmallLogo src="/school.png"/>
+        <div class="overlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div>
+        </div></Col>
+        <Col sm={4}/>
+      </Row><br/><br/><br/>
+      <Row>
+        <Col sm={4}/>
+        <Col sm={4}>
+        <div class="overall">
+        <MobileSmallLogo src="/store.png"/>
+        <div class="overlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
+        </div></Col>
+        <Col sm={4}/>
+      </Row><br/><br/><br/>
+            <SubTagline>{/*Join the community that's right for you. */}under construction.</SubTagline>
       <ArrowImage src="/downarrow.png"/>
   </MobileHeader>
     {/*<Container>

@@ -102,85 +102,31 @@ iframe {
     height: 100px;
 }
 
-      .overall {
-        position: relative;
-      }
+.overall {
+  position: relative;
+}
 
-      .overlay {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 40px;
-        opacity: 0;
-        transition: .5s ease;
-        pointer-events: none;
-      }
+.overlay {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: .5s ease;
+  pointer-events: none;
+}
 
-      .overall:hover .overlay {
-        opacity: 1;
-        transform: scale(1.2);
-      }
-
-
-
-
-                      .hamburger-menu {
-                      display: flex;
-                      flex-direction: column;
-                      flex-wrap: wrap;
-                      margin: 20px;
-                      justify-content: space-between;
-                      height: 2.3rem;
-                      width: 2.7rem;
-                      cursor: pointer;
-                      }
-
-                      .hamburger-menu .bar {
-                      height: 7px;
-                      background: black;
-                      border-radius: 5px;
-                      margin: 3px 0px;
-                      transform-origin: left;
-                      transition: all 1s;
-                      }
-
-                      .hamburger-menu:hover .top {
-                      transform: rotate(34.5deg);
-                      }
-
-                      .hamburger-menu:hover .bottom {
-                      transform: rotate(-34.5deg);
-                      }
-
-                      .reference {
-                      position: relative;
-                      width: 100px;
-                      height: 35px;
-                      }
-
-                      .popout-menu {
-                      position: flex;
-                      visibility: hidden;
-                      left: 100%;
-                      background: #CCCCCC;
-                      color: #000000;
-                      padding: 16px;
-                      }
-
-                      .reference:hover > .popout-menu,
-                      .reference:focus > .popout-menu,
-                      .reference:focus-within > .popout-menu {
-                      visibility: visible;
-                      }
-
-
+.overall:hover .overlay {
+  opacity: 1;
+  transform: scale(1.2);
+}
 
 textarea:focus,
 input:focus,
