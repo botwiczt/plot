@@ -114,6 +114,15 @@ a {
     height: 100px;
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: #CCCCCC;
+    font-size: 20px;
+    }
+
 textarea:focus,
 input:focus,
 select:focus {

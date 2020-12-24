@@ -108,10 +108,10 @@ const Landing = () => (
           welcome to plöt.
         </Call>
         <Description color="#333" size="28px" className="center">
-          representing the future of living. eco-utilitarian infrastructure melded with community-focused living to seed the first successful utopia.{" "}
+          representing the future of living. eco-utilitarian infrastructure melded with community-focused values to seed the first successful utopia.{" "}
           <b>
             <u>
-              <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist</a>
+              <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist.</a>
             </u><LineImg src="/line.png" />
           </b>
         </Description>
@@ -120,7 +120,7 @@ const Landing = () => (
     <br/><br/>
       <Row>
         <Col sm={6}>
-        <CardSpacerContainer><br/></CardSpacerContainer>
+        <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
           <Card bg="#F9BEBE;">
             <Call size="24px" color="#333">
               what is a plöt?
@@ -137,10 +137,10 @@ const Landing = () => (
       </Row><br/>
       <Row>
           <Col sm={6}>
-            <Img width="20%" src="/movein.png" />
+            <Img src="/movein.png" />
           </Col>
           <Col sm={6}>
-          <CardSpacerContainer><br/></CardSpacerContainer>
+          <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
             <Card bg="#F9BEBE;">
               <Call size="24px" color="#333">
                 how does it work?
@@ -149,6 +149,7 @@ const Landing = () => (
                 you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
                 <br/><br/>
                 in the first week, we guide you through the functioning of our community and our values.
+                <br/><br/>we're currently in the process of constructing our first plöt in the state of <b> maine</b>.
               </CardText>
             </Card></Col>
       </Row><br/><br/>
@@ -926,34 +927,33 @@ TBD      </Call>
           <br />
         </Col>
       </Row>
-    </Site>
-    <div class="center">
-      <a href="https://twitter.com/makespp">
-        <img height="52px" src="/twitter.png" alt="twitter icon."/>
-      </a>
-      <a href="https://instagram.com/sppmakes">
-        <img height="50px" src="/instagram.png" alt="instagram icon."/>
-      </a>
-    </div>
-    <Description className="center" size="16px">
-      <Link to ="http://mlh.io/code-of-conduct" style={{
-        color: `black`,
-        fontWeight: `bold`,
-        textDecoration: `underline`
-      }}> MLH Code of Conduct </Link>
-    </Description>
+    </Site>*/}
+
+    {/*<footer>
+    <Row>
+    <Col sm={3}>
+    <a href="https://twitter.com/">
+      <img height="52px" src="/twitter.png" alt="twitter icon."/>
+    </a>
+    <a href="https://instagram.com/">
+      <img height="50px" src="/instagram.png" alt="instagram icon."/>
+    </a>
+    </Col>
+    <Col sm={2}>
     <Description color="#333" className="center" size="16px">
       © 2020 <a> plot co.</a>
-    </Description><div class="center">
-      <a href="http://2018.makespp.com">
-        <b>2018</b>
-      </a>&nbsp; | &nbsp;
-      <a href="https://2019.makespp.com">
-       <b>2019</b>
-      </a> &nbsp; | &nbsp;
-      <a href="https://makespp.com">
-       <b>2020</b>
-      </a>
-    </div>*/}</Site></div>
+    </Description>
+    </Col>
+    <Col sm={2}>
+    <Description size="10px">
+      <Link to ="/tos" style={{
+        color: `black`,
+        textDecoration: `underline`
+      }}> TOS </Link>
+    </Description>
+    </Col>
+    </Row>
+    </footer>*/}
+    </Site></div>
 );
 export default Landing;
