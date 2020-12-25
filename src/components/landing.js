@@ -563,12 +563,12 @@ const Landing = () => (
             </CardText>
           </Card></Col>
           <Col sm={6}>
-            <Img src="/naturehome.png" />
+            <Img src="/naturehome.svg" />
           </Col>
       </Row><br/>
       <Row>
           <Col sm={6}>
-            <Img src="/movein.png" />
+            <Img src="/movein.svg" />
           </Col>
           <Col sm={6}>
           <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
@@ -1431,7 +1431,7 @@ TBD      </Call>
           a plöt is a largely self-contained community of ~300 individuals, all living together in a shared space designed for <b>sustainability</b>.
           <br/><br/>
           each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
-        </CardText><MobileImg src="/naturehome.png"/>
+        </CardText><MobileImg src="/naturehome.svg"/>
       </MobileCard>
         <br/>
       <MobileCard>
@@ -1441,7 +1441,7 @@ TBD      </Call>
         <CardText color="#333">
                 you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
                 <br/>
-                <MobileImg src="/movein.png" />
+                <MobileImg src="/movein.svg" />
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
         </CardText>
