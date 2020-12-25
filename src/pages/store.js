@@ -5,6 +5,22 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 import { Container, Row, Col } from "react-grid-system";
 
+const DesktopStore = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+//768px was original mobileheader value.
+const MobileStore = styled.header`
+  @media (min-width: 575px) {
+   display:none;
+  }
+  @media (max-width: 575px) {
+   display:initial;
+  }
+`;
+
 const Description = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
@@ -39,6 +55,13 @@ const Art = styled.img`
     position: auto;
     width: 65%;
   }*/}
+`;
+
+const MobileArt = styled.img`
+  display: block;
+  margin: auto;
+  margin-top: 50%;
+  width: 100%;
 `;
 
 const Call = styled.h2`
@@ -78,12 +101,22 @@ const Counter = styled.h1`
 const plotStore = () => (
   <Layout>
     <SEO title="plot store" keywords={[`plot`, `store`]}/>
+    <DesktopStore>
     <Art src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
     <a href="/" rel="noreferrer">
     <ScheduleButton>back</ScheduleButton></a>
+    </DesktopStore>
+    <MobileStore>
+    <MobileArt src="/storeart.png" />
+    <Call color="#333" className="center" size="30px">
+      we're bringing local, circular, organic foods right next door...
+    </Call>
+    <a href="/" rel="noreferrer">
+    <ScheduleButton>back</ScheduleButton></a>
+    </MobileStore>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />
           </Counter>

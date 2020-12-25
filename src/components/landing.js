@@ -67,6 +67,8 @@ const Card = styled.div`
 const MobileCard = styled.div`
   max-width: 400px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Sponsor = styled.img`
@@ -84,11 +86,80 @@ const Img = styled.img`
   }
 `;
 
+const ValuesImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+`;
+const ValuesArrowImg = styled.img`
+  display: block;
+  margin-top: 120%;
+  width: 80%;
+  transform: translate(+20px);
+  cursor: pointer;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.15);}
+  }
+`;
+
+const MobileValuesArrowImg = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(+20px);
+  cursor: pointer;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.15);}
+  }
+`;
+
+const ValuesCall = styled.h1`
+  color: ${props => props.color};
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 35px;
+  @media only screen and (max-width: 1024px) {
+      font-size: 25px;
+    }
+`;
+
+const MobileValuesCall = styled.h1`
+  color: ${props => props.color};
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 45px;
+`;
+
 const MobileImg = styled.img`
   display: block;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+`;
+
+const MobileValuesImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 `;
 
 const LineImg = styled.img`
@@ -183,7 +254,26 @@ const Landing = () => (
                 <br/><br/>we're currently in the process of constructing our first plöt in the state of <b> maine</b>.
               </CardText>
             </Card></Col>
-      </Row><br/><br/></Site>
+      </Row>
+
+      <Row>
+      <Col sm={2}/>
+      <Col sm={6}>
+      <ValuesCall color="#333">
+        our values.
+      </ValuesCall>
+      <ValuesImg src="/values.svg" />
+      </Col>
+      <Col sm={2}>
+      <a href="/values" rel="noreferrer">
+      <ValuesArrowImg src="/rightarrow.svg" />
+      </a>
+      </Col>
+      <Col sm={2}/>
+      </Row>
+<br/><br/><br/><br/><br/><br/>
+
+      </Site>
       {/*<CardSpacerContainer><br/></CardSpacerContainer>
       <br/>
       <Row>
@@ -1025,8 +1115,17 @@ TBD      </Call>
                 <MobileImg src="/movein.png" />
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
-        </CardText><br/><br/>
+        </CardText>
       </MobileCard>
+
+      <MobileValuesCall color="#333">
+      our values.
+      </MobileValuesCall>
+      <MobileValuesImg src="/values.svg" />
+      <a href="/values" rel="noreferrer">
+      <MobileValuesArrowImg src="/rightarrow.svg" />
+      </a>
+      <br/><br/><br/>
     </Site>
     </MobileLanding>
     </div>

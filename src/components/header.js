@@ -109,6 +109,7 @@ const SubLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 5px 10px;
   width: 40%;
   padding: 10px;
   border: 6px solid #000000;
@@ -245,7 +246,7 @@ const SubHoverText = styled.h1`
   color: #000000;
   font-size: 24px;
   position: absolute;
-  top: 100%;
+  top: 105%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

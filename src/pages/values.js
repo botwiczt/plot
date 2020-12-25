@@ -5,14 +5,14 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 import { Container, Row, Col } from "react-grid-system";
 
-const DesktopSchool = styled.header`
+const DesktopValues = styled.header`
   @media (max-width: 575px) {
    display:none;
   }
 `;
 
 //768px was original mobileheader value.
-const MobileSchool = styled.header`
+const MobileValues = styled.header`
   @media (min-width: 575px) {
    display:none;
   }
@@ -98,25 +98,23 @@ const Counter = styled.h1`
     }
 `;
 
-const plotSchool = () => (
+const plotStore = () => (
   <Layout>
-    <SEO title="plot school" keywords={[`plot`, `school`]}/>
-    <DesktopSchool>
-    <Art src="/schoolart.png" />
+    <SEO title="plot values" keywords={[`plot`, `values`]}/>
+    <DesktopValues>
+    <Art src="/valueswip.svg" />
     <Call color="#333" className="center" size="30px">
-      we're reimagining the industrial-era education system for the 21st century...
+      they're coming soon...
     </Call>
     <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
-    </DesktopSchool>
-    <MobileSchool>
-    <MobileArt src="/schoolart.png" />
+    <ScheduleButton>back</ScheduleButton></a></DesktopValues>
+    <MobileValues>
+    <MobileArt src="/valueswip.svg" />
     <Call color="#333" className="center" size="30px">
-      we're reimagining the industrial-era education system for the 21st century...
+      they're coming soon...
     </Call>
     <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
-    </MobileSchool>
+    <ScheduleButton>back</ScheduleButton></a></MobileValues>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />
           </Counter>
@@ -260,4 +258,4 @@ const plotSchool = () => (
   </Layout>
 )
 
-export default plotSchool
+export default plotStore
