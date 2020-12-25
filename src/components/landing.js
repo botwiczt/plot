@@ -3,6 +3,24 @@ import React from "react";
 import styled from "styled-components";
 import { Row, Col } from "react-grid-system";
 
+
+const DesktopLanding = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+const MobileLanding= styled.header`
+  @media (min-width: 575px) {
+   display:none;
+  }
+  @media (max-width: 575px) {
+   display:initial;
+  }
+`;
+
+
+
 const Call = styled.h2`
   margin: 0;
   padding: 0;
@@ -46,6 +64,11 @@ const Card = styled.div`
   }
 `;
 
+const MobileCard = styled.div`
+  max-width: 400px;
+  text-align: center;
+`;
+
 const Sponsor = styled.img`
   display: block;
   margin: auto;
@@ -59,6 +82,13 @@ const Img = styled.img`
   @media only screen and (max-width: 575px) {
     width: 60%;
   }
+`;
+
+const MobileImg = styled.img`
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const LineImg = styled.img`
@@ -102,6 +132,7 @@ const FAQSpacerContainer = styled.div`
 
 const Landing = () => (
   <div className="landing">
+    <DesktopLanding>
     <Site><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
@@ -152,7 +183,7 @@ const Landing = () => (
                 <br/><br/>we're currently in the process of constructing our first plöt in the state of <b> maine</b>.
               </CardText>
             </Card></Col>
-      </Row><br/><br/>
+      </Row><br/><br/></Site>
       {/*<CardSpacerContainer><br/></CardSpacerContainer>
       <br/>
       <Row>
@@ -954,6 +985,50 @@ TBD      </Call>
     </Col>
     </Row>
     </footer>*/}
-    </Site></div>
+    </DesktopLanding>
+    <MobileLanding>
+    <Site>
+    <Row>
+      <Col sm={12}>
+        <Call color="#333" size="36px" className="center">
+          welcome to plöt.
+        </Call>
+        <Description color="#333" size="28px" className="center">
+          representing the future of living. eco-utilitarian infrastructure melded with community-focused values to seed the first successful utopia.{" "}
+          <b>
+            <u>
+              <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist.</a>
+            </u><LineImg src="/line.png" />
+          </b>
+        </Description>
+      </Col>
+    </Row>
+    <br/>
+      <MobileCard bg="#F9BEBE;">
+        <Call color="#333">
+          what is a plöt?
+        </Call>
+        <CardText color="#333">
+          a plöt is a largely self-contained community of ~300 individuals, all living together in a shared space designed for <b>sustainability</b>.
+          <br/><br/>
+          each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
+        </CardText><MobileImg src="/naturehome.png"/>
+      </MobileCard>
+        <br/>
+      <MobileCard>
+        <Call color="#333">
+            how does it work?
+        </Call>
+        <CardText color="#333">
+                you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
+                <br/>
+                <MobileImg src="/movein.png" />
+                in the first week, we guide you through the functioning of our community and our values.
+                <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
+        </CardText><br/><br/>
+      </MobileCard>
+    </Site>
+    </MobileLanding>
+    </div>
 );
 export default Landing;

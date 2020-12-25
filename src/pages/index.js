@@ -28,9 +28,9 @@ const ArrowImage = styled.img`
 const IndexPage = () => (
   <Layout>
     <SEO title="plot" keywords={[`plot`,`future`]}/>
+    <ArrowImage src="/downarrow.png"/>
     <Header/>
     <Landing/>
-    <ArrowImage src="/downarrow.png"/>
   </Layout>
 )
 export default IndexPage
