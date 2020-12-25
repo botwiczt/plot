@@ -18,6 +18,10 @@
     "Helvetica Neue", "Arial", sans-serif;
 }
 
+.landing {
+  margin: 2.5%;
+}
+
 a {
   text-decoration: none;
   color: #333;
@@ -67,10 +71,6 @@ a {
 
 .max {
   max-height: 100px;
-}
-
-.landing {
-  margin: 2.5%;
 }
 
 .center {
