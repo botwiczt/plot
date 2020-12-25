@@ -62,7 +62,7 @@ const Background = styled.header`
   height: 90vh;
   }
   @media screen and (width: 1366px) , screen and (height: 768px) {
-  height: 100vh;
+  height: 110vh;
   }
   @media screen and (width: 540px) , screen and (height: 720px) {
   height: 107vh;
