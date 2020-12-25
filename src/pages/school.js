@@ -34,7 +34,6 @@ const Art = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8%;
   width: 70%;
   @media only screen and (max-width: 575px) {
     position: auto;
