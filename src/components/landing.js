@@ -195,7 +195,8 @@ const Landing = () => (
   <div className="landing">
   <br/>
     <DesktopLanding>
-    <Site><Row>
+    <Site>
+    <div id="down"><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
           welcome to plöt.
@@ -210,6 +211,7 @@ const Landing = () => (
         </Description>
       </Col>
     </Row>
+    </div>
     <br/><br/>
       <Row>
         <Col sm={6}>
