@@ -199,9 +199,8 @@ const FAQSpacerContainer = styled.div`
 `;
 
 const Landing = () => (
-  <div>
-<br/>
   <div className="landing">
+  <br/>
     <DesktopLanding>
     <Site><Row>
       <Col sm={12}>
@@ -1127,7 +1126,6 @@ TBD      </Call>
       <br/><br/><br/>
     </Site>
     </MobileLanding>
-    </div>
     </div>
 );
 export default Landing;

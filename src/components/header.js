@@ -1,8 +1,7 @@
-import { Link } from "gatsby";
 import React from "react";
+import { Link } from "gatsby";
+import { Row, Col, Container } from "react-grid-system";
 import styled from "styled-components";
-import { Container} from "react-grid-system";
-import { Row, Col } from "react-grid-system";
 import "./layout.css"
 
 const Background = styled.header`
@@ -43,8 +42,8 @@ const SubLogo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 5px 10px;
   width: 40%;
+  box-shadow: 5px 10px #000000;
   padding: 10px;
   border: 6px solid #000000;
   border-radius: 40px;
@@ -72,13 +71,48 @@ const MobileSubLogo = styled.img`
     opacity: 0.45;
 `;
 
-const Title = styled.h1`
-  text-align: center;
-  max-width: 900px;
-  font-size: 3rem;
+const SubHoverText = styled.h1`
+  color: #000000;
+  font-size: 24px;
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media only screen and (max-width: 2000px) {
+    font-size: 35px;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 800px) {
+    white-space: nowrap;
+    font-size: 17px;
+  }
+`;
+
+//unoptimized
+const MobileSubHoverText = styled.h1`
+  position: absolute;
+  font-size: 15px;
   margin-left: auto;
   margin-right: auto;
-  color: #000000;
+  text-align: center;
+  top: 106%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+const Title = styled.h1`
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 48px;
   border-right: solid 3px #000000;
   white-space: nowrap;
   overflow: hidden;
@@ -92,26 +126,16 @@ const Title = styled.h1`
     from{border-right-color: #000000;}
     to{border-right-color: transparent;}
   }
-  @media only screen and (max-width: 1024px) {
-    font-size: 48px;
-  }
   @media only screen and (max-width: 768px) {
     font-size: 33px;
-    padding: 16px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 33px;
-    padding: 14px;
   }
 `;
 
 const MobileTitle = styled.h1`
-  text-align: left;
-  max-width: 900px;
-  font-size: 25px;
   margin-left: auto;
   margin-right: auto;
-  color: #000000;
+  text-align: center;
+  font-size: 25px;
   border-right: solid 3px #000000;
   white-space: nowrap;
   overflow: hidden;
@@ -127,117 +151,13 @@ const MobileTitle = styled.h1`
   }
 `;
 
-const Tagline = styled.h1`
-  text-align: center;
-  max-width: 900px;
-  font-size: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: #000000;
-  @media only screen and (max-width: 1024px) {
-    font-size: 48px;
-  }
-  @media only screen and (max-width: 768px) {
-    font-size: 33px;
-    padding: 16px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 33px;
-    padding: 14px;
-  }
-`;
-
-const ArrowImage = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  width: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 47%;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.15);}
-  }
-
-`;
-
-const SubText = styled.h1`
-  text-align: center;
-  max-width: 900px;
-  font-size: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  color: #000000;
-`;
-
-const SubHoverText = styled.h1`
-  color: #000000;
-  font-size: 24px;
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  @media only screen and (max-width: 2000px) {
-    font-size: 35px;
-  }
-  @media only screen and (max-width: 1600px) {
-    font-size: 30px;
-  }
-  @media only screen and (max-width: 1200px) {
-    font-size: 24px;
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 20px;
-  }
-  @media only screen and (max-width: 900px) {
-    font-size: 18px;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 17px;
-  }
-  @media only screen and (max-width: 700px) {
-    font-size: 15px;
-  }
-  @media only screen and (max-width: 575px) {
-    font-size: 30px;
-  }
-`;
-
-const MobileSubHoverText = styled.h1`
-  color: #000000;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  font-size: 15px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-`;
-
 const SubTitle = styled.h1`
-  text-align: center;
-  max-width: 700px;
-  font-size: 24px;
   margin-left: auto;
   margin-right: auto;
-  {/*color: #215f00;*/}
-  color: #000000;
-  @media only screen and (max-width: 1024px) {
-    max-width: 600px;
-  }
+  text-align: center;
+  font-size: 24px;
   @media only screen and (max-width: 768px) {
-    padding: 16px;
-  }
-  @media only screen and (max-width: 600px) {
-    font-size: 17px;
-    max-width: 500px;
-    padding: 2px;
+    font-size: 18px;
   }
 `;
 
@@ -246,97 +166,85 @@ const Header = ({ siteTitle }) => (
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
       <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-          <a href="/home" rel="noreferrer">
+        <Col/>
+        <Col>
+          <Link to="/home">
             <div class="overall">
               <SubLogo src="/house.png"/>
               <div class="overlay">
                   <SubHoverText>plöt │ home</SubHoverText>
               </div>
             </div>
-          </a>
+          </Link>
         </Col>
-        <Col sm={4}/>
+        <Col/>
       </Row>
   <br/><br/><br/><br/>
       <Row>
-        <Col sm={4}>
-          <a href="/school" rel="noreferrer">
+        <Col>
+          <Link to="/school">
             <div class="overall">
               <SubLogo src="/school.png"/>
               <div class="overlay">
                 <SubHoverText>plöt │ school</SubHoverText></div>
             </div>
-          </a>
+          </Link>
         </Col>
-        <Col sm={4}>
-          <a href="/" rel="noreferrer">
+        <Col>
+          <Link to="/">
             <Logo src="/logo.png" />
-          </a>
+          </Link>
         </Col>
-        <Col sm={4}>
-          <a href="/store" rel="noreferrer">
+        <Col>
+          <Link to="/store">
             <div class="overall">
               <SubLogo src="/store.png"/>
               <div class="overlay">
                 <SubHoverText>plöt │ store</SubHoverText>
               </div>
             </div>
-          </a>
+          </Link>
         </Col>
       </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
       <SubTitle>under construction.</SubTitle>
 
-    <ArrowImage src="/downarrow.png"/>
-
   </DesktopHeader>
   <MobileHeader>
-  <br/>
-    <Row>
-      <Col sm={4}/>
-      <Col sm={4}>
-      <a href="/" rel="noreferrer">
+    <br/><br/>
+    <Link to="/">
       <MobileLogo src="/logo.png" />
-      </a>
-      </Col>
-    <Col sm={4}/>
-    </Row>
-      <MobileTitle>plöt: the future of living.</MobileTitle>
-      <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
-      <br/>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <a href="/home" rel="noreferrer">
-        <div class="overall">
+    </Link>
+    <MobileTitle>plöt: the future of living.</MobileTitle>
+    <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
+    <br/>
+    <Link to="/home">
+      <div class="overall">
         <MobileSubLogo src="/house.png"/>
-        <div class="mobileoverlay"><MobileSubHoverText>plöt │ home</MobileSubHoverText></div>
-        </div></a></Col>
-        <Col sm={4}/>
-      </Row><br/><br/><br/>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <a href="/school" rel="noreferrer">
-        <div class="overall">
+          <div class="mobileoverlay">
+            <MobileSubHoverText>plöt │ home</MobileSubHoverText>
+          </div>
+      </div>
+    </Link>
+    <br/><br/><br/>
+    <Link to="/school">
+      <div class="overall">
         <MobileSubLogo src="/school.png"/>
-        <div class="mobileoverlay"><MobileSubHoverText>plöt │ school</MobileSubHoverText></div>
-        </div></a></Col>
-        <Col sm={4}/>
-      </Row><br/><br/><br/>
-      <Row>
-        <Col sm={4}/>
-        <Col sm={4}>
-        <a href="/store" rel="noreferrer">
-        <div class="overall">
+          <div class="mobileoverlay">
+            <MobileSubHoverText>plöt │ school</MobileSubHoverText>
+          </div>
+      </div>
+    </Link>
+    <br/><br/><br/>
+    <Link to="/store">
+      <div class="overall">
         <MobileSubLogo src="/store.png"/>
-        <div class="mobileoverlay"><MobileSubHoverText>plöt │ store</MobileSubHoverText></div>
-        </div></a></Col>
-        <Col sm={4}/>
-      </Row>
+          <div class="mobileoverlay">
+            <MobileSubHoverText>plöt │ store</MobileSubHoverText>
+          </div>
+      </div>
+    </Link>
   </MobileHeader>
   </Background>
 );
