@@ -1,7 +1,7 @@
-import { Link } from "gatsby";
 import React from "react";
-import styled from "styled-components";
+import { Link } from "gatsby";
 import { Row, Col } from "react-grid-system";
+import styled from "styled-components";
 
 const DesktopLanding = styled.header`
   @media (max-width: 575px) {
@@ -116,13 +116,6 @@ const MobileValuesArrowImg = styled.img`
   cursor: pointer;
   animation: 1s Zoom linear infinite,
   1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.15);}
   }
 `;
 

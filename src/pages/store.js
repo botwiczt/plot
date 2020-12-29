@@ -75,12 +75,15 @@ const Call = styled.h2`
 `;
 
 const ScheduleButton = styled.h1`
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6px;
+  display: table;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 5px solid;
   border-radius: 10px;
   font-size: 30px;
@@ -106,16 +109,16 @@ const plotStore = () => (
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </DesktopStore>
     <MobileStore>
     <MobileArt src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </MobileStore>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />

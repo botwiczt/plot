@@ -20,14 +20,14 @@ const ArrowImage = styled.img`
   }
 
   @keyframes Always {
-      100% { transform: scale(1.15);}
+      100% { transform: scale(1.2);}
   }
 
 `;
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="plot" keywords={[`plot`,`future`]}/>
+    <SEO title="plöt" keywords={[`plot`,`future`]}/>
     <ArrowImage src="/downarrow.png"/>
     <Header/>
     <Landing/>

@@ -1,9 +1,10 @@
 import React from "react"
+import { Container, Row, Col } from "react-grid-system";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
+import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 
 const DesktopHome = styled.header`
   @media (max-width: 575px) {
@@ -38,18 +39,6 @@ const Art = styled.img`
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
-  {/*@media only screen and (min-width: 1250px) {
-    position: auto;
-    width: 40%;
-  }
-  @media only screen and (max-width: 767px) {
-    position: auto;
-    width: 65%;
-  }
-  @media only screen and (min-width: 1200px) {
-    position: auto;
-    width: 40%;
-  }
   @media only screen and (max-width: 100px) {
   content:url("/logosmall.png");
     position: auto;
@@ -75,12 +64,15 @@ const Call = styled.h2`
 `;
 
 const ScheduleButton = styled.h1`
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6px;
+  display: table;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 5px solid;
   border-radius: 10px;
   font-size: 30px;
@@ -98,24 +90,57 @@ const Counter = styled.h1`
     }
 `;
 
+const Logo = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+`;
+
+const BackButton = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-10px);
+  cursor: pointer;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+`;
+
+
 const plotHome = () => (
   <Layout>
     <SEO title="plot home" keywords={[`plot`, `home`, `house`]}/>
     <DesktopHome>
-    <Art src="/houseart.png" />
+    {/*<br/>
+    <Row>
+      <Col sm={4}>
+        <Link to="/">
+          <Logo src="/logo.png" />
+        </Link>
+        <br/>
+        <Link to="/">
+        <BackButton src="/leftarrow.svg" /></Link>
+      </Col>
+      <Col sm={8}>
+      </Col>
+    </Row>*/}
+    <Art src="/houseart.png"/>
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </DesktopHome>
     <MobileHome>
-    <MobileArt src="/houseart.png" />
+    <MobileArt src="/houseart.png"/>
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </MobileHome>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />

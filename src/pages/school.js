@@ -1,9 +1,9 @@
 import React from "react"
+import { Container, Row, Col } from "react-grid-system";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
 
 const DesktopSchool = styled.header`
   @media (max-width: 575px) {
@@ -75,12 +75,15 @@ const Call = styled.h2`
 `;
 
 const ScheduleButton = styled.h1`
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6px;
+  display: table;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 5px solid;
   border-radius: 10px;
   font-size: 30px;
@@ -106,16 +109,16 @@ const plotSchool = () => (
     <Call color="#333" className="center" size="30px">
       we're reimagining the industrial-era education system for the 21st century...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </DesktopSchool>
     <MobileSchool>
     <MobileArt src="/schoolart.png" />
     <Call color="#333" className="center" size="30px">
       we're reimagining the industrial-era education system for the 21st century...
     </Call>
-    <a href="/" rel="noreferrer">
-    <ScheduleButton>back</ScheduleButton></a>
+    <Link to="/">
+    <ScheduleButton>back</ScheduleButton></Link>
     </MobileSchool>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />
