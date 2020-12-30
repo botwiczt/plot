@@ -183,7 +183,7 @@ class RegisterComponentMobile extends Component {
       .then(response => console.log("success!", response))
       .catch(error => console.error("error!", error.message));
     event.preventDefault();
-    navigate("/formsubmitted");
+    navigate("/JDe0EbYiLe");
   }
 
   render() {
