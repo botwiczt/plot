@@ -122,44 +122,10 @@ const plotStore = () => (
     <BackButton src="/leftarrow.svg" /></Link>
     <DesktopFormInner>
     <Logo src="/logo.png"/>
-    <form name="desktopwaitlist" method="POST" data-netlify="true">
-      <h1>
-      plöt waitlist
-      </h1>
-      <SubLine>
-      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
-      </SubLine>
-            <Input type="email" name="email" placeholder="name@example.com"/>
-            <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>
-    </form>
-
-
-    <form name="simpleContactForm" method="POST" data-netlify="true" action="/formsubmitted" id="simple-contact-form" class="contact-form">
-        <p class="form-row">
-            <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
-            <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input" />
-        </p>
-        <p class="form-row">
-            <label id="contact-form-email-label" for="contact-form-email" class="form-label">Email address</label>
-            <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" />
-        </p>
-        <p class="form-row">
-            <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
-            <textarea
-                name="message"
-                id="contact-form-message"
-                aria-labelledby="contact-form-message-label"
-                class="form-textarea"
-                rows="7"
-            ></textarea>
-        </p>
-        <p class="form-row form-submit">
-            <button type="submit" class="button">Send Message</button>
-        </p>
-    </form>
-
-
-
+    <h1>
+    <span role="img" aria-label="party popper emoji">🎉</span> added to waitlist.
+    </h1>
+    <br/><br/><br/><br/>
     </DesktopFormInner>
     </DesktopForm>
     <MobileForm>
@@ -167,16 +133,9 @@ const plotStore = () => (
     <MobileBackButton src="/leftarrow.svg" /></Link>
     <MobileFormInner>
     <MobileLogo src="/logo.png"/>
-    <form name="contact" method="POST" data-netlify="true">
-      <h1>
-      plöt waitlist
-      </h1>
-      <SubLine>
-      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
-      </SubLine>
-            <h1><Input type="email" name="email" placeholder="name@example.com"/></h1>
-      <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>
-    </form>
+    <h1>
+      <span role="img" aria-label="party popper emoji">🎉</span> added to waitlist.
+    </h1>
     </MobileFormInner>
     </MobileForm>
   </Layout>
