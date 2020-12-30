@@ -36,10 +36,6 @@ const MobilePrivacyInner = styled.header`
   @media (max-width: 672px) {
    display:initial;
    text-align: center;
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
   }
 `;
 
