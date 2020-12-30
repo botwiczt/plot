@@ -99,9 +99,13 @@ const ValuesArrowImg = styled.img`
   }
 `;
 
+//a little jittery due to translate overlap
 const MobileValuesArrowImg = styled.img`
-  display: block;
+  display: table;
+  position: absolute;
+  left: 44%;
   width: 10%;
+  transform: translateX(-50%);
   margin-left: auto;
   margin-right: auto;
   transform: translate(+20px);

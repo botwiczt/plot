@@ -102,9 +102,6 @@ const MobileBackButton = styled.img`
   margin-left: 2%;
   margin-top: 2%;
   cursor: pointer;
-  @media only screen and (min-width: 1200px) {
-      width: 8%;
-    }
 `;
 
 {/*const Description = styled.p`

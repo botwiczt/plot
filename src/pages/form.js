@@ -104,7 +104,8 @@ const BackButton = styled.img`
 `;
 
 const MobileBackButton = styled.img`
-  display: block;
+  display: table;
+  position: absolute;
   width: 10%;
   margin-left: 2%;
   margin-top: 2%;

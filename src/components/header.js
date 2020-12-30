@@ -160,7 +160,6 @@ const WaitlistButton = styled.button`
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  display: block;
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
