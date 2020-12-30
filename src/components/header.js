@@ -221,7 +221,8 @@ const Header = ({ siteTitle }) => (
       </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
-      <WaitlistButton>join the waitlist</WaitlistButton>
+      <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">
+      <WaitlistButton>join the waitlist</WaitlistButton></a>
 
   </DesktopHeader>
   <MobileHeader>
@@ -230,7 +231,8 @@ const Header = ({ siteTitle }) => (
       <MobileLogo src="/logo.png" />
     </Link>
     <MobileTitle>plöt: the future of living.</MobileTitle>
-    <WaitlistButton>join the waitlist</WaitlistButton>
+    <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">
+    <WaitlistButton>join the waitlist</WaitlistButton></a>
     <br/>
     <Link to="/home">
       <div class="overall">

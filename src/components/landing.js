@@ -219,11 +219,6 @@ const Landing = () => (
         </LargeTitle>
         <Description color="#333" size="28px" className="center">
         representing the future of living. eco-utilitarian infrastructure melded with community-focused values to seed the first successful utopia.{" "}
-          <b><u>
-            <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">
-              join the waitlist.
-            </a>
-          </u></b>
           <LineImg src="/line.png" />
         </Description>
       </Fade>
@@ -304,11 +299,7 @@ const Landing = () => (
         </LargeTitle>
       <Description color="#333" size="28px" className="center">
         representing the future of living. eco-utilitarian infrastructure melded with community-focused values to seed the first successful utopia.{" "}
-        <b>
-          <u>
-            <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">join the waitlist.</a>
-          </u><LineImg src="/line.png" />
-        </b>
+        <LineImg src="/line.png" />
       </Description>
     </Col>
   </Row></Fade>
