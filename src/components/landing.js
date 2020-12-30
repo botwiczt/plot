@@ -192,13 +192,14 @@ const ArrowImage = styled.img`
   }
 `;
 
-{/*const FooterText = styled.p`
-  font-size: 15px;
-  @media only screen and (max-width: 1024px) {
-    }
+const FooterImg = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3%;
 `;
 
-const Profile = styled.img`
+{/*const Profile = styled.img`
   margin-left: auto;
   margin-right: auto;
   height: 125px;
@@ -514,23 +515,21 @@ const Landing = () => (
     <Col sm={3}>
     </Col>
     <Col sm={3}>
-    {/*<FooterText className="right">
-      <Link to ="/termsofservice" style={{
-        color: `black`,
-        textDecoration: `underline`
-      }}> Terms of Service </Link>
-    </FooterText>
-    <FooterText className="right">
-      <Link to ="/privacypolicy" style={{
-        color: `black`,
-        textDecoration: `underline`
-      }}> Privacy Policy </Link>
-    </FooterText>
-    <FooterText color="#333" className="right" >
+    {/*
+      <FooterText className="right">
+        <Link to ="/terms" style={{
+          color: `black`,
+          textDecoration: `underline`
+        }}> terms </Link>
+      </FooterText>
+      <FooterText color="#333" className="right" >
       © 2020 <a> plot co.</a>
     </FooterText>*/}
     </Col>
     </Row>
+      <Link to ="/privacy">
+      <FooterImg className="right" src="/lock.svg" />
+      </Link>
     </footer>
     </div>
 );

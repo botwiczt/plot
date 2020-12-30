@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
 
-const DesktopForm = styled.header`
+const DesktopPrivacy = styled.header`
   @media (max-width: 672px) {
    display:none;
   }
 `;
 
-const DesktopFormInner = styled.header`
+const DesktopPrivacyInner = styled.header`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -20,7 +20,7 @@ const DesktopFormInner = styled.header`
   }
 `;
 
-const MobileForm = styled.header`
+const MobilePrivacy = styled.header`
   @media (min-width: 672px) {
    display:none;
   }
@@ -29,7 +29,7 @@ const MobileForm = styled.header`
   }
 `;
 
-const MobileFormInner = styled.header`
+const MobilePrivacyInner = styled.header`
   @media (min-width: 672px) {
    display:none;
   }
@@ -81,28 +81,47 @@ const MobileBackButton = styled.img`
 
 const plotStore = () => (
   <Layout>
-    <SEO title="plöt form submitted" keywords={[`plot`, `formsubmitted`]}/>
-    <DesktopForm>
+    <SEO title="plöt privacy" keywords={[`plot`, `privacy`]}/>
+    <DesktopPrivacy>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopFormInner>
+    <DesktopPrivacyInner>
     <Logo src="/logo.png"/>
     <h1>
-    <span role="img" aria-label="party popper emoji">🎉</span> added to waitlist.
+    privacy policy:
     </h1>
+    <h3>
+    last updated december 30th, 2020
+    </h3>
+    <h3>
+    > we do not automatically collect any personal information from site visitors.
+    <br/>> we collect your email if entered into the waitlist.
+    <br/>> we store all collected emails along with a timestamp of collection on a secure server.
+    <br/>> we do not use any analytical software.
+    </h3>
     <br/><br/><br/><br/>
-    </DesktopFormInner>
-    </DesktopForm>
-    <MobileForm>
+    </DesktopPrivacyInner>
+    </DesktopPrivacy>
+    <MobilePrivacy>
     <Link to="/">
     <MobileBackButton src="/leftarrow.svg" /></Link>
-    <MobileFormInner>
+    <MobilePrivacyInner>
     <MobileLogo src="/logo.png"/>
     <h1>
-      <span role="img" aria-label="party popper emoji">🎉</span> added to waitlist.
+    privacy policy:
     </h1>
-    </MobileFormInner>
-    </MobileForm>
+    <h3>
+    last updated december 30th, 2020
+    </h3>
+    <br/>
+    <h3>
+    > we do not automatically collect any personal information from site visitors.
+    <br/>  <br/>> we collect your email if entered into the waitlist.
+    <br/>  <br/>> we store all collected emails along with a timestamp of collection on a secure server.
+    <br/>  <br/>> we do not use any analytical software.
+    </h3>
+    </MobilePrivacyInner>
+    </MobilePrivacy>
   </Layout>
 )
 
