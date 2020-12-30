@@ -1,10 +1,10 @@
 import React from "react"
-import { Container, Row, Col } from "react-grid-system";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+{/*import { Container, Row, Col } from "react-grid-system";
+import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';*/}
 
 const DesktopHome = styled.header`
   @media (max-width: 575px) {
@@ -20,15 +20,6 @@ const MobileHome = styled.header`
   @media (max-width: 575px) {
    display:initial;
   }
-`;
-
-const Description = styled.p`
-  font-size: ${props => props.size};
-  font-weight: 400;
-  color: #333;
-  padding: 0;
-  line-height: 1.3;
-  color: ${props => props.color};
 `;
 
 const Art = styled.img`
@@ -83,6 +74,15 @@ const ScheduleButton = styled.h1`
   }
 `;
 
+{/*const Description = styled.p`
+  font-size: ${props => props.size};
+  font-weight: 400;
+  color: #333;
+  padding: 0;
+  line-height: 1.3;
+  color: ${props => props.color};
+`;
+
 const Counter = styled.h1`
   letter-spacing: 2px;
   text-align: center;
@@ -107,7 +107,7 @@ const BackButton = styled.img`
   animation: 1s Zoom linear infinite,
   1s Always ease alternate infinite;
   }
-`;
+`;*/}
 
 
 const plotHome = () => (

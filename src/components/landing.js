@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Row, Col } from "react-grid-system";
 import Fade from 'react-reveal/Fade'
 import styled from "styled-components";
 import "./layout.css"
+{/*import { Link } from "gatsby";*/}
 
 const DesktopLanding = styled.header`
   @media (max-width: 575px) {
