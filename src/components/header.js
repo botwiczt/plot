@@ -43,9 +43,9 @@ const SubLogo = styled.img`
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+  border: 6px solid #000000;
   box-shadow: 5px 10px #000000;
   padding: 10px;
-  border: 6px solid #000000;
   border-radius: 40px;
   cursor: pointer;
   transition: all 300ms ease;

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Row, Col } from "react-grid-system";
+import Fade from 'react-reveal/Fade'
 import styled from "styled-components";
+import "./layout.css"
 
 const DesktopLanding = styled.header`
   @media (max-width: 575px) {
@@ -196,7 +198,8 @@ const Landing = () => (
   <br/>
     <DesktopLanding>
     <Site>
-    <div id="down"><Row>
+    <div id="down">
+    <Fade><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
           welcome to plöt.
@@ -210,10 +213,10 @@ const Landing = () => (
           </b>
         </Description>
       </Col>
-    </Row>
+    </Row></Fade>
     </div>
     <br/><br/>
-      <Row>
+      <Fade><Row>
         <Col sm={6}>
         <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
           <Card bg="#F9BEBE;">
@@ -229,8 +232,9 @@ const Landing = () => (
           <Col sm={6}>
             <Img src="/naturehome.svg" />
           </Col>
-      </Row><br/>
-      <Row>
+      </Row></Fade>
+      <br/>
+      <Fade><Row>
           <Col sm={6}>
             <Img src="/movein.svg" />
           </Col>
@@ -247,9 +251,9 @@ const Landing = () => (
                 <br/><br/>we're currently in the process of constructing our first plöt in the state of <b> maine</b>.
               </CardText>
             </Card></Col>
-      </Row>
+      </Row></Fade>
 
-      <Row>
+      <Fade><Row>
       <Col sm={2}/>
       <Col sm={6}>
       <ValuesCall color="#333">
@@ -263,7 +267,7 @@ const Landing = () => (
       </a>
       </Col>
       <Col sm={2}/>
-      </Row>
+      </Row></Fade>
 <br/><br/><br/><br/><br/><br/>
 
       </Site>
@@ -1071,7 +1075,8 @@ TBD      </Call>
     </DesktopLanding>
     <MobileLanding>
     <Site>
-    <Row>
+    <div id="down">
+    <Fade><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
           welcome to plöt.
@@ -1085,8 +1090,9 @@ TBD      </Call>
           </b>
         </Description>
       </Col>
-    </Row>
-    <br/>
+    </Row></Fade>
+    </div>
+    <Fade><br/>
       <MobileCard bg="#F9BEBE;">
         <Call color="#333">
           what is a plöt?
@@ -1097,8 +1103,8 @@ TBD      </Call>
           each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
         </CardText><MobileImg src="/naturehome.svg"/>
       </MobileCard>
-        <br/>
-      <MobileCard>
+        <br/></Fade>
+      <Fade><MobileCard>
         <Call color="#333">
             how does it work?
         </Call>
@@ -1109,16 +1115,16 @@ TBD      </Call>
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
         </CardText>
-      </MobileCard>
+      </MobileCard></Fade>
 
-      <MobileValuesCall color="#333">
+      <Fade><MobileValuesCall color="#333">
       our values.
       </MobileValuesCall>
       <MobileValuesImg src="/values.svg" />
       <a href="/values" rel="noreferrer">
       <MobileValuesArrowImg src="/rightarrow.svg" />
       </a>
-      <br/><br/><br/>
+      <br/><br/><br/></Fade>
     </Site>
     </MobileLanding>
     </div>
