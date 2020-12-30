@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component }  from "react"
+import { Link, navigate } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
@@ -114,6 +114,100 @@ const MobileBackButton = styled.img`
     }
 `;
 
+
+
+const updateByPropertyName = (propertyName, value) => () => ({
+  [propertyName]: value
+});
+
+class RegisterComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      time: ""
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    console.log(this.state);
+    const data = new FormData(event.target);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbxoFCQkWmrK_F64X65l8zaFF4Q3tEuautcXDf8gRqf4Torc4JxuawEtVw/exec",
+      { method: "POST", body: data }
+    )
+      .then(response => console.log("success!", response))
+      .catch(error => console.error("error!", error.message));
+    event.preventDefault();
+    navigate("/formsubmitted");
+  }
+
+  render() {
+    return (
+        <form onSubmit={this.handleSubmit}>
+              <Input
+                type="text"
+                name="email"
+                placeholder="name@example.com"
+                value={this.state.email}
+                onChange={event =>
+                  this.setState(
+                    updateByPropertyName("email", event.target.value)
+                  )
+                }
+              />
+          <Button type="submit">submit</Button>
+        </form>
+    );
+  }
+}
+
+class RegisterComponentMobile extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      time: ""
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    console.log(this.state);
+    const data = new FormData(event.target);
+    fetch(
+      "https://script.google.com/macros/s/AKfycbwXbc7NliDvMD9WS_PfpY-Fv060rIlC66yX1JPYNMXALHQa0SY/exec",
+      { method: "POST", body: data }
+    )
+      .then(response => console.log("success!", response))
+      .catch(error => console.error("error!", error.message));
+    event.preventDefault();
+    navigate("/formsubmitted");
+  }
+
+  render() {
+    return (
+        <form onSubmit={this.handleSubmit}>
+              <br/><Input
+                type="text"
+                name="email"
+                placeholder="name@example.com"
+                value={this.state.email}
+                onChange={event =>
+                  this.setState(
+                    updateByPropertyName("email", event.target.value)
+                  )
+                }
+              />
+          <br/><br/><Button type="submit">submit</Button>
+        </form>
+    );
+  }
+}
+
 const plotStore = () => (
   <Layout>
     <SEO title="plot waitlist" keywords={[`plot`, `waitlist`]}/>
@@ -129,35 +223,11 @@ const plotStore = () => (
       <SubLine>
       <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
       </SubLine>
-            <Input type="email" name="email" placeholder="name@example.com"/>
-            <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>
+      <RegisterComponent/>
     </form>
 
-
-    <form name="simpleContactForm" method="POST" data-netlify="true" action="/formsubmitted" id="simple-contact-form" class="contact-form">
-        <p class="form-row">
-            <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
-            <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input" />
-        </p>
-        <p class="form-row">
-            <label id="contact-form-email-label" for="contact-form-email" class="form-label">Email address</label>
-            <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" />
-        </p>
-        <p class="form-row">
-            <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
-            <textarea
-                name="message"
-                id="contact-form-message"
-                aria-labelledby="contact-form-message-label"
-                class="form-textarea"
-                rows="7"
-            ></textarea>
-        </p>
-        <p class="form-row form-submit">
-            <button type="submit" class="button">Send Message</button>
-        </p>
-    </form>
-
+    {/*<Input type="email" name="email" placeholder="name@example.com"/>
+    <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>*/}
 
 
     </DesktopFormInner>
@@ -174,8 +244,7 @@ const plotStore = () => (
       <SubLine>
       <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
       </SubLine>
-            <h1><Input type="email" name="email" placeholder="name@example.com"/></h1>
-      <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>
+      <RegisterComponentMobile/>
     </form>
     </MobileFormInner>
     </MobileForm>
