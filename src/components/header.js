@@ -152,13 +152,33 @@ const MobileTitle = styled.h1`
 `;
 
 const SubTitle = styled.h1`
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+
   font-size: 24px;
   @media only screen and (max-width: 768px) {
     font-size: 18px;
   }
+`;
+
+const WaitlistButton = styled.button`
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  :hover {
+    box-shadow: inset 0 0 100px 100px #444d56;
+  }
+  @media only screen and (max-width: 672px) {
+      border-radius: 3px;
+    }
 `;
 
 const Header = ({ siteTitle }) => (
@@ -209,7 +229,7 @@ const Header = ({ siteTitle }) => (
       </Row>
     <br/><br/>
       <Title>plöt: the future of living.</Title>
-      <SubTitle>under construction.</SubTitle>
+      <WaitlistButton>join the waitlist</WaitlistButton>
 
   </DesktopHeader>
   <MobileHeader>

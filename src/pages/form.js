@@ -115,7 +115,7 @@ const plotStore = () => (
       <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
       </SubLine>
             <h1><Input type="email" name="email" placeholder="name@example.com"/></h1>
-            <Button type="submit">submit</Button>
+      <Button type="submit">submit</Button>
     </form>
     </MobileForm>
   </Layout>
