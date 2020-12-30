@@ -226,14 +226,14 @@ const Header = ({ siteTitle }) => (
 
   </DesktopHeader>
   <MobileHeader>
-    <br/><br/>
+    <br/>
     <Link to="/">
       <MobileLogo src="/logo.png" />
     </Link>
     <MobileTitle>plöt: the future of living.</MobileTitle>
     <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">
     <WaitlistButton>join the waitlist</WaitlistButton></a>
-    <br/>
+    <br/><br/><br/>
     <Link to="/home">
       <div class="overall">
         <MobileSubLogo src="/house.png"/>
