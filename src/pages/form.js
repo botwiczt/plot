@@ -5,16 +5,31 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 
 const DesktopForm = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+const DesktopFormInner = styled.header`
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media (max-width: 672px) {
+  @media (max-width: 575px) {
    display:none;
   }
 `;
 
 const MobileForm = styled.header`
+  @media (min-width: 672px) {
+   display:none;
+  }
+  @media (max-width: 672px) {
+   display:initial;
+  }
+`;
+
+const MobileFormInner = styled.header`
   @media (min-width: 672px) {
    display:none;
   }
@@ -77,6 +92,18 @@ const Button = styled.button`
 `;
 
 const BackButton = styled.img`
+  display: table;
+  position: absolute;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
+`;
+
+const MobileBackButton = styled.img`
   display: block;
   width: 10%;
   margin-left: 2%;
@@ -90,9 +117,10 @@ const BackButton = styled.img`
 const plotStore = () => (
   <Layout>
     <SEO title="plot waitlist" keywords={[`plot`, `waitlist`]}/>
+    <DesktopForm>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopForm>
+    <DesktopFormInner>
     <Logo src="/logo.png"/>
     <form name="contact" method="POST" data-netlify="true">
       <h1>
@@ -104,8 +132,12 @@ const plotStore = () => (
             <Input type="email" name="email" placeholder="name@example.com"/>
             <Button type="submit">submit</Button>
     </form>
+    </DesktopFormInner>
     </DesktopForm>
     <MobileForm>
+    <Link to="/">
+    <MobileBackButton src="/leftarrow.svg" /></Link>
+    <MobileFormInner>
     <MobileLogo src="/logo.png"/>
     <form name="contact" method="POST" data-netlify="true">
       <h1>
@@ -117,6 +149,7 @@ const plotStore = () => (
             <h1><Input type="email" name="email" placeholder="name@example.com"/></h1>
       <Button type="submit">submit</Button>
     </form>
+    </MobileFormInner>
     </MobileForm>
   </Layout>
 )

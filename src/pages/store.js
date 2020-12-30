@@ -5,6 +5,12 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 
 const DesktopStore = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+const DesktopStoreInner = styled.header`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -69,6 +75,18 @@ const Call = styled.h2`
 `;
 
 const BackButton = styled.img`
+  display: table;
+  position: absolute;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
+`;
+
+const MobileBackButton = styled.img`
   display: block;
   width: 10%;
   margin-left: 2%;
@@ -82,15 +100,19 @@ const BackButton = styled.img`
 const plotStore = () => (
   <Layout>
     <SEO title="plöt store" keywords={[`plot`, `store`]}/>
+    <DesktopStore>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopStore>
+    <DesktopStoreInner>
     <Art src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
+    </DesktopStoreInner>
     </DesktopStore>
     <MobileStore>
+    <Link to="/">
+    <MobileBackButton src="/leftarrow.svg" /></Link>
     <MobileArt src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...

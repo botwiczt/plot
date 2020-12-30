@@ -5,6 +5,12 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 
 const DesktopValues = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+const DesktopValuesInner = styled.header`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -68,43 +74,51 @@ const Call = styled.h2`
     }
 `;
 
-const BackButton = styled.h1`
+const BackButton = styled.img`
   display: table;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border: 5px solid;
-  border-radius: 10px;
-  font-size: 30px;
-  color: #000000;
-  transition: all 300ms ease;
-  &:hover {
-    background: #cccccc;
-  }
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
+`;
+
+const MobileBackButton = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
 `;
 
 const plotStore = () => (
   <Layout>
     <SEO title="plot values" keywords={[`plot`, `values`]}/>
     <DesktopValues>
+    <Link to="/">
+    <BackButton src="/leftarrow.svg" />
+    </Link>
+    <DesktopValuesInner>
     <Art src="/valueswip.svg" />
     <Call color="#333" className="center" size="30px">
       they're coming soon...
     </Call>
-    <Link to="/">
-    <BackButton>back</BackButton></Link></DesktopValues>
+    </DesktopValuesInner>
+    </DesktopValues>
     <MobileValues>
+    <Link to="/">
+    <MobileBackButton src="/leftarrow.svg" /></Link>
     <MobileArt src="/valueswip.svg" />
     <Call color="#333" className="center" size="30px">
       they're coming soon...
     </Call>
-    <Link to="/">
-    <BackButton>back</BackButton></Link></MobileValues>
+    </MobileValues>
   </Layout>
 )
 

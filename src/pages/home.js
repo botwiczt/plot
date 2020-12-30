@@ -7,6 +7,12 @@ import styled from "styled-components";
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';*/}
 
 const DesktopHome = styled.header`
+  @media (max-width: 575px) {
+   display:none;
+  }
+`;
+
+const DesktopHomeInner = styled.header`
   position: fixed;
   top: 50%;
   left: 50%;
@@ -79,6 +85,18 @@ const ScheduleButton = styled.h1`
 `;
 
 const BackButton = styled.img`
+  display: table;
+  position: absolute;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
+`;
+
+const MobileBackButton = styled.img`
   display: block;
   width: 10%;
   margin-left: 2%;
@@ -128,9 +146,10 @@ const BackButton = styled.img`
 const plotHome = () => (
   <Layout>
     <SEO title="plöt home" keywords={[`plot`, `home`, `house`]}/>
+    <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopHome>
+    <DesktopHomeInner>
     {/*<br/>
     <Row>
       <Col sm={4}>
@@ -148,8 +167,11 @@ const plotHome = () => (
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
+    </DesktopHomeInner>
     </DesktopHome>
     <MobileHome>
+    <Link to="/">
+    <MobileBackButton src="/leftarrow.svg" /></Link>
     <MobileArt src="/houseart.png"/>
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...

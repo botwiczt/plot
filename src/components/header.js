@@ -152,6 +152,11 @@ const MobileTitle = styled.h1`
 `;
 
 const WaitlistButton = styled.button`
+  display: table;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -233,7 +238,7 @@ const Header = ({ siteTitle }) => (
     <MobileTitle>plöt: the future of living.</MobileTitle>
     <a href="https://mwsoi9hzsiu.typeform.com/to/IpRvruMZ" target="_blank" rel="noreferrer">
     <WaitlistButton>join the waitlist</WaitlistButton></a>
-    <br/><br/><br/>
+    <br/><br/><br/><br/><br/>
     <Link to="/home">
       <div class="overall">
         <MobileSubLogo src="/house.png"/>
