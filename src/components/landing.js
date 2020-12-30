@@ -193,6 +193,29 @@ const FAQSpacerContainer = styled.div`
 }
 `;
 
+const ArrowImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  position: fixed;
+  bottom: 0;
+  left: 47%;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.2);}
+  }
+  @media only screen and (max-width: 768px) {
+    left: 44%;
+    width: 12%;
+  }
+`;
+
 const Landing = () => (
   <div className="landing">
   <br/>
@@ -269,7 +292,6 @@ const Landing = () => (
       <Col sm={2}/>
       </Row></Fade>
 <br/><br/><br/><br/><br/><br/>
-
       </Site>
       {/*<CardSpacerContainer><br/></CardSpacerContainer>
       <br/>
@@ -1072,10 +1094,11 @@ TBD      </Call>
     </Col>
     </Row>
     </footer>*/}
+    <a href="#down"><ArrowImage src="/downarrow.png"/></a>
     </DesktopLanding>
     <MobileLanding>
     <Site>
-    <div id="down">
+    <div id="mobiledown">
     <Fade><Row>
       <Col sm={12}>
         <Call color="#333" size="36px" className="center">
@@ -1126,6 +1149,7 @@ TBD      </Call>
       </a>
       <br/><br/><br/></Fade>
     </Site>
+    <a href="#mobiledown"><ArrowImage src="/downarrow.png"/></a>
     </MobileLanding>
     </div>
 );

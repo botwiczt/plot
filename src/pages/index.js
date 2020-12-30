@@ -5,30 +5,9 @@ import Layout from "../components/layout";
 import styled from "styled-components";
 import SEO from "../components/seo";
 
-const ArrowImage = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  width: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 47%;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.2);}
-  }
-
-`;
-
 const IndexPage = () => (
   <Layout>
     <SEO title="plöt" keywords={[`plot`,`future`]}/>
-    <a href="#down"><ArrowImage src="/downarrow.png"/></a>
     <Header/>
     <Landing/>
   </Layout>
