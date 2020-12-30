@@ -113,11 +113,12 @@ const plotStore = () => (
     <h3>
     last updated december 30th, 2020
     </h3>
+    <br/>
     <h3>
     > we do not automatically collect any personal information from site visitors.
-    <br/>> we collect your email if entered into the waitlist.
-    <br/>> we store all collected emails along with a timestamp of collection on a secure server.
-    <br/>> we do not use any analytical software.
+    <br/>  <br/>> we collect your email if entered into the waitlist.
+    <br/>  <br/>> we store all collected emails along with a timestamp of collection on a secure server.
+    <br/>  <br/>> we do not use any analytical software.
     </h3>
     </MobilePrivacyInner>
     </MobilePrivacy>
