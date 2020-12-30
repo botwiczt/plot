@@ -29,7 +29,7 @@ const Button = styled.button`
   background: black;
   color: white;
   border: none;
-  border-radius: 0 3px 3px 0;
+  border-radius: 10px;
   :hover {
     box-shadow: inset 0 0 100px 100px #444d56;
   }

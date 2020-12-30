@@ -50,7 +50,7 @@ const Input = styled.input`
   padding: 10px;
   background: #DCDCDC;
   border: none;
-  border-radius: 3px 0 0 3px;
+  border-radius: 10px 0 0 10px;
   @media only screen and (max-width: 672px) {
       border-radius: 3px;
     }
@@ -67,7 +67,7 @@ const Button = styled.button`
   background: black;
   color: white;
   border: none;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 10px 10px 0;
   :hover {
     box-shadow: inset 0 0 100px 100px #444d56;
   }

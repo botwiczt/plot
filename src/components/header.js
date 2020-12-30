@@ -151,14 +151,6 @@ const MobileTitle = styled.h1`
   }
 `;
 
-const SubTitle = styled.h1`
-
-  font-size: 24px;
-  @media only screen and (max-width: 768px) {
-    font-size: 18px;
-  }
-`;
-
 const WaitlistButton = styled.button`
   margin-left: auto;
   margin-right: auto;
@@ -172,7 +164,7 @@ const WaitlistButton = styled.button`
   background: black;
   color: white;
   border: none;
-  border-radius: 0 3px 3px 0;
+  border-radius: 10px;
   :hover {
     box-shadow: inset 0 0 100px 100px #444d56;
   }
@@ -238,7 +230,7 @@ const Header = ({ siteTitle }) => (
       <MobileLogo src="/logo.png" />
     </Link>
     <MobileTitle>plöt: the future of living.</MobileTitle>
-    <SubTitle>{/*Join the community that's right for you. */}under construction.</SubTitle>
+    <WaitlistButton>join the waitlist</WaitlistButton>
     <br/>
     <Link to="/home">
       <div class="overall">
