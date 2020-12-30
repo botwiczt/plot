@@ -217,7 +217,7 @@ const FooterImg = styled.img`
 const Landing = () => (
   <div>
   <div className="landing">
-  <br/>
+  <br/><br/>
   <DesktopLanding>
     <Site>
       <div id="down">
