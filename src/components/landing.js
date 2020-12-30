@@ -3,7 +3,7 @@ import { Row, Col } from "react-grid-system";
 import Fade from 'react-reveal/Fade'
 import styled from "styled-components";
 import "./layout.css"
-{/*import { Link } from "gatsby";*/}
+import { Link } from "gatsby";
 
 const DesktopLanding = styled.header`
   @media (max-width: 575px) {
@@ -188,6 +188,12 @@ const ArrowImage = styled.img`
   }
 `;
 
+const FooterText = styled.p`
+  font-size: 15px;
+  @media only screen and (max-width: 1024px) {
+    }
+`;
+
 {/*const Profile = styled.img`
   margin-left: auto;
   margin-right: auto;
@@ -201,6 +207,7 @@ const ArrowImage = styled.img`
 
 
 const Landing = () => (
+  <div>
   <div className="landing">
   <br/>
   <DesktopLanding>
@@ -282,7 +289,7 @@ const Landing = () => (
       </Row>
       </Fade>
     </Site>
-  <br/><br/><br/><br/><br/><br/>
+  <br/>
   <a href="#down" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </DesktopLanding>
 
@@ -495,34 +502,41 @@ const Landing = () => (
         }}>here</Link>.
         {" "}
       </Description></Col></Row>
-      <br /> <br />
+      <br /> <br />*/}
+    </div>
     <footer>
     <Row>
     <Col sm={3}>
-    <a href="https://twitter.com/">
+    {/*<a href="https://twitter.com/">
       <img height="52px" src="/twitter.png" alt="twitter icon."/>
-    </a>
-    <a href="https://instagram.com/">
+    </a>*/}
+    </Col>
+    <Col sm={3}>
+    {/*<a href="https://instagram.com/">
       <img height="50px" src="/instagram.png" alt="instagram icon."/>
-    </a>
+    </a>*/}
     </Col>
-    <Col sm={2}>
-    <Description color="#333" className="center" size="16px">
-      © 2020 <a> plot co.</a>
-    </Description>
+    <Col sm={3}>
     </Col>
-    <Col sm={2}>
-    <Description size="10px">
-      <Link to ="/tos" style={{
+    <Col sm={3}>
+    {/*<FooterText className="right">
+      <Link to ="/termsofservice" style={{
         color: `black`,
         textDecoration: `underline`
-      }}> TOS </Link>
-    </Description>
+      }}> Terms of Service </Link>
+    </FooterText>
+    <FooterText className="right">
+      <Link to ="/privacypolicy" style={{
+        color: `black`,
+        textDecoration: `underline`
+      }}> Privacy Policy </Link>
+    </FooterText>
+    <FooterText color="#333" className="right" >
+      © 2020 <a> plot co.</a>
+    </FooterText>*/}
     </Col>
     </Row>
-    </footer>*/}
-
-
+    </footer>
     </div>
 );
 export default Landing;

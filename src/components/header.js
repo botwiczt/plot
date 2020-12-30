@@ -163,6 +163,7 @@ const SubTitle = styled.h1`
 
 const Header = ({ siteTitle }) => (
   <Background>
+  <div className="headersqueeze">
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
       <Row>
@@ -246,6 +247,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </Link>
   </MobileHeader>
+  </div>
   </Background>
 );
 
