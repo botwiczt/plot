@@ -188,13 +188,13 @@ const ArrowImage = styled.img`
   }
 `;
 
-const FooterText = styled.p`
+{/*const FooterText = styled.p`
   font-size: 15px;
   @media only screen and (max-width: 1024px) {
     }
 `;
 
-{/*const Profile = styled.img`
+const Profile = styled.img`
   margin-left: auto;
   margin-right: auto;
   height: 125px;
@@ -276,9 +276,9 @@ const Landing = () => (
           <ValuesImg src="/values.svg"/>
         </Col>
         <Col sm={2}>
-          <a href="/values" rel="noreferrer">
+          <Link to="/values">
             <ValuesArrowImg src="/rightarrow.svg"/>
-          </a>
+          </Link>
         </Col>
         <Col sm={2}/>
       </Row>
@@ -333,9 +333,9 @@ const Landing = () => (
     our values.
     </MobileValuesCall>
     <MobileValuesImg src="/values.svg" />
-    <a href="/values" rel="noreferrer">
+    <Link to="/values">
     <MobileValuesArrowImg src="/rightarrow.svg" />
-    </a>
+    </Link>
     <br/><br/><br/></Fade>
   </Site>
   <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>

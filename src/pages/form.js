@@ -114,8 +114,6 @@ const MobileBackButton = styled.img`
     }
 `;
 
-
-
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value
 });
@@ -212,41 +210,34 @@ const plotStore = () => (
   <Layout>
     <SEO title="plot waitlist" keywords={[`plot`, `waitlist`]}/>
     <DesktopForm>
-    <Link to="/">
-    <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopFormInner>
-    <Logo src="/logo.png"/>
-    <form name="desktopwaitlist" method="POST" data-netlify="true">
-      <h1>
-      plöt waitlist
-      </h1>
-      <SubLine>
-      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
-      </SubLine>
-      <RegisterComponent/>
-    </form>
-
-    {/*<Input type="email" name="email" placeholder="name@example.com"/>
-    <Link to="/formsubmitted"><Button type="submit">submit</Button></Link>*/}
-
-
-    </DesktopFormInner>
+      <Link to="/">
+        <BackButton src="/leftarrow.svg" />
+      </Link>
+      <DesktopFormInner>
+        <Logo src="/logo.png"/>
+        <h1>
+          plöt waitlist
+        </h1>
+        <SubLine>
+          <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
+        </SubLine>
+        <RegisterComponent/>
+      </DesktopFormInner>
     </DesktopForm>
     <MobileForm>
-    <Link to="/">
-    <MobileBackButton src="/leftarrow.svg" /></Link>
-    <MobileFormInner>
-    <MobileLogo src="/logo.png"/>
-    <form name="contact" method="POST" data-netlify="true">
-      <h1>
-      plöt waitlist
-      </h1>
-      <SubLine>
-      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
-      </SubLine>
-      <RegisterComponentMobile/>
-    </form>
-    </MobileFormInner>
+      <Link to="/">
+        <MobileBackButton src="/leftarrow.svg"/>
+      </Link>
+      <MobileFormInner>
+        <MobileLogo src="/logo.png"/>
+        <h1>
+          plöt waitlist
+        </h1>
+        <SubLine>
+          <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
+        </SubLine>
+        <RegisterComponentMobile/>
+        </MobileFormInner>
     </MobileForm>
   </Layout>
 )
