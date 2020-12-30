@@ -5,6 +5,10 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 
 const DesktopStore = styled.header`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media (max-width: 575px) {
    display:none;
   }
@@ -24,7 +28,7 @@ const Art = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 100%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -64,44 +68,33 @@ const Call = styled.h2`
     }
 `;
 
-const BackButton = styled.h1`
-  display: table;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border: 5px solid;
-  border-radius: 10px;
-  font-size: 30px;
-  color: #000000;
-  transition: all 300ms ease;
-  &:hover {
-    background: #cccccc;
-  }
+const BackButton = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
 `;
 
 const plotStore = () => (
   <Layout>
-    <SEO title="plot store" keywords={[`plot`, `store`]}/>
+    <SEO title="plöt store" keywords={[`plot`, `store`]}/>
+    <Link to="/">
+    <BackButton src="/leftarrow.svg" /></Link>
     <DesktopStore>
     <Art src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
-    <Link to="/">
-    <BackButton>back</BackButton></Link>
     </DesktopStore>
     <MobileStore>
     <MobileArt src="/storeart.png" />
     <Call color="#333" className="center" size="30px">
       we're bringing local, circular, organic foods right next door...
     </Call>
-    <Link to="/">
-    <BackButton>back</BackButton></Link>
     </MobileStore>
   </Layout>
 )

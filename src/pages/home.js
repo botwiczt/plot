@@ -7,6 +7,10 @@ import styled from "styled-components";
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';*/}
 
 const DesktopHome = styled.header`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media (max-width: 575px) {
    display:none;
   }
@@ -26,7 +30,7 @@ const Art = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 100%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -74,6 +78,17 @@ const ScheduleButton = styled.h1`
   }
 `;
 
+const BackButton = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
+    }
+`;
+
 {/*const Description = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
@@ -112,7 +127,9 @@ const BackButton = styled.img`
 
 const plotHome = () => (
   <Layout>
-    <SEO title="plot home" keywords={[`plot`, `home`, `house`]}/>
+    <SEO title="plöt home" keywords={[`plot`, `home`, `house`]}/>
+    <Link to="/">
+    <BackButton src="/leftarrow.svg" /></Link>
     <DesktopHome>
     {/*<br/>
     <Row>
@@ -131,16 +148,12 @@ const plotHome = () => (
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
-    <Link to="/">
-    <ScheduleButton>back</ScheduleButton></Link>
     </DesktopHome>
     <MobileHome>
     <MobileArt src="/houseart.png"/>
     <Call color="#333" className="center" size="30px">
       we're 3D-printing recycled, optimized homes for sustainable life...
     </Call>
-    <Link to="/">
-    <ScheduleButton>back</ScheduleButton></Link>
     </MobileHome>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />

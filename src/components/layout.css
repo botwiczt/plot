@@ -31,6 +31,11 @@ a {
   color: #333;
 }
 
+#linkstyle a {
+  text-decoration: underline;
+  color: lightblue;
+}
+
 .overall {
   position: relative;
 }
@@ -70,6 +75,35 @@ a {
 
 .overall:hover .overlay {
   opacity: 1;
+  transform: scale(1.2);
+}
+
+
+.dunbar {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted;
+  display:inline
+}
+.dunbarinfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #444d56;
+  color: white;
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: .5s ease;
+}
+.dunbar:hover .dunbarinfo {
+  opacity: 0.85;
   transform: scale(1.2);
 }
 

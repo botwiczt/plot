@@ -56,17 +56,6 @@ const Input = styled.input`
     }
 `;
 
-const BackButton = styled.img`
-  display: block;
-  width: 10%;
-  margin-left: 2%;
-  margin-top: 2%;
-  cursor: pointer;
-  @media only screen and (min-width: 1200px) {
-      width: 8%;
-    }
-`;
-
 const Button = styled.button`
   width: auto;
   cursor: pointer;
@@ -84,6 +73,17 @@ const Button = styled.button`
   }
   @media only screen and (max-width: 672px) {
       border-radius: 3px;
+    }
+`;
+
+const BackButton = styled.img`
+  display: block;
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  @media only screen and (min-width: 1200px) {
+      width: 8%;
     }
 `;
 

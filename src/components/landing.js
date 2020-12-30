@@ -231,7 +231,7 @@ const Landing = () => (
                 what is a plöt?
               </LargeTitle>
               <CardText size="18px">
-                a plöt is a largely self-contained community of ~300 individuals, all living together in a shared space designed for <b>sustainability</b>.
+                a plöt is a largely self-contained community of <div class="dunbar">~300 individuals,<div class="dunbarinfo"><b>why 300?</b><br/>this represents the upper end of<div id="linkstyle"><a href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></div></div></div> all living together in a shared space designed for <b>sustainability</b>.
                 <br/><br/>
                 each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
               </CardText>

@@ -5,6 +5,10 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 
 const DesktopValues = styled.header`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @media (max-width: 575px) {
    display:none;
   }
@@ -24,7 +28,7 @@ const Art = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 100%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -65,12 +69,15 @@ const Call = styled.h2`
 `;
 
 const BackButton = styled.h1`
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6px;
+  display: table;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 5px solid;
   border-radius: 10px;
   font-size: 30px;
