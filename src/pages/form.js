@@ -179,7 +179,7 @@ class RegisterComponentMobile extends Component {
     console.log(this.state);
     const data = new FormData(event.target);
     fetch(
-      "https://script.google.com/macros/s/AKfycbwXbc7NliDvMD9WS_PfpY-Fv060rIlC66yX1JPYNMXALHQa0SY/exec",
+      "https://script.google.com/a/students.spprep.org/macros/s/AKfycbwFQ56sDUCg9VAguxfJSrb587PFv58acwDdZBi17w/exec",
       { method: "POST", body: data }
     )
       .then(response => console.log("success!", response))
