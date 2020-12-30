@@ -197,6 +197,9 @@ const FooterImg = styled.img`
   margin-left: auto;
   margin-right: auto;
   width: 3%;
+  @media only screen and (max-width: 768px) {
+    width: 6%;
+  }
 `;
 
 {/*const Profile = styled.img`
