@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
 
 const DesktopForm = styled.header`
   position: fixed;
@@ -40,16 +39,6 @@ const MobileLogo = styled.img`
   display: block;
   margin: auto;
   width: 80%;
-`;
-
-const Call = styled.h2`
-  margin: 0;
-  padding: 0;
-  font-size: ${props => props.size};
-  color: ${props => props.color};
-  @media only screen and (max-width: 1024px) {
-      font-size: 25px;
-    }
 `;
 
 const SubLine = styled.h1`
@@ -110,7 +99,7 @@ const plotStore = () => (
       plöt waitlist
       </h1>
       <SubLine>
-      ✏️ enter your email for updates on developments!
+      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
       </SubLine>
             <Input type="email" name="email" placeholder="name@example.com"/>
             <Button type="submit">submit</Button>
@@ -123,7 +112,7 @@ const plotStore = () => (
       plöt waitlist
       </h1>
       <SubLine>
-      ✏️ enter your email for updates on developments!
+      <span role="img" aria-label="pencil emoji">✏️</span> enter your email for updates on developments!
       </SubLine>
             <h1><Input type="email" name="email" placeholder="name@example.com"/></h1>
             <Button type="submit">submit</Button>

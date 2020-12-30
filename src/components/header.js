@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Row, Col, Container } from "react-grid-system";
+import { Row, Col} from "react-grid-system";
 import styled from "styled-components";
 import "./layout.css"
 
