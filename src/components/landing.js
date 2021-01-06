@@ -183,7 +183,7 @@ const ArrowImage = styled.img`
   margin-left: auto;
   margin-right: auto;
   width: 6%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 47%;
   animation: 1s Zoom linear infinite,
