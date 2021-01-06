@@ -179,6 +179,29 @@ const FooterImg = styled.img`
   }
 `;
 
+const ArrowImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.2);}
+  }
+  @media only screen and (max-width: 768px) {
+    left: 44%;
+    width: 12%;
+  }
+`;
+
 {/*const Profile = styled.img`
   margin-left: auto;
   margin-right: auto;
@@ -321,6 +344,7 @@ const Landing = () => (
     <MobileValuesArrowImg src="/rightarrow.svg" />
     </Link>
     <br/><br/><br/></Fade>
+     <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </Site>
   </MobileLanding>
 

@@ -287,7 +287,6 @@ const Header = ({ siteTitle }) => (
           </div>
       </div>
     </Link>
-    <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </MobileHeader>
   </div>
   </Background>
