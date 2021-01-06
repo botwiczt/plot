@@ -151,6 +151,29 @@ const MobileTitle = styled.h1`
   }
 `;
 
+const ArrowImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.2);}
+  }
+  @media only screen and (max-width: 768px) {
+    left: 44%;
+    width: 12%;
+  }
+`;
+
 const WaitlistButton = styled.button`
   display: table;
   position: absolute;
@@ -227,7 +250,7 @@ const Header = ({ siteTitle }) => (
       <Title>plöt: the future of living.</Title>
       <Link to="/form">
       <WaitlistButton>join the waitlist</WaitlistButton></Link>
-
+      <a href="#down" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </DesktopHeader>
   <MobileHeader>
     <br/>
@@ -264,6 +287,7 @@ const Header = ({ siteTitle }) => (
           </div>
       </div>
     </Link>
+    <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </MobileHeader>
   </div>
   </Background>

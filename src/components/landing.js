@@ -169,29 +169,6 @@ const CardSpacerContainer = styled.div`
 }
 `;
 
-const ArrowImage = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  width: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 47%;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.2);}
-  }
-  @media only screen and (max-width: 768px) {
-    left: 44%;
-    width: 12%;
-  }
-`;
-
 const FooterImg = styled.img`
   display: block;
   margin-left: auto;
@@ -265,7 +242,7 @@ const Landing = () => (
                 how does it work?
               </LargeTitle>
               <CardText size="18px">
-                you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
+                you exchange your old home or pay a <b>low fee</b>{/*<b>$100,000</b>*/}  and <div class="dunbar">move into your brand new community.<div class="moveininfo"><b>pack light.</b><br/>each home comes equipped with 3D-printed, built-in furniture to reduce moving costs, material waste, and harmful offgassed<div id="linkstyle"><a href="https://en.wikipedia.org/wiki/Volatile_organic_compound" target="_blank" rel="noreferrer">VOCs.</a></div></div></div>
                 <br/><br/>
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
@@ -293,7 +270,6 @@ const Landing = () => (
       </Fade>
     </Site>
   <br/>
-  <a href="#down" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </DesktopLanding>
 
   <MobileLanding>
@@ -329,7 +305,7 @@ const Landing = () => (
           how does it work?
       </LargeTitle>
       <CardText color="#333">
-              you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
+              you exchange your old home or pay a <b>low fee</b>{/*<b>$100,000</b>*/} and <div class="dunbar">move into your brand new community.<div class="moveininfo"><b>pack light.</b><br/>each home comes equipped with 3D-printed, built-in furniture to reduce moving costs, material waste, and harmful offgassed<div id="linkstyle"><a href="https://en.wikipedia.org/wiki/Volatile_organic_compound" target="_blank" rel="noreferrer">VOCs.</a></div></div></div>
               <br/>
               <MobileImg src="/movein.svg" />
               in the first week, we guide you through the functioning of our community and our values.
@@ -346,7 +322,6 @@ const Landing = () => (
     </Link>
     <br/><br/><br/></Fade>
   </Site>
-  <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
   </MobileLanding>
 
       {/*<LargeTitle color="#333" className="center" size="48px">
