@@ -202,29 +202,6 @@ const FooterImg = styled.img`
   }
 `;
 
-const ArrowImage = styled.img`
-  margin-left: auto;
-  margin-right: auto;
-  width: 6%;
-  position: fixed;
-  bottom: 0;
-  left: 47%;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
-
-  @keyframes Always {
-      100% { transform: scale(1.2);}
-  }
-  @media only screen and (max-width: 768px) {
-    left: 44%;
-    width: 12%;
-  }
-`;
-
 {/*const Profile = styled.img`
   margin-left: auto;
   margin-right: auto;
@@ -241,6 +218,7 @@ const Landing = () => (
   <div>
   <div className="landing">
   <br/><br/>
+
   <DesktopLanding>
     <Site>
       <div id="down">
@@ -264,7 +242,7 @@ const Landing = () => (
                 what is a plöt?
               </LargeTitle>
               <CardText size="18px">
-                a plöt is a largely self-contained community of <div class="dunbar">~300 individuals,<div class="dunbarinfo"><b>why 300?</b><br/>this represents the upper end of<div id="linkstyle"><a href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></div></div></div> all living together in a shared space designed for <b>sustainability</b>.
+                a plöt is a largely self-contained community of <div class="dunbar">~300 individuals,<div class="dunbarinfo"><b>why 300?</b><br/>this represents the upper end of <a class="linkstyle" href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></div></div> all living together in a shared space designed for <b>sustainability</b>.
                 <br/><br/>
                 each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
               </CardText>
@@ -288,7 +266,7 @@ const Landing = () => (
                 how does it work?
               </LargeTitle>
               <CardText size="18px">
-                you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
+                you exchange your old home or pay a <b>low fee</b>{/*<b>$100,000</b>*/} and <div class="dunbar">move into your brand new community.<div class="moveininfo"><b>pack light.</b><br/>homes come with 3D-printed, built-in furniture to reduce moving costs & <a class="linkstyle" href="https://en.wikipedia.org/wiki/Volatile_organic_compound" target="_blank" rel="noreferrer">offgassed VOCs.</a></div></div>
                 <br/><br/>
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.
@@ -341,7 +319,7 @@ const Landing = () => (
         what is a plöt?
       </LargeTitle>
       <CardText color="#333">
-        a plöt is a largely self-contained community of <br/><div class="dunbar">~300 individuals,<div class="dunbarinfo"><b>why 300?</b><br/>this represents the upper end of<div id="linkstyle"><a href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></div></div></div> all living together in a shared space designed for <b>sustainability</b>.
+        a plöt is a largely self-contained community of <div class="dunbar">~300 individuals,<div class="dunbarinfo"><b>why 300?</b><br/>this represents the upper end of <a class="linkstyle" href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></div></div> all living together in a shared space designed for <b>sustainability</b>.
         <br/><br/>
         each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
       </CardText><MobileImg src="/naturehome.svg"/>
@@ -352,8 +330,7 @@ const Landing = () => (
           how does it work?
       </LargeTitle>
       <CardText color="#333">
-              you exchange your old home or pay <b>$100,000</b> and move into your brand new community.
-              <br/>
+              you exchange your old home or pay a <b>low fee</b>{/*<b>$100,000</b>*/} and <div class="dunbar">move into your brand new community.<div class="moveininfo"><b>pack light.</b><br/>homes come with 3D-printed, built-in furniture to reduce moving costs & <a class="linkstyle" href="https://en.wikipedia.org/wiki/Volatile_organic_compound" target="_blank" rel="noreferrer">offgassed VOCs.</a></div></div>              <br/>
               <MobileImg src="/movein.svg" />
               in the first week, we guide you through the functioning of our community and our values.
               <br/><br/>we're currently in the process of designing our first plöt in the state of <b> maine</b>.

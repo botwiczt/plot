@@ -180,6 +180,7 @@ const WaitlistButton = styled.button`
 const Header = ({ siteTitle }) => (
   <Background>
   <div className="headersqueeze">
+  
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
       <Row>
@@ -227,8 +228,8 @@ const Header = ({ siteTitle }) => (
       <Title>plöt: the future of living.</Title>
       <Link to="/form">
       <WaitlistButton>join the waitlist</WaitlistButton></Link>
-
   </DesktopHeader>
+
   <MobileHeader>
     <br/>
     <Link to="/">
@@ -265,6 +266,7 @@ const Header = ({ siteTitle }) => (
       </div>
     </Link>
   </MobileHeader>
+
   </div>
   </Background>
 );
