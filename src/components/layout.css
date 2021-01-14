@@ -83,77 +83,39 @@ a.linkstyle {
   transform: scale(1.2);
 }
 
-
-.dunbar {
-  position: relative;
-  cursor: help;
+u.dotting {
   border-bottom: 1px dotted;
-  display:inline
-}
-.dunbarinfo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 14%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: #444d56;
-  color: white;
-  width: 100%;
-  font-size: 15px;
-  padding: 8px;
-  border-radius: 10px;
-  opacity: 0;
-  transition: .5s ease;
-}
-.dunbar:hover .dunbarinfo {
-  opacity: 0.85;
-  transform: scale(1.2);
+  text-decoration: none;
 }
 
-.moveininfo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: #444d56;
-  color: white;
-  width: 100%;
-  font-size: 15px;
-  padding: 8px;
-  border-radius: 10px;
-  opacity: 0;
-  transition: .5s ease;
-}
-.dunbar:hover .moveininfo {
-  opacity: 0.85;
-  transform: scale(1.2);
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
 }
 
-.moveininfomobile {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7%;
-  position: absolute;
-  left: 0;
-  right: 0;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
   background-color: #444d56;
   color: white;
-  width: 100%;
-  font-size: 15px;
-  padding: 8px;
+  text-align: center;
   border-radius: 10px;
+  padding: 8px;
+  font-size: inherit;
   opacity: 0;
-  transition: .5s ease;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -100px;
 }
-.dunbar:hover .moveininfo {
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
   opacity: 0.85;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .max {
