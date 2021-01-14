@@ -87,7 +87,7 @@ const plotStore = () => (
     privacy policy:
     </h1>
     <h3>
-    last updated december 30th, 2020
+    last updated january 1st, 2021
     </h3>
     <h3>
     > we do not automatically collect any personal information from site visitors.
@@ -107,7 +107,7 @@ const plotStore = () => (
     privacy policy:
     </h1>
     <h3>
-    last updated december 30th, 2020
+    last updated january 1st, 2021
     </h3>
     <br/>
     <h3>
