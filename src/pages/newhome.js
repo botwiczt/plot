@@ -48,43 +48,61 @@ const MobileArt = styled.img`
   width: 100%;
 `;
 
-
-const HomeTitleplot = styled.h1`
-  text-align: right;
-  font-size: 100px;
+const Logo = styled.img`
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40%;
-  color: #000000;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
-  }
+  width: 90%;
+`;
 
-  @keyframes Always {
-      100% { transform: scale(1.02);}
+const Header = styled.h1`
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  color: #000000;
+  @media only screen and (max-width: 2000px) {
+    font-size: 75px;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 54px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 860px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 25px;
   }
 `;
 
-const HomeTitlehome = styled.h1`
+const Title = styled.h1`
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40%;
-  border-radius: 10px;
-  font-size: 100px;
+  font-size: 50px;
   color: #000000;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
+  @media only screen and (max-width: 2000px) {
+    font-size: 75px;
   }
-  @keyframes Zoom {
-      100% { background-position: 100vw 0px; }
+  @media only screen and (max-width: 1600px) {
+    font-size: 60px;
   }
-
-  @keyframes Always {
-      100% { transform: scale(1.02);}
+  @media only screen and (max-width: 1200px) {
+    font-size: 54px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 860px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 25px;
   }
 `;
 
@@ -228,23 +246,31 @@ const LargeTitle = styled.h2`
 const plotHome = () => (
   <Layout>
     <SEO title="plöt home" keywords={[`plot`, `home`, `house`]}/>
-
     <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <br/>
+    <br/><br/><br/><br/><br/>
     <Row>
-      <Col sm={3.5}>
-      <HomeTitleplot>
-      plöt
-      </HomeTitleplot>
+      <Col sm={4}/>
+      <Col sm={2}>
+      <Logo src="/logo.png" />
       </Col>
-      <Col sm={5}>
+      <Col sm={2}>
+          <Header>home</Header>
+      </Col>
+      <Col sm={4}/>
+    </Row>
+    <Row>
+      <Col sm={2}/>
+      <Col sm={4}>
+      <Title>
+      3-D printed. sustainable. futuristic.
+      </Title>
+      </Col>
+      <Col sm={4}>
           <Art src="/houseart.png" />
       </Col>
-      <Col sm={3.5}>
-      <HomeTitlehome>home</HomeTitlehome>
-      </Col>
+      <Col sm={2}/>
     </Row>
 <CardShrink>
     <Row>

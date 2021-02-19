@@ -5,21 +5,20 @@ import styled from "styled-components";
 import "./layout.css"
 
 const Background = styled.header`
-  min-height: 100vh;
 `;
 
 const DesktopHeader = styled.header`
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
    display:none;
   }
 `;
 
 //768px was original mobileheader value.
 const MobileHeader = styled.header`
-  @media (min-width: 575px) {
+  @media (min-width: 768px) {
    display:none;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
    display:initial;
   }
 `;
