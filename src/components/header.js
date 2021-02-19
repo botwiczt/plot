@@ -180,7 +180,7 @@ const WaitlistButton = styled.button`
 const Header = ({ siteTitle }) => (
   <Background>
   <div className="headersqueeze">
-  
+
   <DesktopHeader>
   <br/><br/><br/><br/><br/>
       <Row>
