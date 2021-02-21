@@ -29,7 +29,7 @@ const ArrowImage = styled.img`
 // fix scroll down arrow to be uninteractable when opacity = 0;
 // it is interactable now even though it is invisible.
 
-class Scroll extends Component {
+class MobileScroll extends Component {
   state = {
     opacity: '1'
   }
@@ -59,4 +59,4 @@ class Scroll extends Component {
   }
 }
 
-export default Scroll
+export default MobileScroll
