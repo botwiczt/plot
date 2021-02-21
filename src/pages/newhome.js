@@ -31,7 +31,7 @@ const MobileHome = styled.header`
 const Art = styled.img`
   display: block;
   margin-left: -30%;
-  margin-top: -20%;
+  margin-top: -10%;
   width: 150%;
   @media only screen and (max-width: 575px) {
     position: auto;
@@ -201,7 +201,7 @@ const CardText = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
   line-height: 2;
-  text-align: center;
+  text-align: left;
   @media only screen and (max-width: 1024px) {
       font-size: 18px;
     }
@@ -211,7 +211,7 @@ const CardText = styled.p`
 `;
 
 const Card = styled.div`
-  max-width: 400px;
+  max-width: 600px;
   text-align: center;
   @media only screen and (max-width: 1024px) {
     height: 330px;
@@ -275,13 +275,18 @@ const plotHome = () => (
                 <LargeTitle size="30px">
                   save money, save the planet.
                 </LargeTitle>
+                <Row>
+                <Col sm={9}>
                 <CardText size="20px">
-                $36,000 &emsp;&emsp;average US income
+                &emsp; &nbsp;&nbsp;$36,000 &emsp;&emsp;average US income
                   <br/>
-                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living<Dashboard/>
-                <hr width="100%"/>
-                <font color="green"><b>&emsp; &nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
-                  <br/>
+                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living
+                </CardText></Col>
+                <Col sm={3}><br/><br/><Dashboard/></Col>
+                </Row>
+                <CardText size="20px">
+                  <hr width="100%"/>
+                  <font color="green"><b>&emsp; &ensp;&nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
                 </CardText>
               </Card>
         </CardShrink>

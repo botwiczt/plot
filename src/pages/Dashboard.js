@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Modal from './Modal.js';
+import './dashboard.css';
 
 class Dashboard extends Component {
   constructor() {
@@ -31,7 +32,6 @@ class Dashboard extends Component {
           ☀️ fossil-free heating<br/>
           🌐 gigabit internet<br/>
           </p>
-          <br/>
           <b><font color="#00FF00"><b><u> plöt+ includes:</u></b></font></b>
           <br/><p>
           ☝️ everything above<br/>
@@ -40,9 +40,9 @@ class Dashboard extends Component {
           🛠️ priority support<br/>
           </p>
         </Modal>
-        <button type="button" onClick={this.showModal}>
+        <h4 className="openbutton" onClick={this.showModal}>
           what's included?
-        </button>
+        </h4>
       </main>
     );
   }
