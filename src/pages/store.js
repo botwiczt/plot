@@ -344,46 +344,35 @@ const plotHome = () => (
 
                 <Row>
                 <Col sm={1.5}/>
-                <Col sm={2.5}>
+                <Col sm={2.75}>
                 <CardText>
                 <b>minimal packaging</b>
                 </CardText>
-                </Col>
-                <Col sm={0.75}/>
-                <Col sm={2.5}>
-                <CardText>
-                <b>cruelty free</b>
-                </CardText>
-                </Col>
-                <Col sm={0.75}/>
-                <Col sm={2.5}>
-                <CardText>
-                <b>produce stickers: nope!</b>
-                </CardText>
-                </Col>
-                <Col sm={1.5}/>
-                </Row>
-                <Row>
-                <Col sm={1.5}/>
-                <Col sm={2.5}>
                 <CardText>
                 homemade essentials, bulk bins, and the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><b><a class="linkstyle" href="/reUSE" rel="noreferrer">learn more ></a></b></span></div>. no packaging means no waste!
                 </CardText>
                 </Col>
-                <Col sm={0.75}/>
-                <Col sm={2.5}>
+                <Col sm={0.375}/>
+                <Col sm={2.75}>
+                <CardText>
+                <b>cruelty free</b>
+                </CardText>
                 <CardText>
                 all of the products in our stores are certified vegan. healthier for you, the animals, and the earth.
                 </CardText>
                 </Col>
-                <Col sm={0.75}/>
-                <Col sm={2.5}>
+                <Col sm={0.375}/>
+                <Col sm={2.75}>
+                <CardText>
+                <b>produce stickers: nope!</b>
+                </CardText>
                 <CardText>
                 easier to wash and no sticky residue from those <i>pesky</i> stickers. we saved you the hassle.
                 </CardText>
                 </Col>
                 <Col sm={1.5}/>
                 </Row>
+
                 <br/>
                 <LargeTitle>
                   more info coming soon...
