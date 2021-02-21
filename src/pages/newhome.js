@@ -262,7 +262,7 @@ const plotHome = () => (
       </Col>
       <Col sm={1}/>
       <Col sm={4}>
-          <Art src="/deskboy.png" />
+          <Art src="/forest.svg" />
       </Col>
       <Col sm={1.5}/>
     </Row>
