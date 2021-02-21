@@ -64,26 +64,6 @@ const Call = styled.h2`
     }
 `;
 
-const ScheduleButton = styled.h1`
-  display: table;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border: 5px solid;
-  border-radius: 10px;
-  font-size: 30px;
-  color: #000000;
-  transition: all 300ms ease;
-  &:hover {
-    background: #cccccc;
-  }
-`;
-
 const BackButton = styled.img`
   display: table;
   position: absolute;
