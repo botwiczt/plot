@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/seo"
 import { Link } from "gatsby";
 import { Row, Col} from "react-grid-system";
 import styled from "styled-components";
@@ -178,6 +179,7 @@ const WaitlistButton = styled.button`
 
 const Header = ({ siteTitle }) => (
   <Background>
+  <SEO title="plöt" description="welcome to plöt. representing the future of living. 3D-printed, sustainable, and futuristic communities serving as the first successful utopias." keywords={[`plot`, `sustainable`, `homepage`, `3D printing`, `infrastructure`]}/>
   <div className="headersqueeze">
 
   <DesktopHeader>

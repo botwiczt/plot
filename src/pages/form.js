@@ -209,7 +209,7 @@ class RegisterComponentMobile extends Component {
 
 const plotStore = () => (
   <Layout>
-    <SEO title="plöt form" keywords={[`plot`, `form`, `waitlist`]}/>
+    <SEO title="join the waitlist" keywords={[`plot`, `form`, `waitlist`]}/>
     <DesktopForm>
       <Link to="/">
         <BackButton src="/leftarrow.svg" />
