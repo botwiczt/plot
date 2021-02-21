@@ -302,7 +302,7 @@ const Center = styled.div`
 
 const plotHome = () => (
   <Layout>
-    <SEO title="plöt home" keywords={[`plot`, `home`, `house`]}/>
+    <SEO title="plöt store" keywords={[`plot`, `store`, `shopping`, `vegan`, `zero waste`]}/>
     <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
