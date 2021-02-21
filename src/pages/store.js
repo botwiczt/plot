@@ -60,7 +60,6 @@ const MobileIcon = styled.img`
 
 const MobileArt = styled.img`
   display: block;
-  margin-left: 5%;
   margin-top: 10%;
   width: 100%;
 `;
