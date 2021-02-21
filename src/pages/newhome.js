@@ -266,7 +266,7 @@ const plotHome = () => (
       </Col>
       <Col sm={1.5}/>
     </Row>
-<CardShrink>
+{/*<CardShrink>
     <Row>
       <Col sm={8}>
         <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
