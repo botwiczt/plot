@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-grid-system";
 import Fade from 'react-reveal/Fade'
+import Rellax from 'rellax'
+import Scroll from "./Scroll.js"
 import styled from "styled-components";
 import "./layout.css"
 import { Link } from "gatsby";
@@ -215,6 +217,13 @@ const FooterImg = styled.img`
 
 
 
+{/*const updateByPropertyName = (propertyName, value) => () => ({
+  [propertyName]: value
+});
+class JavaScript extends Component {
+  var rellax = new Rellax('.rellax');
+};*/}
+
 const Landing = () => (
   <div>
   <div className="landing">
@@ -295,7 +304,7 @@ const Landing = () => (
       </Fade>
     </Site>
   <br/>
-  <a href="#down" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
+  <Scroll/>
   </DesktopLanding>
 
   <MobileLanding>
