@@ -3,6 +3,7 @@ import { Row, Col } from "react-grid-system";
 import Fade from 'react-reveal/Fade'
 import Rellax from 'rellax'
 import Scroll from "./Scroll.js"
+import MobileScroll from "./MobileScroll.js"
 import styled from "styled-components";
 import "./layout.css"
 import { Link } from "gatsby";
@@ -356,9 +357,9 @@ const Landing = () => (
     <MobileValuesArrowImg src="/rightarrow.svg" />
     </Link>
     <br/><br/><br/></Fade>
-     <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
+
   </Site>
-  <a href="#mobiledown" aria-label="scroll down"><ArrowImage src="/downarrow.png"/></a>
+  <MobileScroll/>
   </MobileLanding>
 
       {/*<LargeTitle color="#333" className="center" size="48px">
