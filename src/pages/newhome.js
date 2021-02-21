@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
 import { Container, Row, Col } from "react-grid-system";
+import Dashboard from "./Dashboard.js";
 
 const DesktopHome = styled.header`
   @media (max-width: 575px) {
@@ -13,6 +14,8 @@ const DesktopHome = styled.header`
 
 const CardShrink = styled.div`
   margin: 4%;
+  display: flex;
+ justify-content: center;
 `;
 
 //768px was original mobileheader value.
@@ -197,7 +200,7 @@ const BackButton = styled.img`
 const CardText = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   text-align: center;
   @media only screen and (max-width: 1024px) {
       font-size: 18px;
@@ -266,7 +269,24 @@ const plotHome = () => (
       </Col>
       <Col sm={1.5}/>
     </Row>
-<CardShrink>
+
+    <CardShrink>
+              <Card bg="#F9BEBE;">
+                <LargeTitle size="30px">
+                  save money, save the planet.
+                </LargeTitle>
+                <CardText size="20px">
+                $36,000 &emsp;&emsp;average US income
+                  <br/>
+                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living<Dashboard/>
+                <hr width="100%"/>
+                <font color="green"><b>&emsp; &nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
+                  <br/>
+                </CardText>
+              </Card>
+        </CardShrink>
+
+{/*}<CardShrink>
     <Row>
       <Col sm={8}>
         <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
@@ -289,7 +309,7 @@ const plotHome = () => (
       </Col>
     </Row>
 
-    </CardShrink>
+    </CardShrink>*/}
     </DesktopHome>
 
 
