@@ -27,9 +27,9 @@ const MobileHome = styled.header`
 
 const Art = styled.img`
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-left: -30%;
+  margin-top: -20%;
+  width: 150%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -49,9 +49,10 @@ const MobileArt = styled.img`
 `;
 
 const Logo = styled.img`
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 50%;
 `;
 
 const Header = styled.h1`
@@ -249,28 +250,21 @@ const plotHome = () => (
     <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <br/><br/><br/><br/><br/>
+    <br/>
+      <Logo src="/plothome.png"/>
+      <br/><br/><br/>
     <Row>
-      <Col sm={4}/>
-      <Col sm={2}>
-      <Logo src="/logo.png" />
-      </Col>
-      <Col sm={2}>
-          <Header>home</Header>
-      </Col>
-      <Col sm={4}/>
-    </Row>
-    <Row>
-      <Col sm={2}/>
+      <Col sm={1.5}/>
       <Col sm={4}>
       <Title>
       3-D printed. sustainable. futuristic.
       </Title>
       </Col>
+      <Col sm={1}/>
       <Col sm={4}>
-          <Art src="/houseart.png" />
+          <Art src="/deskboy.png" />
       </Col>
-      <Col sm={2}/>
+      <Col sm={1.5}/>
     </Row>
 <CardShrink>
     <Row>
