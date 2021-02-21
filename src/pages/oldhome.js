@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
-import Dashboard from "./Dashboard.js";
+{/*import { Container, Row, Col } from "react-grid-system";
+import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';*/}
 
 const DesktopHome = styled.header`
   @media (max-width: 575px) {
@@ -12,10 +12,14 @@ const DesktopHome = styled.header`
   }
 `;
 
-const CardShrink = styled.div`
-  margin: 4%;
-  display: flex;
- justify-content: center;
+const DesktopHomeInner = styled.header`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (max-width: 575px) {
+   display:none;
+  }
 `;
 
 //768px was original mobileheader value.
@@ -30,9 +34,9 @@ const MobileHome = styled.header`
 
 const Art = styled.img`
   display: block;
-  margin-left: -30%;
-  margin-top: -10%;
-  width: 150%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -40,8 +44,7 @@ const Art = styled.img`
   content:url("/logosmall.png");
     position: auto;
     width: 65%;
-  }
-
+  }*/}
 `;
 
 const MobileArt = styled.img`
@@ -49,65 +52,6 @@ const MobileArt = styled.img`
   margin: auto;
   margin-top: 50%;
   width: 100%;
-`;
-
-const Logo = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-`;
-
-const Header = styled.h1`
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 50px;
-  color: #000000;
-  @media only screen and (max-width: 2000px) {
-    font-size: 75px;
-  }
-  @media only screen and (max-width: 1600px) {
-    font-size: 60px;
-  }
-  @media only screen and (max-width: 1200px) {
-    font-size: 54px;
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 860px) {
-    font-size: 30px;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 25px;
-  }
-`;
-
-const Title = styled.h1`
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 50px;
-  color: #000000;
-  @media only screen and (max-width: 2000px) {
-    font-size: 75px;
-  }
-  @media only screen and (max-width: 1600px) {
-    font-size: 60px;
-  }
-  @media only screen and (max-width: 1200px) {
-    font-size: 54px;
-  }
-  @media only screen and (max-width: 1024px) {
-    font-size: 40px;
-  }
-  @media only screen and (max-width: 860px) {
-    font-size: 30px;
-  }
-  @media only screen and (max-width: 800px) {
-    font-size: 25px;
-  }
 `;
 
 const Call = styled.h2`
@@ -160,8 +104,6 @@ const MobileBackButton = styled.img`
   cursor: pointer;
 `;
 
-
-
 {/*const Description = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
@@ -197,55 +139,6 @@ const BackButton = styled.img`
   }
 `;*/}
 
-const CardText = styled.p`
-  font-size: ${props => props.size};
-  font-weight: 400;
-  line-height: 2;
-  text-align: left;
-  @media only screen and (max-width: 1024px) {
-      font-size: 18px;
-    }
-  @media only screen and (max-width: 800px) {
-        font-size: 16px;
-    }
-`;
-
-const Card = styled.div`
-  max-width: 600px;
-  text-align: center;
-  @media only screen and (max-width: 1024px) {
-    height: 330px;
-  }
-`;
-
-const MobileCard = styled.div`
-  max-width: 400px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-`;
-
-const Img = styled.img`
-  display: block;
-  width: 100%;
-`;
-
-const CardSpacerContainer = styled.div`
-@media only screen and (max-width: 768px) {
-  ;
-}
-`;
-
-const LargeTitle = styled.h2`
-  margin: 0;
-  padding: 0;
-  font-size: ${props => props.size};
-  color: #333;
-  @media only screen and (max-width: 1024px) {
-      font-size: 25px;
-    }
-`;
-
 
 const plotHome = () => (
   <Layout>
@@ -253,71 +146,26 @@ const plotHome = () => (
     <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <br/>
-      <Logo src="/plothome.png"/>
-      <br/><br/><br/>
+    <DesktopHomeInner>
+    {/*<br/>
     <Row>
-      <Col sm={1.5}/>
       <Col sm={4}>
-      <Title>
-      3-D printed. sustainable. futuristic.
-      </Title>
+        <Link to="/">
+          <Logo src="/logo.png" />
+        </Link>
+        <br/>
+        <Link to="/">
+        <BackButton src="/leftarrow.svg" /></Link>
       </Col>
-      <Col sm={1}/>
-      <Col sm={4}>
-          <Art src="/forest.svg" />
-      </Col>
-      <Col sm={1.5}/>
-    </Row>
-
-    <CardShrink>
-              <Card bg="#F9BEBE;">
-                <LargeTitle size="30px">
-                  save money, save the planet.
-                </LargeTitle>
-                <Row>
-                <Col sm={9}>
-                <CardText size="20px">
-                &emsp; &nbsp;&nbsp;$36,000 &emsp;&emsp;average US income
-                  <br/>
-                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living
-                </CardText></Col>
-                <Col sm={3}><br/><br/><Dashboard/></Col>
-                </Row>
-                <CardText size="20px">
-                  <hr width="100%"/>
-                  <font color="green"><b>&emsp; &ensp;&nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
-                </CardText>
-              </Card>
-        </CardShrink>
-
-{/*}<CardShrink>
-    <Row>
       <Col sm={8}>
-        <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
-          <Card bg="#F9BEBE;">
-            <LargeTitle size="24px">
-              the homes
-            </LargeTitle>
-            <CardText size="18px">
-              1. cork insulation
-              <br/>
-              2. self-cleaning & self-healing concrete
-              <br/>
-              3.
-              <br/>
-            </CardText>
-          </Card>
       </Col>
-      <Col sm={4}>
-        <Img src="/naturehome.svg"/>
-      </Col>
-    </Row>
-
-    </CardShrink>*/}
+    </Row>*/}
+    <Art src="/houseart.png"/>
+    <Call color="#333" className="center" size="30px">
+      we're 3D-printing recycled, optimized homes for sustainable life...
+    </Call>
+    </DesktopHomeInner>
     </DesktopHome>
-
-
     <MobileHome>
     <Link to="/">
     <MobileBackButton src="/leftarrow.svg" /></Link>

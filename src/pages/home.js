@@ -3,40 +3,36 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
-{/*import { Container, Row, Col } from "react-grid-system";
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';*/}
+import { Container, Row, Col } from "react-grid-system";
+import Dashboard from "./Dashboard.js";
 
 const DesktopHome = styled.header`
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
    display:none;
   }
 `;
 
-const DesktopHomeInner = styled.header`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  @media (max-width: 575px) {
-   display:none;
-  }
+const CardShrink = styled.div`
+  margin: 4%;
+  display: flex;
+ justify-content: center;
 `;
 
-//768px was original mobileheader value.
+//575px was other mobileheader value.
 const MobileHome = styled.header`
-  @media (min-width: 575px) {
+  @media (min-width: 768px) {
    display:none;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
    display:initial;
   }
 `;
 
 const Art = styled.img`
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  margin-left: -30%;
+  margin-top: -10%;
+  width: 150%;
   @media only screen and (max-width: 575px) {
     position: auto;
     width: 40%;
@@ -44,14 +40,95 @@ const Art = styled.img`
   content:url("/logosmall.png");
     position: auto;
     width: 65%;
-  }*/}
+  }
+
 `;
 
 const MobileArt = styled.img`
   display: block;
-  margin: auto;
-  margin-top: 50%;
+  margin-left: 5%;
+  margin-top: 10%;
   width: 100%;
+`;
+
+const Logo = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+`;
+
+const MobileLogo = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+`;
+
+const Header = styled.h1`
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  color: #000000;
+  @media only screen and (max-width: 2000px) {
+    font-size: 75px;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 54px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 860px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 25px;
+  }
+`;
+
+const Title = styled.h1`
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  color: #000000;
+  @media only screen and (max-width: 2000px) {
+    font-size: 75px;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 54px;
+  }
+  @media only screen and (max-width: 1024px) {
+    font-size: 40px;
+  }
+  @media only screen and (max-width: 860px) {
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 25px;
+  }
+`;
+
+const MobileTitle = styled.h1`
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  color: #000000;
+  @media only screen and (max-width: 320px) {
+      font-size: 35px;
+    }
+  @media only screen and (max-width: 232px) {
+      font-size: 30px;
+    }
 `;
 
 const Call = styled.h2`
@@ -104,6 +181,8 @@ const MobileBackButton = styled.img`
   cursor: pointer;
 `;
 
+
+
 {/*const Description = styled.p`
   font-size: ${props => props.size};
   font-weight: 400;
@@ -139,6 +218,62 @@ const BackButton = styled.img`
   }
 `;*/}
 
+const CardText = styled.p`
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  text-align: left;
+  @media only screen and (max-width: 1024px) {
+      font-size: 18px;
+    }
+  @media only screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+  @media only screen and (max-width: 320px) {
+        font-size: 14px;
+    }
+`;
+
+const Card = styled.div`
+  max-width: 600px;
+  text-align: center;
+  @media only screen and (max-width: 1024px) {
+    height: 330px;
+  }
+`;
+
+const MobileCard = styled.div`
+  max-width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const Img = styled.img`
+  display: block;
+  width: 100%;
+`;
+
+const CardSpacerContainer = styled.div`
+@media only screen and (max-width: 768px) {
+  ;
+}
+`;
+
+const LargeTitle = styled.h2`
+  margin: 0;
+  padding: 0;
+  font-size: ${props => props.size};
+  color: #333;
+  @media only screen and (max-width: 1024px) {
+      font-size: 25px;
+    }
+`;
+
+const Center = styled.div`
+ margin-left:30%;
+`;
+
 
 const plotHome = () => (
   <Layout>
@@ -146,33 +281,106 @@ const plotHome = () => (
     <DesktopHome>
     <Link to="/">
     <BackButton src="/leftarrow.svg" /></Link>
-    <DesktopHomeInner>
-    {/*<br/>
+    <br/>
+      <Logo src="/plothome.png"/>
+      <br/><br/><br/>
     <Row>
+      <Col sm={1.5}/>
       <Col sm={4}>
-        <Link to="/">
-          <Logo src="/logo.png" />
-        </Link>
-        <br/>
-        <Link to="/">
-        <BackButton src="/leftarrow.svg" /></Link>
+      <Title>
+      3-D printed. sustainable. futuristic.
+      </Title>
       </Col>
+      <Col sm={1}/>
+      <Col sm={4}>
+          <Art src="/forest.svg" />
+      </Col>
+      <Col sm={1.5}/>
+    </Row>
+
+    <CardShrink>
+              <Card bg="#F9BEBE;">
+                <LargeTitle size="30px">
+                  save money, save the planet.
+                </LargeTitle>
+                <Row>
+                <Col sm={9}>
+                <CardText>
+                &emsp; &nbsp;&nbsp;$36,000 &emsp;&emsp;average US income
+                  <br/>
+                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living
+                </CardText></Col>
+                <Col sm={3}><br/><br/><Dashboard/></Col>
+                </Row>
+                <CardText>
+                  <hr width="100%"/>
+                  <font color="green"><b>&emsp; &ensp;&nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
+                </CardText>
+                <br/>
+                <LargeTitle>
+                  more info coming soon...
+                </LargeTitle>
+              </Card>
+      </CardShrink>
+
+
+{/*}<CardShrink>
+    <Row>
       <Col sm={8}>
+        <CardSpacerContainer><br/><br/><br/></CardSpacerContainer>
+          <Card bg="#F9BEBE;">
+            <LargeTitle size="24px">
+              the homes
+            </LargeTitle>
+            <CardText size="18px">
+              1. cork insulation
+              <br/>
+              2. self-cleaning & self-healing concrete
+              <br/>
+              3.
+              <br/>
+            </CardText>
+          </Card>
       </Col>
-    </Row>*/}
-    <Art src="/houseart.png"/>
-    <Call color="#333" className="center" size="30px">
-      we're 3D-printing recycled, optimized homes for sustainable life...
-    </Call>
-    </DesktopHomeInner>
+      <Col sm={4}>
+        <Img src="/naturehome.svg"/>
+      </Col>
+    </Row>
+
+    </CardShrink>*/}
     </DesktopHome>
+
+
     <MobileHome>
     <Link to="/">
     <MobileBackButton src="/leftarrow.svg" /></Link>
-    <MobileArt src="/houseart.png"/>
-    <Call color="#333" className="center" size="30px">
-      we're 3D-printing recycled, optimized homes for sustainable life...
-    </Call>
+
+    <MobileLogo src="/plothome.png"/>
+    <MobileArt src="/forest.svg"/>
+    <MobileTitle>
+    3-D printed. sustainable. futuristic.
+    </MobileTitle>
+    <CardShrink>
+              <Card bg="#F9BEBE;">
+                <LargeTitle size="30px">
+                  save money, save the planet.
+                </LargeTitle>
+                <CardText>
+                &emsp; &nbsp;&nbsp;$36,000 &emsp;&emsp;average US income
+                  <br/>
+                <b>-</b>&emsp; &nbsp;$24,000 &emsp;&emsp;yearly cost of plöt living
+                </CardText>
+                <Center><Dashboard/></Center>
+                <CardText>
+                  <hr width="100%"/>
+                  <font color="green"><b>&emsp; &ensp;&nbsp;$12,000 &emsp;&emsp;discretionary money</b></font>
+                </CardText>
+                <br/><br/><LargeTitle>
+                  more info coming soon...
+                </LargeTitle>
+              </Card>
+      </CardShrink>
+
     </MobileHome>
           {/*<div><Counter>
             <Countdown timeTillDate="10 11 2019, 2:00 pm" timeFormat="MM DD YYYY, h:mm a" />

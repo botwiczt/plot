@@ -29,6 +29,39 @@
   animation-duration: 1s
 }
 
+@media screen and (max-width: 768px) {
+  .modal-main {
+    font-size:15px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-main {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-main {
+    font-size:16px;
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .modal-main {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal-main {
+    font-size:15px;
+    width: 150px;
+  }
+}
+
 .display-block {
   display: block;
 }
