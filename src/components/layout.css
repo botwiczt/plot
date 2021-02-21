@@ -142,6 +142,13 @@ u.dotting {
   font-weight: bold;
 }
 
+.scrollvanish {
+    z-index:200;
+    position: fixed;
+    bottom:0;
+    transition: opacity 0.5s ease;
+}
+
 footer {
     position: relative;
     bottom: 0;
