@@ -348,7 +348,7 @@ const plotHome = () => (
                 <b>minimal packaging</b>
                 </CardText>
                 <CardText>
-                homemade essentials, bulk bins, and the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><a class="linkstyle" href="/reUSE" rel="noreferrer">learn more ></a></span></div>. no packaging means no waste!
+                the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><a class="linkstyle" href="/reUSE" rel="noreferrer">learn more ></a></span></div>, homemade essentials, and bulk bins. no packaging means no waste!
                 </CardText>
                 </Col>
                 <Col sm={0.375}/>
@@ -427,7 +427,7 @@ const plotHome = () => (
                 <b>minimal packaging</b>
                 </CardText>
                 <CardText>
-                homemade essentials, bulk bins, and the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><a class="linkstyle" href="/reUSE" rel="noreferrer">learn more ></a></span></div>. no packaging means no waste!
+                the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><a class="linkstyle" href="/reUSE" rel="noreferrer">learn more ></a></span></div>, homemade essentials, and bulk bins. no packaging means no waste!
                 </CardText>
                 </Col>
                 </Row>
