@@ -21,6 +21,7 @@
     "react-grid-system": "^7.1.1",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.5",
     "rellax": "^1.12.1",
     "sass": "^1.32.8",
     "styled-components": "^5.2.1"
