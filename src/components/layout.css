@@ -31,6 +31,14 @@ html {
   scroll-behavior: smooth;
  }
 
+ body {
+   height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: overlay;
+ }
+
 a {
   text-decoration: none;
   color: #333;
@@ -81,6 +89,36 @@ a.linkstyle {
 .overall:hover .overlay {
   opacity: 1;
   transform: scale(1.2);
+}
+
+.navhover {
+  position: relative;
+  float: left;
+}
+
+.navhover:hover .navoverlay {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.navoverlay {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 110%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  pointer-events: none;
+  @media only screen and (max-width: 1000px) {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navoverlay {
+    top: 105%;
+  }
 }
 
 u.dotting {
