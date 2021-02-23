@@ -50,25 +50,54 @@ const Render = styled.img`
     margin-top: -59%;
     width: 36%;
   }
+  @media only screen and (max-width: 960px) {
+    margin-left: 33%;
+    margin-top: -62%;
+    width: 36%;
+  }
+  @media only screen and (max-width: 870px) {
+    margin-left: 33%;
+    margin-top: -64%;
+    width: 36%;
+  }
+  @media only screen and (max-width: 830px) {
+    margin-left: 35%;
+    margin-top: -65%;
+    width: 36%;
+  }
+  @media only screen and (max-width: 780px) {
+    margin-left: 36%;
+    margin-top: -67%;
+    width: 36%;
+  }
+`;
+
+const MobileRender = styled.img`
+  display: block;
+  margin-left: 30%;
+  margin-top: -45%;
+  width: 40%;
+  transition: all 0.5s ease;
+  :hover {
+    transform: scale(1.1) rotate(5deg);
+  }
 `;
 
 const MobileLogo = styled.img`
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  margin-top: 10%;
+  width: 160%;
 `;
 
 
 
 const MobileSubLogo = styled.img`
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 18%;
-  padding: 10px;
+  margin-left: 70%;
+  width: 65%;
+  padding: 8px;
   border: 6px solid #000000;
-  border-radius: 40px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 300ms ease;
   &:hover {
@@ -165,15 +194,15 @@ const MobileTitle = styled.h1`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 45px;
   border-right: solid 3px #000000;
   white-space: nowrap;
   overflow: hidden;
-  animation: animated-textmobile 3s steps(26) 1s 1 normal both,
+  animation: animated-textmobile 1.5s steps(23) 1s 1 normal both,
              animated-cursor 600ms steps(26) infinite;
   @keyframes animated-textmobile{
   from{width: 0;}
-  to{width: 306px;}
+  to{width: 390px;}
   }
   @keyframes animated-cursor{
     from{border-right-color: #000000;}
@@ -210,6 +239,73 @@ const WaitlistButton = styled.button`
       margin-left: 37%;
 
     }
+`;
+
+const MobileWaitlistButton = styled.button`
+  margin-left: 30%;
+  cursor: pointer;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  :hover {
+    box-shadow: inset 0 0 100px 100px #444d56;
+    transform: scale(1.15);
+  }
+`;
+
+//ugly workaround to move buttons closer; figure out how to wrap
+
+const NavButton1 = styled.img`
+  width: 40%;
+  margin-left: 100%;
+  cursor: pointer;
+  display: block;
+  border: 6px solid #000000;
+  box-shadow: 5px 5px #000000;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  :hover {
+    background: #CCCCCC;
+    transform: scale(1.2);
+    opacity: 0.45;
+  }
+  @media only screen and (max-width: 1200px) {
+    box-shadow: 3px 3px #000000;
+  }
+  @media only screen and (max-width: 1000px) {
+    box-shadow: 0px 0px;
+  }
+`;
+
+const NavButton2 = styled.img`
+  width: 40%;
+  margin-left: 62%;
+  cursor: pointer;
+  display: block;
+  border: 6px solid #000000;
+  box-shadow: 5px 5px #000000;
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  :hover {
+    background: #CCCCCC;
+    transform: scale(1.2);
+    opacity: 0.45;
+  }
+  @media only screen and (max-width: 1200px) {
+    box-shadow: 3px 3px #000000;
+  }
+  @media only screen and (max-width: 1000px) {
+    box-shadow: 0px 0px;
+  }
 `;
 
 const NavButton = styled.img`
@@ -272,7 +368,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={2.23}>
           <Link to="/home">
           <div class="navhover">
-            <NavButton src="/house.png"/>
+            <NavButton1 src="/house.png"/>
             <div class="navoverlay">
               <NavHover>plöt │ home</NavHover>
             </div>
@@ -282,7 +378,7 @@ const Header = ({ siteTitle }) => (
         <Col sm={2.23}>
           <Link to="/school">
           <div class="navhover">
-            <NavButton src="/school.png"/>
+            <NavButton2 src="/school.png"/>
             <div class="navoverlay">
               <NavHover>plöt │ school</NavHover>
             </div>
@@ -299,13 +395,6 @@ const Header = ({ siteTitle }) => (
             </div>
           </Link>
         </Col>
-
-
-
-
-
-
-
         <Col/>
       </Row>
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -318,13 +407,15 @@ const Header = ({ siteTitle }) => (
 
   <MobileHeader>
     <br/>
+    <Row>
+    <Col sm={1}/>
+    <Col sm={2}>
     <Link to="/">
       <MobileLogo src="/logo.png" />
     </Link>
-    <MobileTitle>plöt: the future of living.</MobileTitle>
-    <Link to="/form">
-    <WaitlistButton>join the waitlist</WaitlistButton></Link>
-    <br/><br/><br/><br/><br/>
+    </Col>
+    <Col sm={1.5}/>
+    <Col sm={2}>
     <Link to="/home">
       <div class="overall">
         <MobileSubLogo src="/house.png"/>
@@ -333,7 +424,8 @@ const Header = ({ siteTitle }) => (
           </div>
       </div>
     </Link>
-    <br/><br/><br/>
+    </Col>
+    <Col sm={2}>
     <Link to="/school">
       <div class="overall">
         <MobileSubLogo src="/school.png"/>
@@ -342,7 +434,8 @@ const Header = ({ siteTitle }) => (
           </div>
       </div>
     </Link>
-    <br/><br/><br/>
+    </Col>
+    <Col sm={2}>
     <Link to="/store">
       <div class="overall">
         <MobileSubLogo src="/store.png"/>
@@ -351,6 +444,14 @@ const Header = ({ siteTitle }) => (
           </div>
       </div>
     </Link>
+    </Col>
+  </Row>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/>
+    <MobileRender src="/render.png" />
+    <MobileTitle>welcome to plöt.</MobileTitle>
+    <Link to="/form">
+    <MobileWaitlistButton>join the waitlist</MobileWaitlistButton></Link>
   </MobileHeader>
 
   </Background>
