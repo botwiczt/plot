@@ -74,38 +74,18 @@ class NavBar extends Component {
   render () {
     return (
       <Menu width={ '100%' } noOverlay right >
-      <Row>
-      <Col sm={4}>
         <Link id="home" className="menu-item" to="/home">
-        <div class="newnavhover">
-          <MobileNavButton1 src="/house.png"/>
-          <div class="newnavoverlay">
-            <NavHover>plöt │ home</NavHover>
-          </div>
-        </div>
+          <MobileNavButton src="/house.png"/>
         </Link>
-        </Col>
-<Col sm={4}>
+        <MobileNavText>plöt │ home</MobileNavText>
         <Link id="home" className="menu-item" to="/school">
-        <div class="newnavhover">
           <MobileNavButton2 src="/school.png"/>
-          <div class="newnavoverlay">
-            <NavHover>plöt │ school</NavHover>
-          </div>
-        </div>
         </Link>
-        </Col>
-<Col sm={4}>
+        <MobileNavText>plöt │ school</MobileNavText>
         <Link id="home" className="menu-item" to="/store">
-          <div class="newnavhover">
-            <MobileNavButton src="/store.png"/>
-            <div class="newnavoverlay">
-              <NavHover>plöt │ store</NavHover>
-            </div>
-          </div>
+            <MobileNavButton3 src="/store.png"/>
         </Link>
-        </Col>
-        </Row>
+        <MobileNavText>plöt │ store</MobileNavText>
       </Menu>
     );
   }
@@ -466,65 +446,96 @@ const NavHover = styled.h1`
   }
 `;
 
-const MobileNavButton1 = styled.img`
-  width: 40%;
-  margin-left: 100%;
-  cursor: pointer;
-  display: block;
-  border: 6px solid #FFFFFF;
-  box-shadow: 5px 5px #FFFFFF;
-  padding: 10px;
-  border-radius: 30px;
-  transition: all 0.5s ease;
-  :hover {
-    background: #CCCCCC;
-    transform: scale(1.2);
-    opacity: 0.45;
+const MobileNavText = styled.h1`
+  color: #000000;
+  font-size: 22px;
+  text-align: center;
+  left-margin: auto;
+  right-margin: auto;
+  margin-top: 28%;
+  margin-bottom: 30%;
+  @media only screen and (max-width: 2000px) {
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 1600px) {
+    font-size: 20px;
   }
   @media only screen and (max-width: 1200px) {
-    box-shadow: 3px 3px #000000;
+    font-size: 19px;
   }
-  @media only screen and (max-width: 1000px) {
-    box-shadow: 0px 0px;
+  @media only screen and (max-width: 1024px) {
+    font-size: 16px;
   }
+  @media only screen and (max-width: 800px) {
+    white-space: nowrap;
+    font-size: 17px;
+  }
+`;
+
+const MobileNavButton3 = styled.img`
+display: table;
+position: absolute;
+margin-left: 35%;
+margin-top: -20%;
+width: 15vw;
+cursor: pointer;
+border: 6px solid #000000;
+box-shadow: 5px 5px #000000;
+padding: 10px;
+border-radius: 30px;
+transition: all 0.5s ease;
+:hover {
+  background: #8ECBC8;
+  transform: scale(1.2);
+  opacity: 0.45;
+}
+@media only screen and (max-width: 1200px) {
+  box-shadow: 3px 3px #000000;
+}
+@media only screen and (max-width: 1000px) {
+  box-shadow: 0px 0px;
+}
 `;
 
 const MobileNavButton2 = styled.img`
-  width: 40%;
-  margin-left: 62%;
-  cursor: pointer;
-  display: block;
-  border: 6px solid #FFFFFF;
-  box-shadow: 5px 5px #FFFFFF;
-  padding: 10px;
-  border-radius: 30px;
-  transition: all 0.5s ease;
-  :hover {
-    background: #CCCCCC;
-    transform: scale(1.2);
-    opacity: 0.45;
-  }
-  @media only screen and (max-width: 1200px) {
-    box-shadow: 3px 3px #000000;
-  }
-  @media only screen and (max-width: 1000px) {
-    box-shadow: 0px 0px;
-  }
+display: table;
+position: absolute;
+margin-left: 35%;
+margin-top: -20%;
+width: 15vw;
+cursor: pointer;
+border: 6px solid #000000;
+box-shadow: 5px 5px #000000;
+padding: 10px;
+border-radius: 30px;
+transition: all 0.5s ease;
+:hover {
+  background: #8ECBC8;
+  transform: scale(1.2);
+  opacity: 0.45;
+}
+@media only screen and (max-width: 1200px) {
+  box-shadow: 3px 3px #000000;
+}
+@media only screen and (max-width: 1000px) {
+  box-shadow: 0px 0px;
+}
 `;
 
 const MobileNavButton = styled.img`
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  display: table;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 15vw;
   cursor: pointer;
-  display: block;
-  border: 6px solid #FFFFFF;
-  box-shadow: 5px 5px #FFFFFF;
+  border: 6px solid #000000;
+  box-shadow: 5px 5px #000000;
   padding: 10px;
   border-radius: 30px;
   transition: all 0.5s ease;
   :hover {
-    background: #CCCCCC;
+    background: #8ECBC8;
     transform: scale(1.2);
     opacity: 0.45;
   }
@@ -638,7 +649,7 @@ const Header = ({ siteTitle }) => (
               <Logo src="/logo.png" />
             </Link>
             </Col>
-            <Col sm={5.4}/>
+            <Col sm={5.2}/>
             <Col sm={1.5}>
               <Link to="/home">
               <div class="navhover">
@@ -669,14 +680,13 @@ const Header = ({ siteTitle }) => (
                 </div>
               </Link>
             </Col>
-            <Col sm={0.1}/>
+            <Col sm={0.3}/>
           </Row>
           <MidRender src="/render.png" />
           <MidTitle>we're creating a utopia.</MidTitle>
           <MidSubTitle>welcome to plöt.</MidSubTitle>
           <Link to="/form">
           <MidWaitlistButton>join the waitlist</MidWaitlistButton></Link>
-
       </MidsizeHeader>
 
   <MobileHeader>
@@ -691,7 +701,6 @@ const Header = ({ siteTitle }) => (
     <Col sm={2}>
     <NavBar/>
     </Col>
-
     </Row>
     <MobileRender src="/render.png" />
     <MobileTitle>we're creating a utopia.</MobileTitle>

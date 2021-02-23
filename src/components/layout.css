@@ -111,23 +111,6 @@ a.linkstyle {
   pointer-events: none;
 }
 
-.newnavhover {
-  position: relative;
-}
-
-.newnavhover:hover .newnavoverlay {
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-.newnavoverlay {
-
-  text-align: center;
-  opacity: 0;
-  transition: .5s ease;
-  pointer-events: none;
-}
-
 @media only screen and (min-width: 1500px) {
   .navoverlay {
     margin-top: 75%;
