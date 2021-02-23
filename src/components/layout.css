@@ -93,7 +93,6 @@ a.linkstyle {
 
 .navhover {
   position: relative;
-  float: left;
 }
 
 .navhover:hover .navoverlay {
@@ -105,14 +104,11 @@ a.linkstyle {
   display: block;
   position: absolute;
   text-align: center;
-  top: 110%;
-  width: 100%;
+  margin-left: 5%;
+  margin-top: 80%;
   opacity: 0;
   transition: .5s ease;
   pointer-events: none;
-  @media only screen and (max-width: 1000px) {
-    top: 10%;
-  }
 }
 
 .newnavhover {
@@ -132,9 +128,9 @@ a.linkstyle {
   pointer-events: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 1500px) {
   .navoverlay {
-    top: 105%;
+    margin-top: 75%;
   }
 }
 
