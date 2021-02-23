@@ -8,9 +8,9 @@ const Logo = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  @media (min-width: 1200px) {
-   width: 30%;
+  width: 30%;
+  @media (max-width: 1200px) {
+   width: 50%;
   }
 `;
 
@@ -19,7 +19,6 @@ const ErrorContent = styled.p`
 `;
 
 const Button = styled.button`
-  width: auto;
   cursor: pointer;
   font-size: 20px;
   padding-top: 10px;
@@ -30,8 +29,11 @@ const Button = styled.button`
   color: white;
   border: none;
   border-radius: 10px;
+  transition: all 0.5s ease;
+
   :hover {
     box-shadow: inset 0 0 100px 100px #444d56;
+    transform: scale(1.15);
   }
   @media only screen and (max-width: 672px) {
       border-radius: 3px;
@@ -46,7 +48,7 @@ const NotFoundPage = () => (
     </Link>
     <ErrorContent>
     <h1>404: not found</h1>
-    <p>you just hit a route that does not exist.</p>
+    <p>this page does not exist.</p>
     <Link to="/"><Button>return home</Button></Link>
     </ErrorContent>
   </Layout>
