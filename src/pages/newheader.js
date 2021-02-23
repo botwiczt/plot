@@ -40,6 +40,16 @@ const Render = styled.img`
   :hover {
     transform: scale(1.1) rotate(5deg);
   }
+  @media only screen and (max-width: 1350px) {
+    margin-left: 58%;
+    margin-top: -33%;
+    width: 36%;
+  }
+  @media only screen and (max-width: 1050px) {
+    margin-left: 31%;
+    margin-top: -59%;
+    width: 36%;
+  }
 `;
 
 const MobileLogo = styled.img`
@@ -112,6 +122,14 @@ const Title = styled.h1`
   @media only screen and (max-width: 768px) {
     font-size: 33px;
   }
+  @media only screen and (max-width: 1350px) {
+    margin-left: 7%;
+    font-size: 43px;
+  }
+  @media only screen and (max-width: 1050px) {
+    margin-left: 25%;
+    margin-top: 12%;
+  }
 `;
 
 const SubTitle = styled.h1`
@@ -133,6 +151,13 @@ const SubTitle = styled.h1`
   }
   @media only screen and (max-width: 768px) {
     font-size: 33px;
+  }
+  @media only screen and (max-width: 1350px) {
+    margin-left: 6%;
+    margin-top: -2%;
+  }
+  @media only screen and (max-width: 1050px) {
+    margin-left: 22.5%;
   }
 `;
 
@@ -176,6 +201,14 @@ const WaitlistButton = styled.button`
   }
   @media only screen and (max-width: 672px) {
       border-radius: 3px;
+    }
+    @media only screen and (max-width: 1350px) {
+      margin-left: 17%;
+      margin-top: -1%;
+    }
+    @media only screen and (max-width: 1050px) {
+      margin-left: 37%;
+
     }
 `;
 
