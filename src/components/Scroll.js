@@ -29,6 +29,10 @@ const ArrowImage = styled.img`
 // fix scroll down arrow to be uninteractable when opacity = 0;
 // it is interactable now even though it is invisible.
 
+// FIX MOBILE SCROLL ARROW TO ACTUALLY WORK
+
+// TURN SCROLL ARROW FROM IMAGE INTO EMOJI.
+
 class Scroll extends Component {
   state = {
     opacity: '1'
