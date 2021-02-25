@@ -30,9 +30,7 @@
     "yup": "^0.26.6"
   },
   "keywords": [
-    "gatsby",
-    "portfolio",
-    "developer"
+    "gatsby"
   ],
   "license": "MIT",
   "scripts": {
@@ -60,9 +58,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:smakosh/gatsby-portfolio-dev.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   },
   "bugs": {
-    "url": "https://github.com/smakosh/gatsby-portfolio-dev/issues"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
