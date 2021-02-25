@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-https://plot.community.netlify.com/* https://plot.community/:splat 301!
