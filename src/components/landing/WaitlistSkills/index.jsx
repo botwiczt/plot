@@ -41,6 +41,7 @@ class RegisterComponent extends Component {
                 name="email"
                 placeholder="name@example.com"
                 value={this.state.email}
+                required
                 onChange={event =>
                   this.setState(
                     updateByPropertyName("email", event.target.value)
