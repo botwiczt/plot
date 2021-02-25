@@ -15,6 +15,10 @@ import { Dashboard } from './Dashboard';
 // FOOTER LOOKS WEIRD
 // SCROLL DOWN ARROW DOES NOT invert
 // SCROLL DOWN ARROW APPEARS IN SIDEBAR
+// READD TYPING
+// ADD BACK FADE IN
+// app icon is garbage
+// lack and togg;e arent centered on mobile
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
