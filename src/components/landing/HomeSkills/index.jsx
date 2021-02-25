@@ -6,7 +6,7 @@ import dev from 'assets/illustrations/skills.svg';
 import moving from 'assets/illustrations/moving.svg';
 import values from 'assets/illustrations/values.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail, ValueDetails} from './styles';
-import { Dashboard } from './dashboard';
+import { Dashboard } from './Dashboard';
 
 // IMPLEMENT DASHBOARD
 // LINE IN MATH DOES NOT INVERT IN DARK mode
