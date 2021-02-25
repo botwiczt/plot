@@ -8,33 +8,7 @@ import './navbar.css';
 // WE'RE LOOKING GOOD DOWN TO 600PX, THEN THINGS GO BAD
 
 const Background = styled.body`
-  background: linear-gradient(to right, #FFFFFF, #B2FEFA);
-   min-height: 100vh;
-   height: 100%;
-   @media (max-height: 610px) {
-    height: 130vh;
-   }
-   @media (max-height: 540px) {
-    height: 150vh;
-   }
-   @media (max-height: 470px) {
-    height: 170vh;
-   }
-   @media (max-height: 400px) {
-    height: 180vh;
-   }
-   @media (max-height: 380px) {
-    height: 190vh;
-   }
-   @media (max-height: 350px) {
-    height: 220vh;
-   }
-   @media (max-height: 305px) {
-    height: 250vh;
-  }
-  @media (max-height: 260px) {
-   height: 270vh;
-  }
+  
 `;
 
 const DesktopHeader = styled.body`
@@ -630,7 +604,7 @@ const Header = ({ siteTitle }) => (
       <Title>we're creating a utopia.</Title>
       <SubTitle>welcome to plöt.</SubTitle>
       <Link to="/form">
-      <WaitlistButton>join the waitlist</WaitlistButton></Link>
+      <WaitlistButton>join the waitlist →</WaitlistButton></Link>
       </Col>
       <Col sm={6}>
       <Render src="/render.png" />
@@ -686,7 +660,7 @@ const Header = ({ siteTitle }) => (
           <MidTitle>we're creating a utopia.</MidTitle>
           <MidSubTitle>welcome to plöt.</MidSubTitle>
           <Link to="/form">
-          <MidWaitlistButton>join the waitlist</MidWaitlistButton></Link>
+          <MidWaitlistButton>join the waitlist →</MidWaitlistButton></Link>
       </MidsizeHeader>
 
   <MobileHeader>
@@ -706,7 +680,7 @@ const Header = ({ siteTitle }) => (
     <MobileTitle>we're creating a utopia.</MobileTitle>
     <MobileSubTitle>welcome to plöt.</MobileSubTitle>
     <Link to="/form">
-    <MobileWaitlistButton>join the waitlist</MobileWaitlistButton></Link>
+    <MobileWaitlistButton>join the waitlist →</MobileWaitlistButton></Link>
   </MobileHeader>
 
   </Background>
