@@ -1,35 +1,57 @@
+const config = require('./src/data/config');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `plöt`,
-    description: `welcome home.`,
-    author: `Tomek Botwicz`,
+    title: config.defaultTitle,
+    description: config.defaultDescription,
+    author: config.author,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-nprogress',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        color: config.themeColor,
+        showSpinner: false,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-favicon',
       options: {
-        name: `plöt`,
-        short_name: `plöt`,
-        start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#000000`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        logo: './static/favicon/favicon-512.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false,
+        },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    //`gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: config.defaultTitle,
+        short_name: 'starter',
+        start_url: '/',
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'minimal-ui',
+        icon: './static/favicon/favicon-512.png',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
-}
+};
