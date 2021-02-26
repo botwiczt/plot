@@ -1,6 +1,5 @@
 export * from './Intro';
 export * from './Skills';
-export * from './Contact';
 export * from './HomeIntro';
 export * from './HomeSkills';
 export * from './SchoolIntro';
