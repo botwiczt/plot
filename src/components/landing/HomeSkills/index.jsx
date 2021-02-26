@@ -10,9 +10,9 @@ import { Dashboard } from './Dashboard';
 // scroll down arrow does not invert
 // scroll down arrow appears in sidebar
 // lock and toggle aren't centered on mobile
+// can click slightly beneath most images...
 // update react?
 
-// app icon on phone is glitchy
 // improve footer
 
 export const HomeSkills = () => {
