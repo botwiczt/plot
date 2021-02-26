@@ -29,7 +29,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop -o",
-    "reset": "rm -rf .cache/ public/",
+    "reset": "rm -rf .cache/ public/"
   },
   "repository": {
     "type": "git",
