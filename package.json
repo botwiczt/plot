@@ -1,8 +1,8 @@
 {
-  "name": "plot",
+  "name": "plöt",
   "private": true,
   "description": "the future of living",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Tomek <tomekbotwicz@pm.me>",
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -30,7 +30,6 @@
     "build": "gatsby build",
     "start": "gatsby develop -o",
     "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
     "type": "git",
