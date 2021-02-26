@@ -187,3 +187,12 @@ border-radius: 10px;
   box-shadow: inset 0 0 100px 100px #444d56;
 }
 `;
+
+export const MathLine = styled.div`
+  width: 70%;
+  border-top: 1px solid #fff;
+  @media (max-width: 960px) {
+    width: 90%;
+  }
+}
+`;

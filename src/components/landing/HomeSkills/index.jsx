@@ -1,20 +1,19 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details } from './styles';
+import { Wrapper, SkillsWrapper, Details, MathLine} from './styles';
 import { Dashboard } from './Dashboard';
 
-// IMPLEMENT DASHBOARD
-// LINE IN MATH DOES NOT INVERT IN DARK mode
-// REIMPLEMENT TYPING ON HEADER
-// X IN SIDEBAR DOES NOT invert
-// FOOTER LOOKS WEIRD
-// SCROLL DOWN ARROW DOES NOT invert
-// SCROLL DOWN ARROW APPEARS IN SIDEBAR
-// READD TYPING
-// ADD BACK FADE IN
-// app icon is garbage
-// lack and togg;e arent centered on mobile
+// ** IMPLEMENT DASHBOARD **
+// ** RE-ADD TYPING **
+// X in sidebar does not invert
+// scroll down arrow does not invert
+// scroll down arrow appears in sidebar
+// lock and toggle aren't centered on mobile
+// update react?
+
+// app icon on phone is glitchy
+// improve footer
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
@@ -29,7 +28,7 @@ export const HomeSkills = () => {
           &ensp;&ensp;$36,000   average US income<br/>
           <b>-</b> $24,000   yearly cost of plöt living
 
-          <hr width="70%"/>
+          <MathLine><hr/></MathLine>
           <font color="green">&ensp;&ensp;$12,000   discretionary money</font>
           <br/><br/>
           <b>&ensp;&ensp;more info coming soon...</b>
