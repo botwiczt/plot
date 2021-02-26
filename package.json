@@ -5,12 +5,10 @@
   "version": "0.1.2",
   "author": "Tomek <tomekbotwicz@pm.me>",
   "dependencies": {
-    "axios": "^0.21.1",
     "dotenv": "^6.2.0",
     "gatsby": "^2.17.7",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-canonical-urls": "^2.0.8",
-    "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-nprogress": "^2.0.7",
     "gatsby-plugin-offline": "^3.0.14",
@@ -36,10 +34,6 @@
     "start": "gatsby develop -o",
     "reset": "rm -rf .cache/ public/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
-    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
