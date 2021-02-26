@@ -1,5 +1,5 @@
 {
-  "name": "plöt",
+  "name": "plot",
   "private": true,
   "description": "the future of living",
   "version": "0.2.0",
@@ -29,7 +29,8 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop -o",
-    "reset": "rm -rf .cache/ public/"
+    "reset": "rm -rf .cache/ public/",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "repository": {
     "type": "git",
