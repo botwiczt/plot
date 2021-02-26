@@ -55,7 +55,7 @@ export const Details = styled.div`
   }
 
   @media (max-width: 680px) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -67,7 +67,10 @@ export const Privacy = styled.button`
   transition: 0.3s all;
   cursor: pointer;
   @media (max-width: 960px) {
-    text-align: right;
+    text-align: center;
+  }
+  @media (max-width: 680px) {
+    margin-bottom: 1rem;
   }
 
   img {

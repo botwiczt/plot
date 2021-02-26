@@ -1,16 +1,11 @@
-# dependency directories
+# dependencies
 node_modules/
 
-# npm cache directory
+# npm
 .npm
 package-lock.json
 
-# dotenv environment variables file
-.env
-.env.development
-.env.production
-
-# gatsby files
+# gatsby
 .cache/
 public
 
