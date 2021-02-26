@@ -4,12 +4,6 @@ export const Wrapper = styled.div`
 
 `;
 
-//AGAIN, removing background
-// background-image: url(${detailsIllustration});
-// background-size: contain;
-// background-position: left top;
-// background-repeat: no-repeat;
-
 export const SkillsWrapper = styled.div`
   padding: 4rem 0;
   display: flex;

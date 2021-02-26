@@ -1,13 +1,7 @@
-import React, { Component, useContext } from 'react';
-import { Link } from "gatsby";
+import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, Thumbnail} from './styles';
-import styled from 'styled-components';
-
-const updateByPropertyName = (propertyName, value) => () => ({
-  [propertyName]: value
-});
+import { Wrapper, SkillsWrapper, Details } from './styles';
 
 export const SubmittedSkills = () => {
   const { theme } = useContext(ThemeContext);
