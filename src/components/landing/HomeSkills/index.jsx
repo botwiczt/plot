@@ -1,11 +1,7 @@
 import React, { useContext } from 'react';
-import { Link } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/skills.svg';
-import moving from 'assets/illustrations/moving.svg';
-import values from 'assets/illustrations/values.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, ValueDetails} from './styles';
+import { Container } from 'components/common';
+import { Wrapper, SkillsWrapper, Details } from './styles';
 import { Dashboard } from './Dashboard';
 
 // IMPLEMENT DASHBOARD

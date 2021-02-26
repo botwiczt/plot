@@ -1,9 +1,7 @@
-import React, { Component, useContext } from 'react';
-import { Link } from "gatsby";
+import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, RegisterButton, Input} from './styles';
-import styled from 'styled-components';
+import { Wrapper, SkillsWrapper, Details } from './styles';
 
 export const ValuesSkills = () => {
   const { theme } = useContext(ThemeContext);

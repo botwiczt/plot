@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from "gatsby";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
+import { Container } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import moving from 'assets/illustrations/moving.svg';
 import values from 'assets/illustrations/values.svg';
@@ -30,7 +30,7 @@ export const Skills = () => {
       </Line>
       <SkillsWrapper as={Container}>
         <Thumbnail>
-          <img src={dev} alt="picture of woman walking through forest" />
+          <img src={dev} alt="person walking through forest" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>what is a plöt?</h1>
@@ -52,12 +52,12 @@ export const Skills = () => {
           </p>
         </Details>
         <Thumbnail>
-          <img src={moving} alt="picture of man with briefcase moving in" />
+          <img src={moving} alt="person with briefcase moving in" />
         </Thumbnail>
       </SkillsWrapper>
       <SkillsWrapper as={Container}>
       <Thumbnail>
-        <img src={values} alt="picture of checklist indicating values" />
+        <img src={values} alt="checklist indicating values" />
       </Thumbnail>
         <ValueDetails theme={theme}>
           <h1>our values.</h1>

@@ -50,7 +50,6 @@ export class Scroll extends Component {
     if (typeof window !== "undefined") {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset;
-        let maxScroll = document.body.scrollHeight - window.innerHeight;
         if (currentScrollPos > 0 ) {
           this.setState({ opacity: "0" })
         } else {

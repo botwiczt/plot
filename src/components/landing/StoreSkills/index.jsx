@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Button } from 'components/common';
+import { Container } from 'components/common';
 import recycle from 'assets/illustrations/recycle.svg';
 import cow from 'assets/illustrations/cow.svg';
 import sticker from 'assets/illustrations/sticker.svg';
-import { Wrapper, SkillsWrapper, MoreSkillsWrapper, Details, Thumbnail, ValueDetails} from './styles';
+import { Wrapper, SkillsWrapper, MoreSkillsWrapper, Details, Thumbnail } from './styles';
 
 export const StoreSkills = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,18 +15,18 @@ export const StoreSkills = () => {
       <SkillsWrapper as={Container}>
         <Details theme={theme}>
         <Thumbnail theme={theme}>
-          <img src={recycle} alt="picture of woman walking through forest" />
+          <img src={recycle} alt="bag filled with package free goods" />
         </Thumbnail>
           <h1>minimal packaging</h1>
           <p>
-          the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><b>learn more</b><br/><a class="linkstyle" href="/reUSE" target="_blank" rel="noreferrer"><span aria-label="arrow towards the right" role="img">
+          the <div class="tooltip"><u class="dotting">reUSE system</u><span class="tooltiptext"><b>learn more</b><br/><a class="linkstyle" href="/reUSE" rel="noreferrer"><span aria-label="arrow towards the right" role="img">
             →
           </span> </a></span></div>, homemade essentials, and bulk bins. no packaging means no waste!
           </p>
         </Details>
         <Details theme={theme}>
         <Thumbnail theme={theme}>
-          <img src={cow} alt="picture of woman walking through forest" />
+          <img src={cow} alt="cartoon cow" />
         </Thumbnail>
           <h1>cruelty free</h1>
           <p>
@@ -35,7 +35,7 @@ export const StoreSkills = () => {
         </Details>
         <Details theme={theme}>
         <Thumbnail theme={theme}>
-          <img src={sticker} alt="picture of woman walking through forest" />
+          <img src={sticker} alt="produce sticker" />
         </Thumbnail>
           <h1>produce stickers: nope!</h1>
           <p>

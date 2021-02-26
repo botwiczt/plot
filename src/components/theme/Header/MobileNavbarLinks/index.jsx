@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Link } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, Brand} from './styles';
+import { Wrapper } from './styles';
 import house from 'assets/illustrations/house.png';
 import school from 'assets/illustrations/school.png';
 import store from 'assets/illustrations/store.png';

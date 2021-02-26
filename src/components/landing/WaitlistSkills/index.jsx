@@ -1,9 +1,8 @@
 import React, { Component, useContext } from 'react';
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, RegisterButton, Input} from './styles';
-import styled from 'styled-components';
+import { Wrapper, SkillsWrapper, Details, RegisterButton, Input} from './styles';
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value

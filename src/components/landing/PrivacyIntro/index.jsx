@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { WaitlistHeader } from 'components/theme';
-import { Container, Button } from 'components/common';
+import { Container } from 'components/common';
 import logo from 'assets/illustrations/logo.svg';
-import { Wrapper, IntroWrapper, Thumbnail, ButtonGrow} from './styles';
+import { Wrapper, IntroWrapper, Thumbnail } from './styles';
 
 // FIX: welcome to plot typing text is buggy mess
 

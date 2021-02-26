@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Link } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, Brand} from './styles';
+import { Wrapper } from './styles';
 import back from 'assets/illustrations/leftarrow.svg';
 import styled from "styled-components";
 

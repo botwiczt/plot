@@ -24,7 +24,7 @@ export const Intro = () => {
           </Button></ButtonGrow>
         </Details>
         <Thumbnail>
-          <img src={render} alt="image of plöt house" />
+          <img src={render} alt="plöt house" />
         </Thumbnail>
         <Scroll/>
       </IntroWrapper>

@@ -5,7 +5,6 @@ import { Wrapper, Flex, Links, Details, Privacy } from './styles';
 import ToggleTheme from 'components/theme/Header/ToggleTheme';
 import { ThemeContext } from 'providers/ThemeProvider';
 import social from './social.json';
-import styled from 'styled-components';
 import lock from 'assets/illustrations/lock.svg';
 
 export const Footer = () => {
