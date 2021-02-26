@@ -43,9 +43,6 @@ typings/
 .npm
 package-lock.json
 
-# Optional eslint cache
-.eslintcache
-
 # Optional REPL history
 .node_repl_history
 

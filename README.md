@@ -1,5 +1,4 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8be27d1b-dcaa-4154-9cab-e7598013b9fb/deploy-status)](https://app.netlify.com/sites/plot/deploys)
 
-Eslint/Prettier configured
 Scores 100% on a11y / Performance / PWA / SEO
 PWA (desktop & mobile)
