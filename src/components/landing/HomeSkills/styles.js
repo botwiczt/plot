@@ -47,9 +47,7 @@ export const Details = styled.div`
     font-size: 2rem;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+
   }
 
   p {
@@ -57,11 +55,9 @@ export const Details = styled.div`
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 2.2;
-    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#000')};
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+
   }
   u.dotting {
   border-bottom: 1px dotted;
@@ -116,7 +112,7 @@ background: rgba(0, 0, 0, 0.6);
 
 export const ModalStyleMain = styled.div`
 position:fixed;
-background: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
+background: white;
 width: auto;
 padding-left: 60px;
 padding-right: 60px;
@@ -180,6 +176,18 @@ border-radius: 10px;
 :hover {
   box-shadow: inset 0 0 100px 100px #444d56;
 }
+`;
+
+export const TitleColor = styled.h2`
+color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+`;
+
+export const TextColor = styled.h3`
+color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+margin-bottom: 2rem;
+font-size: 1.5rem;
+font-weight: normal;
+line-height: 2.2;
 `;
 
 export const MathLine = styled.div`

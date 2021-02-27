@@ -4,14 +4,16 @@ import { Container } from 'components/common';
 import { Wrapper, SkillsWrapper, Details, MathLine} from './styles';
 import { Dashboard } from './Dashboard';
 
+// BUGS
+// fix dashboard appearance on dark mode
 // scroll down arrow does not invert
 // can click slightly beneath most images...
-// update react?
 
+// IMPROVEMENTS
 // improve footer
-// fix dashboard appearance on dark mode
 // increase size of lock and toggle
 // add back cursor to typing text
+// update react?
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
