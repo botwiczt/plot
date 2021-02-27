@@ -12,8 +12,7 @@ import styled from "styled-components";
 const NavButton = styled.img`
   text-align: center;
   width: 12vw;
-  -webkit-filter: invert(1);
-  filter: invert(1);
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(0)' : 'invert(1)')};
   margin-top: 20%;
   cursor: pointer;
   border: 6px solid #000000;
