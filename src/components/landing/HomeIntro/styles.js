@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +19,6 @@ export const Details = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-bottom: 2rem;
   }
 
   h4 {

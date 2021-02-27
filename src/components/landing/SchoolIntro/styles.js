@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 1rem;
 `;
 
 export const IntroWrapper = styled.div`
@@ -16,11 +15,6 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
 
   h4 {
     margin-bottom: 2.5rem;
@@ -43,10 +37,6 @@ export const Details = styled.div`
 export const Thumbnail = styled.div`
   flex: 1;
   transition: all 0.5s ease;
-  @media (max-width: 960px) {
-    margin-left: 1rem;
-  }
-
   img {
     width: 100%;
   }

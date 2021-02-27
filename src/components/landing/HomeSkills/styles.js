@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
 `;
 
 export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,6 +35,7 @@ border-radius: 10px;
 export const Details = styled.div`
   flex: 1;
   padding-left: 2rem;
+  text-align: center;
 
   @media (max-width: 960px) {
     padding-left: unset;
@@ -44,7 +44,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 26pt;
+    font-size: 2rem;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
 
     @media (max-width: 960px) {
@@ -53,8 +53,8 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     line-height: 2.2;
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#000')};
@@ -190,6 +190,8 @@ border-radius: 10px;
 
 export const MathLine = styled.div`
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 1px solid #fff;
   @media (max-width: 960px) {
     width: 90%;

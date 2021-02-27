@@ -22,8 +22,8 @@ export const HomeSkills = () => {
         <Details theme={theme}>
           <h1>save money, save the planet.</h1>
           <p>
-          &ensp;&ensp;$36,000   average US income<br/>
-          <b>-</b> $24,000   yearly cost of plöt living <Dashboard/>
+          $36,000   average US income<br/>
+          <b>-</b>&ensp;&ensp;&ensp;&ensp;&ensp; $24,000   yearly cost of plöt living <Dashboard/>
           <MathLine><hr/></MathLine>
           <font color="green">&ensp;&ensp;$12,000   discretionary money</font>
           <br/><br/>
