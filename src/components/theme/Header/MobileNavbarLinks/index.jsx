@@ -12,7 +12,7 @@ import styled from "styled-components";
 const NavButton = styled.img`
   text-align: center;
   width: 12vw;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(0)' : 'invert(1)')};
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   margin-top: 20%;
   cursor: pointer;
   border: 6px solid #000000;
@@ -30,9 +30,6 @@ const NavButton = styled.img`
   }
   @media only screen and (max-width: 1000px) {
     box-shadow: 0px 0px;
-  }
-  @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
   }
   @media (max-width: 600px) {
     width: 20vw;
@@ -66,15 +63,15 @@ const NavbarLinks = ({ desktop }) => {
     <Wrapper desktop={desktop} theme={theme}>
 
     <Link to="/home" theme={theme}>
-            <NavButton src={house}/>
+            <NavButton theme={theme} src={house}/>
               <NavHover theme={theme}>plöt │ home</NavHover>
           </Link>
     <Link to="/school" theme={theme}>
-            <NavButton  src={school}/>
+            <NavButton theme={theme} src={school}/>
               <NavHover theme={theme}>plöt │ school</NavHover>
           </Link>
     <Link to="/store" theme={theme}>
-            <NavButton src={store}/>
+            <NavButton theme={theme} src={store}/>
               <NavHover theme={theme}>plöt │ store</NavHover>
           </Link>
     </Wrapper>
