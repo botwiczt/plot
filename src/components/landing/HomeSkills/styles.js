@@ -16,12 +16,12 @@ export const SkillsWrapper = styled.div`
 `;
 
 export const OpenButton = styled.div`
-display: table;
+display: inline;
 text-align: center;
 cursor: pointer;
-font-size: 12px;
-padding-top: 5px;
-padding-bottom: 5px;
+font-size: 1rem;
+padding-top: 10px;
+padding-bottom: 10px;
 padding-left: 15px;
 padding-right: 15px;
 background: black;

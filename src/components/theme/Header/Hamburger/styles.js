@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  z-index: 5;
+  z-index: 998;
   top: 1.6rem;
   right: 1.8rem;
   display: none;
@@ -34,12 +34,12 @@ export const Bar = styled.div`
 	width: 1.6rem;
 	height: .15rem;
 	margin-bottom: .3rem;
-	background-color: #212121;
+  z-index: 999;
 	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
 	opacity 500ms,
 	box-shadow 250ms,
 	background-color 500ms;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
+  background-color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')} !important;
 
 	@media (max-width: 600px){
 		width: 1.6rem;

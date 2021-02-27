@@ -1,5 +1,6 @@
 import React from "react";
 import { ModalStyle, ModalStyleMain, CloseButton } from './styles';
+import "./modal.css";
 
 export const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "ModalStyle display-block" : "ModalStyle display-none";

@@ -36,7 +36,7 @@ export const Details = styled.div`
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-  {/*border-right: solid 3px #000000;*/}
+  border-right: solid 3px #000000;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
@@ -46,7 +46,6 @@ export const Details = styled.div`
     @media (max-width: 680px) {
       font-size: 30pt;
     }
-{/*
   animation: animated-text 1.5s steps(29) 1s 1 normal both,
   animated-cursor 600ms steps(29) infinite;
 
@@ -58,7 +57,7 @@ export const Details = styled.div`
   @keyframes animated-cursor{
     from{border-right-color: #000000;}
     to{border-right-color: transparent;}
-  }*/}
+  }
   }
 
   h1 {
@@ -106,4 +105,29 @@ margin-right: auto;
   box-shadow: inset 0 0 100px 100px #444d56;
   transform: scale(1.15);
 }
+`;
+
+export const ArrowImage = styled.img`
+  margin-left: auto;
+  margin-right: auto;
+  width: 6%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 47%;
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
+  animation: 1s Zoom linear infinite,
+  1s Always ease alternate infinite;
+  }
+  @keyframes Zoom {
+      100% { background-position: 100vw 0px; }
+  }
+
+  @keyframes Always {
+      100% { transform: scale(1.2);}
+  }
+  @media only screen and (max-width: 768px) {
+    left: 44%;
+    width: 12%;
+  }
 `;

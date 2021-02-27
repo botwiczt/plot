@@ -4,15 +4,14 @@ import { Container } from 'components/common';
 import { Wrapper, SkillsWrapper, Details, MathLine} from './styles';
 import { Dashboard } from './Dashboard';
 
-// ** IMPLEMENT DASHBOARD **
 // ** RE-ADD TYPING **
-// X in sidebar does not invert
+
 // scroll down arrow does not invert
-// scroll down arrow appears in sidebar
 // can click slightly beneath most images...
 // update react?
 
 // improve footer
+// work on dashboard appearance
 // increase size of lock and toggle
 
 export const HomeSkills = () => {
@@ -20,14 +19,12 @@ export const HomeSkills = () => {
 
   return (
     <Wrapper id="about">
-    {/*<Dashboard/>*/}
       <SkillsWrapper as={Container}>
         <Details theme={theme}>
           <h1>save money, save the planet.</h1>
           <p>
           &ensp;&ensp;$36,000   average US income<br/>
-          <b>-</b> $24,000   yearly cost of plöt living
-
+          <b>-</b> $24,000   yearly cost of plöt living <Dashboard/>
           <MathLine><hr/></MathLine>
           <font color="green">&ensp;&ensp;$12,000   discretionary money</font>
           <br/><br/>
