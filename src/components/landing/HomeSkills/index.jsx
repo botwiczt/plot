@@ -4,8 +4,6 @@ import { Container } from 'components/common';
 import { Wrapper, SkillsWrapper, Details, MathLine} from './styles';
 import { Dashboard } from './Dashboard';
 
-// ** RE-ADD TYPING **
-
 // scroll down arrow does not invert
 // can click slightly beneath most images...
 // update react?
@@ -13,6 +11,7 @@ import { Dashboard } from './Dashboard';
 // improve footer
 // work on dashboard appearance
 // increase size of lock and toggle
+// add back cursor to typing text
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);

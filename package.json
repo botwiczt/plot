@@ -19,6 +19,7 @@
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
+    "react-typed": "^1.2.0",
     "styled-components": "^5.2.1"
   },
   "keywords": [

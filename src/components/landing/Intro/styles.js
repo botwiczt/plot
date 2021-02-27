@@ -36,7 +36,6 @@ export const Details = styled.div`
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-  border-right: solid 3px #000000;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
@@ -46,18 +45,6 @@ export const Details = styled.div`
     @media (max-width: 680px) {
       font-size: 30pt;
     }
-  animation: animated-text 1.5s steps(29) 1s 1 normal both,
-  animated-cursor 600ms steps(29) infinite;
-
-  @keyframes animated-text{
-  from{width: 0%;}
-  to{width: 100%;}
-  text-align: center;
-  }
-  @keyframes animated-cursor{
-    from{border-right-color: #000000;}
-    to{border-right-color: transparent;}
-  }
   }
 
   h1 {
