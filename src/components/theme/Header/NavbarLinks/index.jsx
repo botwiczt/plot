@@ -4,20 +4,23 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper } from './styles';
 import './navbar.css';
-import house from 'assets/illustrations/house.png';
-import school from 'assets/illustrations/school.png';
-import store from 'assets/illustrations/store.png';
+import house from 'assets/illustrations/homeicon.svg';
+import school from 'assets/illustrations/schoolicon.svg';
+import store from 'assets/illustrations/storeicon.svg';
 import styled from "styled-components";
 
 // FIX navbuttons: can active hover when slightly under button
 
 const NavButton = styled.img`
   text-align: center;
-  width: 6.5vw;
+  width: 5.5vw;
   cursor: pointer;
   border: 6px solid #000000;
   box-shadow: 5px 5px #000000;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 30px;
   transition: all 0.5s ease;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};

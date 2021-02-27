@@ -59,10 +59,9 @@ export const Details = styled.div`
   }
 `;
 
-export const Privacy = styled.button`
+export const Privacy = styled.div`
   background: none;
   border: none;
-  width: 100%;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   transition: 0.3s all;
   cursor: pointer;
@@ -70,7 +69,7 @@ export const Privacy = styled.button`
     text-align: center;
   }
   @media (max-width: 680px) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   img {

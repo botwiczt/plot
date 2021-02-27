@@ -15,7 +15,6 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #fff;
   transition: all 0.5s ease;
   background: ${({ theme }) => (theme === 'dark' ? '#FFF' : '#000')};
   color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};

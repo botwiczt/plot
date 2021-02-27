@@ -9,11 +9,11 @@ import { Dashboard } from './Dashboard';
 // X in sidebar does not invert
 // scroll down arrow does not invert
 // scroll down arrow appears in sidebar
-// lock and toggle aren't centered on mobile
 // can click slightly beneath most images...
 // update react?
 
 // improve footer
+// increase size of lock and toggle
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
