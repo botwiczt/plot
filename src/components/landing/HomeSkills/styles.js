@@ -23,12 +23,12 @@ padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 15px;
 padding-right: 15px;
-background: black;
-color: white;
+background: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
 border: none;
 border-radius: 10px;
 :hover {
-  box-shadow: inset 0 0 100px 100px #444d56;
+  box-shadow: ${({ theme }) => (theme === 'dark' ? 'inset 0 0 100px 100px #444d56' : 'inset 0 0 100px 100px #444d56')};
 }
 `;
 
@@ -45,7 +45,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -116,7 +116,7 @@ background: rgba(0, 0, 0, 0.6);
 
 export const ModalStyleMain = styled.div`
 position:fixed;
-background: white;
+background: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
 width: auto;
 padding-left: 60px;
 padding-right: 60px;
@@ -133,7 +133,11 @@ border-radius: 40px;
 text-align:left;
 transform: translate(-50%,-50%);
 animation-name: animatetop;
-animation-duration: 1s
+animation-duration: 1s;
+@keyframes animatetop {
+  from {top:-30%; opacity:0}
+  to {top:50%; opacity:1}
+}
 @media screen and (max-width: 768px) {
     font-size:15px;
     width: 300px;
@@ -157,30 +161,20 @@ animation-duration: 1s
     width: 150px;
   }
 }
-.display-block {
-  display: block;
-}
-.display-none {
-  display: none;
-  @keyframes animatetop {
-    from {top:-30%; opacity:0}
-    to {top:50%; opacity:1}
-  }
-}
 `;
 
-export const CloseButton = styled.h1`
+export const CloseButton = styled.h2`
 display: table;
 position: absolute;
 text-align: center;
 cursor: pointer;
-font-size: 17px;
+font-size: 1.5rem;
 padding-top: 5px;
 padding-bottom: 5px;
 padding-left: 15px;
 padding-right: 15px;
-background: black;
-color: white;
+background: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
 border: none;
 border-radius: 10px;
 :hover {
@@ -189,7 +183,7 @@ border-radius: 10px;
 `;
 
 export const MathLine = styled.div`
-  width: 70%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   border-top: 1px solid #fff;

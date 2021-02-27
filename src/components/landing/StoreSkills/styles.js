@@ -38,7 +38,7 @@ export const Details = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 26pt;
+    font-size: 2rem;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
     @media (max-width: 960px) {
@@ -47,8 +47,8 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2.5rem;
-    font-size: 20pt;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     line-height: 1.75;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
@@ -104,7 +104,7 @@ export const Thumbnail = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   img {

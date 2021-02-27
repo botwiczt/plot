@@ -9,7 +9,7 @@ import { Dashboard } from './Dashboard';
 // update react?
 
 // improve footer
-// work on dashboard appearance
+// fix dashboard appearance on dark mode
 // increase size of lock and toggle
 // add back cursor to typing text
 
