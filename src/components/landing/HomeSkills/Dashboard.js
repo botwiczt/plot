@@ -26,7 +26,7 @@ export class Dashboard extends Component {
           <TitleColor><br/>
           <b>base package includes:</b>
           <br/><TextColor>
-           your own plöt home<br/>
+          <span role="img" aria-label="bed emoji">🛏</span>️ your own plöt home<br/>
           <span role="img" aria-label="water emoji">🚰</span>️ crisp, clean water<br/>
           <span role="img" aria-label="power emoji">🔌</span>️ solar-generated power<br/>
           <span role="img" aria-label="sun emoji">☀️</span>️ fossil-free heating<br/>
