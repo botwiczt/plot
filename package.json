@@ -2,7 +2,7 @@
   "name": "plot",
   "private": true,
   "description": "the future of living",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Tomek Botwicz <tomekbotwicz@pm.me>",
   "dependencies": {
     "gatsby": "^3.0.1",
