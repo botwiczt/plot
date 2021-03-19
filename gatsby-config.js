@@ -30,6 +30,7 @@ module.exports = {
         start_url: '/',
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
+        background_color: '#FFF',
         display: 'minimal-ui',
         icon: './static/favicon/favicon-512.png',
       },
