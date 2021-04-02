@@ -4,12 +4,6 @@ export const Wrapper = styled.div`
 
 `;
 
-//AGAIN, removing background
-// background-image: url(${detailsIllustration});
-// background-size: contain;
-// background-position: left top;
-// background-repeat: no-repeat;
-
 export const SkillsWrapper = styled.div`
   padding: 4rem 0;
   display: flex;
@@ -25,76 +19,80 @@ export const Details = styled.div`
   flex: 1;
   padding-left: 2rem;
   text-align: center;
+  background: ${({ theme }) => (theme === 'dark' ? '#4C4C4C' : '#E9F0FC')};
+  border-radius: 10px;
+  border: 10px solid;
+  padding: 1rem 2.5rem;
+  margin: 1rem;
 
   @media (max-width: 960px) {
     padding-left: unset;
-    width: 100%;
+    width: 80%;
+    padding: 1rem 1rem;
   }
 
   h1 {
-    margin-bottom: 1rem;
-    font-size: 30pt;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 35px;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
   }
 
   p {
-    margin-bottom: 1rem;
-    font-size: 15pt;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 2;
+    line-height: 1.75;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
   }
+  u.dotting {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #444d56;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.85;
+  transform: scale(1.1);
+}
 `;
 
 export const Thumbnail = styled.div`
   flex: 1;
   text-align: center;
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
 
   @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
     width: 60%;
   }
-`;
-
-export const RegisterButton = styled.button`
-  width: auto;
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  :hover {
-    box-shadow: inset 0 0 100px 100px #444d56;
-  }
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
-    }
-`;
-
-export const Input = styled.input`
-  font-size: 1.5rem;
-  padding: 10px;
-  background: #DCDCDC;
-  border: none;
-  border-radius: 10px 0 0 10px;
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
-    }
 `;

@@ -177,7 +177,21 @@ export const Thumbnail = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  img {
     width: 100%;
+  }
+`;
+
+export const ThumbnailWind = styled.div`
+  flex: 1;
+  margin-left: 2rem;
+
+  @media (max-width: 960px) {
+    width: 80%;
     margin-bottom: 1rem;
   }
 

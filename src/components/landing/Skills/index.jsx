@@ -6,9 +6,10 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import moving from 'assets/illustrations/moving.svg';
+import wind from 'assets/illustrations/wind.svg';
 import values from 'assets/illustrations/values.svg';
 import line from 'assets/illustrations/line.png';
-import { Wrapper, SkillsWrapper, HeaderDetails, Line, Details, Thumbnail, ValueDetails} from './styles';
+import { Wrapper, SkillsWrapper, HeaderDetails, Line, Details, Thumbnail, ThumbnailWind, ValueDetails} from './styles';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -42,7 +43,25 @@ export const Skills = () => {
           </p></Fade>
         </Details>
       </SkillsWrapper>
+
       <SkillsWrapper as={Container}>
+        <Details theme={theme}>
+          <Fade><h1>what are we reforming?</h1>
+          <p>
+          the underlying <div class="tooltip"><u class="dotting">economic + political systems</u><span class="tooltiptext"><b>what are these like?</b><br/>find out more on the values page below.</span></div> provide us with a solid foundation upon which to build our utopia. we've tinkered with nearly every element of modern life.
+              <br/><br/>
+              fundamentally, we are dedicated to preserving <b>human & animal rights</b>, standing for <b>equality & community</b>, and protecting <b>our common home</b>.
+          </p></Fade>
+        </Details>
+        <ThumbnailWind>
+          <Fade><img src={wind} alt="person walking by wind turbines" /></Fade>
+        </ThumbnailWind>
+      </SkillsWrapper>
+
+      <SkillsWrapper as={Container}>
+        <Thumbnail>
+          <Fade><img src={moving} alt="person with briefcase moving in" /></Fade>
+        </Thumbnail>
         <Details theme={theme}>
         <Fade><h1>how does it work?</h1>
         <p>
@@ -52,9 +71,6 @@ export const Skills = () => {
                 <br/><br/>we're currently in the process of designing our first plöt. {/*in the state of <b> maine</b>.*/}
           </p></Fade>
         </Details>
-        <Thumbnail>
-          <Fade><img src={moving} alt="person with briefcase moving in" /></Fade>
-        </Thumbnail>
       </SkillsWrapper>
       <SkillsWrapper as={Container}>
       <Thumbnail>

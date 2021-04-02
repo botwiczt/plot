@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 `;
 
 // remove code below to get rid of overlay from background for now
@@ -73,7 +73,7 @@ export const Thumbnail = styled.div`
   }
 
   @media (max-width: 960px) {
-    width: 80%;
+    width: 95%;
     margin-left: 1rem;
   }
 

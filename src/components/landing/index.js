@@ -13,3 +13,5 @@ export * from './ValuesIntro';
 export * from './ValuesSkills';
 export * from './PrivacyIntro';
 export * from './PrivacySkills';
+export * from './ReuseIntro';
+export * from './ReuseSkills';
