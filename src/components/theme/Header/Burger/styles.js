@@ -54,15 +54,7 @@ export const Bar = styled.div`
 		transform: translateY(8px) rotate(-135deg);
 
 	`}
-
-	${({ mid, sidebar }) =>
-    mid &&
-    sidebar &&
-		`
-		transform: scale(0);
-    filter: ${({ theme }) => (theme === 'dark' ? 'invert(0)' : 'invert(1)')};
-		`}
-
+  
 	${({ bottom, sidebar, theme }) =>
     bottom &&
     sidebar &&

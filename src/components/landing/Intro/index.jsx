@@ -9,8 +9,6 @@ import { Wrapper, IntroWrapper, Details, Thumbnail, ButtonGrow} from './styles';
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 

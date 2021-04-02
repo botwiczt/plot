@@ -5,8 +5,6 @@ import { Container } from 'components/common';
 import forest from 'assets/illustrations/forest.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const HomeIntro = () => {
   const { theme } = useContext(ThemeContext);
 
