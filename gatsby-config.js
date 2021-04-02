@@ -28,7 +28,6 @@ module.exports = {
         name: config.defaultTitle,
         short_name: 'plöt',
         start_url: '/',
-        background_color: config.backgroundColor,
         theme_color: config.themeColor,
         background_color: '#FFF',
         display: 'minimal-ui',

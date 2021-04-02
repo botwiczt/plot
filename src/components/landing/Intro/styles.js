@@ -4,12 +4,6 @@ export const Wrapper = styled.div`
   padding-bottom: 5rem;
 `;
 
-// remove code below to get rid of overlay from background for now
-// background-image: url(${overlayIllustration});
-// background-size: contain;
-// background-position: right top;
-// background-repeat: no-repeat;
-
 export const IntroWrapper = styled.div`
   padding: 4rem 0;
   display: flex;

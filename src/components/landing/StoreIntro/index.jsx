@@ -5,8 +5,6 @@ import { Container } from 'components/common';
 import store from 'assets/illustrations/store.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const StoreIntro = () => {
   const { theme } = useContext(ThemeContext);
 

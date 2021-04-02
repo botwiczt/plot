@@ -6,8 +6,6 @@ import line from 'assets/illustrations/line.svg';
 import lineright from 'assets/illustrations/lineright.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail, Thumbnail2, Line, LineRight } from './styles';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const ValuesIntro = () => {
   const { theme } = useContext(ThemeContext);
 

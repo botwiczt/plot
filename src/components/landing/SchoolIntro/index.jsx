@@ -5,8 +5,6 @@ import { Container } from 'components/common';
 import school from 'assets/illustrations/school.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const SchoolIntro = () => {
   const { theme } = useContext(ThemeContext);
 

@@ -11,13 +11,6 @@ bottom:0;
 transition: opacity 0.5s ease;
 `;
 
-// TODO:
-// fix scroll down arrow to be uninteractable when opacity = 0;
-// it is interactable now even though it is invisible.
-
-// TURN SCROLL ARROW FROM IMAGE INTO EMOJI.
-
-
 export const Scroll = () => {
   const { theme } = useContext(ThemeContext);
 

@@ -1,4 +1,3 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -6,12 +5,6 @@ export const Wrapper = styled.div`
     padding: 0 0 5rem;
   }
 `;
-
-//remove background again
-//background-image: url(${footerIllustration});
-//background-size: cover;
-//background-position: top;
-//background-repeat: no-repeat;
 
 export const Flex = styled.div`
   display: flex;

@@ -5,8 +5,6 @@ import { Wrapper } from './styles';
 import back from 'assets/illustrations/leftarrow.svg';
 import styled from "styled-components";
 
-// FIX navbuttons: can active hover when slightly under button
-
 const NavButton = styled.img`
   text-align: center;
   width: 10vw;

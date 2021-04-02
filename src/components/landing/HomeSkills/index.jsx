@@ -15,6 +15,11 @@ import { Dashboard } from './Dashboard';
 // add back cursor to typing text
 // update react?
 
+// fix scroll down arrow to be uninteractable when opacity = 0;
+// it is interactable now even though it is invisible.
+
+// FIX navbuttons: can active hover when slightly under button
+
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
 

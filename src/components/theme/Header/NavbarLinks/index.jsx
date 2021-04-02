@@ -9,8 +9,6 @@ import school from 'assets/illustrations/schoolicon.svg';
 import store from 'assets/illustrations/storeicon.svg';
 import styled from "styled-components";
 
-// FIX navbuttons: can active hover when slightly under button
-
 const NavButton = styled.img`
   text-align: center;
   width: 5.5vw;

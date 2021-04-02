@@ -5,8 +5,6 @@ import { Container } from 'components/common';
 import logo from 'assets/illustrations/logo.svg';
 import { Wrapper, IntroWrapper, Thumbnail } from './styles';
 
-// FIX: welcome to plot typing text is buggy mess
-
 export const PrivacyIntro = () => {
   const { theme } = useContext(ThemeContext);
 
