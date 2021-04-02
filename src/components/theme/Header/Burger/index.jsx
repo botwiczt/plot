@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper, Bar } from './styles';
 
-const Hamburger = ({ sidebar, toggle }) => {
+const Burger = ({ sidebar, toggle }) => {
 
   const { theme } = useContext(ThemeContext);
 
@@ -14,4 +14,4 @@ const Hamburger = ({ sidebar, toggle }) => {
   )
 };
 
-export default Hamburger;
+export default Burger;
