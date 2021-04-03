@@ -16,16 +16,14 @@ export const Wrapper = styled.div`
   ${({ sidebar }) =>
     sidebar &&
     `
-			right: 18%;
 			top: 1.4rem;
 
 			@media (max-width: 960px) {
-				right: 35%;
 				position: fixed;
 			}
 
 			@media (max-width: 600px) {
-				right: 66%;
+
 			}
 	`}
 `;
@@ -52,9 +50,9 @@ export const Bar = styled.div`
 		`
 		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
 		transform: translateY(8px) rotate(-135deg);
-
+    margin-top: 10px;
 	`}
-  
+
 	${({ bottom, sidebar, theme }) =>
     bottom &&
     sidebar &&
