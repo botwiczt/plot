@@ -20,6 +20,8 @@ import { Dashboard } from './Dashboard';
 
 // FIX navbuttons: can active hover when slightly under button
 
+// work on attribution of line on homepage, cap in store logo, icon on school page, and left back arrow
+
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);
 
