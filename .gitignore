@@ -10,4 +10,4 @@ package-lock.json
 public
 
 # mac files
-.DS_Store
+.DS_Store/
