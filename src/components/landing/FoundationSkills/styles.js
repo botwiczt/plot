@@ -105,6 +105,22 @@ export const Thumbnail = styled.div`
   }
 `;
 
+export const Pointernail = styled.div`
+  flex: 1;
+  text-align: center;
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
+
+  @media (max-width: 960px) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 60%;
+  }
+`;
+
 export const DetailsText = styled.div`
   flex: 1;
   text-align: left;

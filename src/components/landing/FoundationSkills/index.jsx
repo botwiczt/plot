@@ -6,7 +6,7 @@ import gear from 'assets/illustrations/gear.svg';
 import election from 'assets/illustrations/election.svg';
 import politics from 'assets/illustrations/politics.svg';
 import firewall from 'assets/illustrations/firewall.svg';
-import { Wrapper, SkillsWrapper, Details, DetailsText, Thumbnail } from './styles';
+import { Wrapper, SkillsWrapper, Details, DetailsText, Thumbnail, Pointernail } from './styles';
 
 {/*<div class="tooltip"><u class="dotting"><i>plöt economics</i></u><span class="tooltiptext"><b>a form of decentralized, collectivist, market economy</b><br/>
 woah, that’s a word soup. let’s break it down:<br/><br/>
@@ -37,7 +37,7 @@ export const FoundationSkills = () => {
           <h1>plötecon<h4>(short for <i>plöt economics</i>)</h4></h1>
           <p>
           the system separates basic living necessities (like food, water, clothing, and utilities) from unstable market forces. meanwhile, healthy competition continues in "optional" categories (like entertainment, luxury, and technology).
-          </p><Thumbnail theme={theme} ><img src={firewall} alt="illustration of division between essentials like water and luxuries like entertainment" /></Thumbnail>
+          </p><Pointernail theme={theme} ><img src={firewall} alt="illustration of division between essentials like water and luxuries like entertainment" /></Pointernail>
           <p1>a firewall develops between the two sectors. in both sectors, strict <font color="lightgreen">environmental</font> and <font color="lightblue">social</font> guidelines guide development. as industries mature, they become increasingly <font color="red">worker-owned</font>.<br/><br/><a class="linkstyle" href="https://en.wikipedia.org/wiki/Degrowth" target="_blank" rel="noreferrer"><font color="#BBBB1A"><u>degrowth</u></font></a> is central to plötecon.</p1>
           <br/><br/><br/><br/><p>the image above shows a firewall example.</p>
         </Details>
@@ -48,10 +48,10 @@ export const FoundationSkills = () => {
           <h1>plötpolity<h4>(short for <i>plöt politics</i>)</h4></h1>
           <p>
           the system is grounded in <u>true democracy</u>, free from lobbying and granting an equal voice to each plötizen. the basics are simple enough, centering around "councils":<br/>
-          </p><Thumbnail theme={theme} ><img src={politics} alt="tiered electoral system representation" /></Thumbnail>
-          <p1>1. local councils (each containing ~17 plötizens) send a representative to the higher council.<br/>
-          2. higher councils, (each containing ~17 local representatives) send a representive to the interplöt council.<br/>
-          3. this continues until everybody is represented.<br/>
+          </p><Pointernail theme={theme} ><img src={politics} alt="tiered electoral system representation" /></Pointernail>
+          <p1>1. <font color="#AC87BB">local councils</font> (each containing ~17 plötizens) send a representative to the higher council.<br/>
+          2. <font color="#FF9188">higher councils</font>, (each containing ~17 local representatives) send a representive to the interplöt council.<br/>
+          3. this continues until <font color="#E5A2FF">everybody</font> is represented.<br/>
           <br/></p1><p>the image above shows the nesting process.</p>
         </Details>
       </SkillsWrapper>
