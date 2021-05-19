@@ -1,11 +1,11 @@
 import React from 'react';
 import { SidePageLayout, SEO } from 'components/common';
-import { ValuesIntro, ValuesSkills } from 'components/landing';
+import { FoundationIntro, FoundationSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
     <SEO />
-    <ValuesIntro />
-    <ValuesSkills />
+    <FoundationIntro />
+    <FoundationSkills />
   </SidePageLayout>
 );

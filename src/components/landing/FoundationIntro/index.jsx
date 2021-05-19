@@ -6,7 +6,7 @@ import line from 'assets/illustrations/line.svg';
 import lineright from 'assets/illustrations/lineright.svg';
 import { Wrapper, IntroWrapper, Details, Thumbnail, Thumbnail2, Line, LineRight } from './styles';
 
-export const ValuesIntro = () => {
+export const FoundationIntro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (

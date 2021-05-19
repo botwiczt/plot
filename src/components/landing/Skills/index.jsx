@@ -84,9 +84,9 @@ export const Skills = () => {
         <Fade><img src={values} alt="checklist indicating values" /></Fade>
       </Thumbnail>
         <ValueDetails theme={theme}>
-          <Fade><h1>our values.</h1>
-          <Link to="/values">
-          <p as={AnchorLink} href="/values">
+          <Fade><h1>our foundations.</h1>
+          <Link to="/foundations">
+          <p as={AnchorLink} href="/foundations">
           <span aria-label="arrow towards the right" role="img">
             →
           </span>
