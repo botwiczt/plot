@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
     color: #000;
     text-decoration: none;
     text-align: center;
-    position: absolute;
 
 		@media (max-width: 960px) {
 			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
@@ -32,6 +31,7 @@ export const Wrapper = styled.div`
 		`
       : `
 			padding: 0rem;
+      margin-top: 5%;
 			display: flex;
 			flex-direction: column;
 

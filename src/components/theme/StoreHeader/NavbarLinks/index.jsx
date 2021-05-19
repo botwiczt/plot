@@ -6,8 +6,7 @@ import back from 'assets/illustrations/leftarrow.svg';
 import styled from "styled-components";
 
 const NavButton = styled.img`
-  text-align: center;
-  width: 10vw;
+  width: 6vw;
   cursor: pointer;
   padding: 10px;
   transition: all 0.5s ease;
@@ -17,20 +16,17 @@ const NavButton = styled.img`
     opacity: 0.45;
   }
   @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    padding: 0px;
     width: 12vw;
   }
 `;
 
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
-
   return (
     <Wrapper desktop={desktop} theme={theme}>
-    <Link to="/" theme={theme}>
-            <NavButton theme={theme} src={back}/>
-          </Link>
+      <Link to="/" theme={theme}>
+        <NavButton theme={theme} src={back}/>
+      </Link>
     </Wrapper>
   )
 

@@ -12,7 +12,7 @@ const Navbar = () => {
     <Wrapper as={Container}>
       <NavbarLinks/>
       <Brand theme={theme}>
-        <img src={logo} alt="company values logo" />
+        <img src={logo} alt="company logo" />
       </Brand>
     </Wrapper>
   );

@@ -77,13 +77,11 @@ export const Thumbnail = styled.div`
 `;
 
 export const ButtonGrow = styled.div`
-text-align: center;
 transition: all 0.5s ease;
 display: table;
 margin-left: auto;
 margin-right: auto;
 :hover {
-  box-shadow: inset 0 0 100px 100px #444d56;
   transform: scale(1.15);
 }
 `;

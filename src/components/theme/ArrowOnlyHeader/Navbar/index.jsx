@@ -11,9 +11,6 @@ const Navbar = () => {
   return (
     <Wrapper as={Container}>
       <NavbarLinks/>
-      <Brand theme={theme}>
-        <img src={logo} alt="company logo" />
-      </Brand>
     </Wrapper>
   );
 };

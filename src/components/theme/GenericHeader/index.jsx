@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-export const StoreHeader = () => {
+export const GenericHeader = () => {
 
   return (
       <Navbar />

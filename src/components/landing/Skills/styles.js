@@ -204,3 +204,13 @@ filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
     }
   }
 `;
+
+export const ButtonGrow = styled.div`
+transition: all 0.5s ease;
+display: table;
+margin-left: auto;
+margin-right: auto;
+:hover {
+  transform: scale(1.15);
+}
+`;

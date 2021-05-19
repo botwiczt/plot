@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
 			align-items: center;
 			display: flex;
 
+			@media (max-width: 960px) {
+					display: none;
+			}
+
 			a {
 					margin-right: 2rem;
 
@@ -27,8 +31,25 @@ export const Wrapper = styled.div`
 		`
       : `
 			padding: 0rem;
+      margin-top: 5%;
 			display: flex;
 			flex-direction: column;
+
+			a {
+					margin-bottom: 1rem;
+
+					&:last-child {
+							margin-bottom: unset;
+					}
 			}
 	`}
+`;
+
+export const Brand = styled.a`
+  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+  width: 15%;
+
+  @media (max-width: 960px) {
+    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+  }
 `;

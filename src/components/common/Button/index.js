@@ -6,6 +6,7 @@ export const Button = styled.button`
   padding: 1rem 2.5rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   justify-content: center;
   border: none;
   -webkit-appearance: none;
@@ -18,6 +19,10 @@ export const Button = styled.button`
   transition: all 0.5s ease;
   background: ${({ theme }) => (theme === 'dark' ? '#FFF' : '#000')};
   color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};
+  :hover {
+    box-shadow: inset 0 0 100px 100px #444d56;
+    transform: scale(1.15);
+  }
   &:focus {
     outline: none;
   }

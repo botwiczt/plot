@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { ValuesHeader } from 'components/theme';
+import { GenericHeader } from 'components/theme';
 import { Container } from 'components/common';
 import line from 'assets/illustrations/line.svg';
 import lineright from 'assets/illustrations/lineright.svg';
@@ -11,7 +11,7 @@ export const ValuesIntro = () => {
 
   return (
     <Wrapper>
-      <ValuesHeader />
+      <GenericHeader />
 
       <IntroWrapper as={Container}>
         <Details theme={theme}>

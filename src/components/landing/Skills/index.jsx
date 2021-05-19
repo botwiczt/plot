@@ -9,7 +9,8 @@ import moving from 'assets/illustrations/moving.svg';
 import wind from 'assets/illustrations/wind.svg';
 import values from 'assets/illustrations/values.svg';
 import line from 'assets/illustrations/line.png';
-import { Wrapper, SkillsWrapper, HeaderDetails, Line, Details, Thumbnail, ThumbnailWind, ValueDetails} from './styles';
+import { Button } from 'components/common';
+import { Wrapper, SkillsWrapper, HeaderDetails, Line, Details, Thumbnail, ThumbnailWind, ValueDetails, ButtonGrow} from './styles';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -40,7 +41,13 @@ export const Skills = () => {
           a plöt is a largely self-contained community of <div class="tooltip"><u class="dotting">~300 individuals,</u><span class="tooltiptext"><b>why 300?</b><br/>this represents the upper end of <a class="linkstyle" href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank" rel="noreferrer">Dunbar's number.</a></span></div> all living together in a shared space designed for <b>sustainability</b>.
               <br/><br/>
               each part of everyday life has been refined for symbiosis with nature, from the composting of nearly all trash to freshly crafted plant-based meals.
-          </p></Fade>
+          </p>
+
+          <ButtonGrow><Button theme={theme} as={Link} href="/about">
+            learn more →
+          </Button></ButtonGrow>
+
+          </Fade>
         </Details>
       </SkillsWrapper>
 

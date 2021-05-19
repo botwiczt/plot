@@ -2,6 +2,8 @@ export * from './Intro';
 export * from './Skills';
 export * from './HomeIntro';
 export * from './HomeSkills';
+export * from './AboutIntro';
+export * from './AboutSkills';
 export * from './SchoolIntro';
 export * from './SchoolSkills';
 export * from './StoreIntro';
