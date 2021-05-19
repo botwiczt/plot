@@ -41,8 +41,10 @@ export const FoundationSkills = () => {
           <p>
           the system separates basic living necessities (like food, water, clothing, and utilities) from unstable market forces. meanwhile, healthy competition continues in "optional" categories (like entertainment, luxury, and technology).
           </p><Pointernail theme={theme} ><img src={firewall} alt="illustration of division between essentials like water and luxuries like entertainment" /></Pointernail>
-          <p1>a firewall develops between the two sectors. in both sectors, strict <font color="lightgreen">environmental</font> and <font color="lightblue">social</font> guidelines guide development. as industries mature, they become increasingly <font color="red">worker-owned</font>.<br/><br/><a class="linkstyle" href="https://en.wikipedia.org/wiki/Degrowth" target="_blank" rel="noreferrer"><font color="#BBBB1A"><u>degrowth</u></font></a> is central to plötecon.</p1>
-          <br/><br/><br/><br/><p>the image above shows a firewall example.</p>
+          <p1><ul>
+<li>a firewall develops between the two sectors.</li><li>in both sectors, strict <font color="lightgreen">environmental</font> and <font color="lightblue">social</font> rules guide development.
+</li><li>as industries mature, they become increasingly <font color="red">worker-owned</font>.</li></ul><a class="linkstyle" href="https://en.wikipedia.org/wiki/Degrowth" target="_blank" rel="noreferrer"><font color="#BBBB1A"><u>degrowth</u></font></a> is central to plötecon.</p1>
+          <br/><br/><br/><p>the image above shows a firewall example.</p>
         </Details>
         <Details theme={theme}>
         <Thumbnail theme={theme}>
