@@ -13,7 +13,6 @@ import { Dashboard } from './Dashboard';
 // improve footer
 // increase size of lock and toggle
 // add back cursor to typing text
-// update react?
 
 // fix scroll down arrow to be uninteractable when opacity = 0;
 // it is interactable now even though it is invisible.
