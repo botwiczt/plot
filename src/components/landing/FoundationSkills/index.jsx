@@ -24,6 +24,9 @@ a complementary system to plötecon.
 
 */}
 
+
+// HEIGHT OF TWO INFO BOXES ISN'T EQUAL. FIXED HEIGHT??? (INTRODUCES NEW ISSUES)
+
 export const FoundationSkills = () => {
   const { theme } = useContext(ThemeContext);
 

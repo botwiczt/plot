@@ -11,6 +11,25 @@ import values from 'assets/illustrations/values.svg';
 import line from 'assets/illustrations/line.png';
 import { Button } from 'components/common';
 import { Wrapper, SkillsWrapper, HeaderDetails, Line, Details, Thumbnail, ThumbnailWind, ValueDetails, ButtonGrow} from './styles';
+import styled from 'styled-components';
+
+export const ButtonSoon = styled.button`
+  cursor: not-allowed;
+  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  user-select: none;
+  transition: all 0.5s ease;
+  background: ${({ theme }) => (theme === 'dark' ? '#FFF' : '#000')};
+  color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};
+  :hover {
+    box-shadow: inset 0 0 100px 100px #FF9999;
+  }
+`;
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
@@ -44,7 +63,7 @@ export const Skills = () => {
           </p>
 
           <ButtonGrow><Button theme={theme} as={Link} href="/about">
-            learn more →
+            about us →
           </Button></ButtonGrow>
 
           </Fade>
@@ -58,7 +77,13 @@ export const Skills = () => {
           the underlying <div class="tooltip"><u class="dotting">economic + political systems</u><span class="tooltiptext"><b>what are these like?</b><br/>find out more on the values page below.</span></div> provide us with a solid foundation upon which to build our utopia. we've tinkered with nearly every element of modern life.
               <br/><br/>
               fundamentally, we are dedicated to preserving <b>human & animal rights</b>, standing for <b>equality & community</b>, and protecting <b>our common home</b>.
-          </p></Fade>
+          </p>
+
+          <ButtonGrow><Button theme={theme} as={Link} href="/foundations">
+          our foundations →
+          </Button></ButtonGrow>
+
+          </Fade>
         </Details>
         <ThumbnailWind>
           <Fade><img src={wind} alt="person walking by wind turbines" /></Fade>
@@ -76,13 +101,21 @@ export const Skills = () => {
                 <br/><br/>
                 in the first week, we guide you through the functioning of our community and our values.
                 <br/><br/>we're currently in the process of designing our first plöt. {/*in the state of <b> maine</b>.*/}
-          </p></Fade>
+          </p>
+
+          <ButtonSoon theme={theme}>
+          details coming soon
+          </ButtonSoon>
+
+          </Fade>
         </Details>
       </SkillsWrapper>
-      <SkillsWrapper as={Container}>
+      {/*<SkillsWrapper as={Container}>
       <Thumbnail>
         <Fade><img src={values} alt="checklist indicating values" /></Fade>
       </Thumbnail>
+
+
         <ValueDetails theme={theme}>
           <Fade><h1>our foundations.</h1>
           <Link to="/foundations">
@@ -93,7 +126,9 @@ export const Skills = () => {
           </p>
           </Link></Fade>
         </ValueDetails>
-      </SkillsWrapper>
+
+
+      </SkillsWrapper>*/}
     </Wrapper>
   );
 };

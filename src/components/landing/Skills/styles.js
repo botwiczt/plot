@@ -186,6 +186,8 @@ export const ThumbnailWind = styled.div`
   @media (max-width: 960px) {
     width: 80%;
     margin-bottom: 1rem;
+    margin-top: 3.5rem;
+    margin-left: 0rem;
   }
 
   img {
