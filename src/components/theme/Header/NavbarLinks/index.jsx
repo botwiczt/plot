@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import { Link } from 'gatsby';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper } from './styles';
 import './navbar.css';
