@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
-import { Container, Button } from 'components/common';
 import render from 'assets/illustrations/render.png';
-import { Scroll } from './Scroll';
 import { Wrapper, BodyWrapper, Details, Thumbnail, ButtonGrow} from './styles';
+import { Container, Button } from 'components/common';
 import { Typing } from "typing-effect-reactjs";
+import { Link } from "gatsby";
+import { Scroll } from './Scroll';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
@@ -17,20 +17,19 @@ export const Intro = () => {
       <BodyWrapper as={Container}>
         <Details theme={theme}>
           <h1>we're creating a utopia.</h1>
-
           <Typing
-  text={[
-    "welcome to plöt.",
-  ]}
-  typeSpeed={80}
-  disableBlinkingOnEnd={5}
-/>
-          <ButtonGrow><Button theme={theme} as={Link} href="/waitlist">
-            join the waitlist →
-          </Button></ButtonGrow>
+            text={["welcome to plöt.",]}
+            typeSpeed={80}
+            disableBlinkingOnEnd={3}
+          />
+          <ButtonGrow>
+            <Button theme={theme} as={Link} href="/waitlist">
+              join the waitlist →
+            </Button>
+          </ButtonGrow>
         </Details>
         <Thumbnail>
-          <img src={render} alt="plöt house" />
+          <img src={render} alt="a rendering of a plöt house."/>
         </Thumbnail>
         <Scroll/>
       </BodyWrapper>
