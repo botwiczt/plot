@@ -74,7 +74,7 @@ export const Skills = () => {
         <Details theme={theme}>
           <Fade><h1>what are we reforming?</h1>
           <p>
-          the underlying <div class="tooltip"><u class="dotting">economic + political systems</u><span class="tooltiptext"><b>what are these like?</b><br/>find out more on the values page below.</span></div> provide us with a solid foundation upon which to build our utopia. we've tinkered with nearly every element of modern life.
+          the underlying <div class="tooltip"><u class="dotting">economic + political systems</u><span class="tooltiptext"><b>what are these like?</b><br/>learn more about plötecon and plötpolity below!</span></div> provide us with a solid foundation upon which to build our utopia. we've tinkered with nearly every element of modern life.
               <br/><br/>
               fundamentally, we are dedicated to preserving <b>human & animal rights</b>, standing for <b>equality & community</b>, and protecting <b>our common home</b>.
           </p>
