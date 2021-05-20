@@ -3,7 +3,7 @@ import './App.css';
 import Colors from './Colors'
 import DetailsThumb from './DetailsThumb';
 import { Container, Button } from 'components/common';
-import { ButtonGrow} from './product';
+import { ButtonGrow} from './styles';
 import { Link } from "gatsby";
 import render from 'assets/illustrations/render.png';
 import darkrender from 'assets/illustrations/darkrender.png';
