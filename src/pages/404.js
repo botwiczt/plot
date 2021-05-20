@@ -33,8 +33,9 @@ export default () => {
     <Center>
     <h1>404: not found</h1>
     <p>this page does not exist.</p>
+    <br/>
     <Link to="/">
-    <Button theme={theme}>return home</Button></Link>
+    <Button theme={theme}>return home →</Button></Link>
     </Center>
   </SidePageLayout>
 );

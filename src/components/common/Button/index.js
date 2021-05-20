@@ -17,6 +17,9 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   transition: all 0.5s ease;
+  display: table;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
   background: ${({ theme }) => (theme === 'dark' ? '#FFF' : '#000')};
   color: ${({ theme }) => (theme === 'dark' ? '#000' : '#FFF')};
   :hover {

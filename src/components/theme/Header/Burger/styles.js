@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 960px) {
     display: block;
+    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
   }
 
   ${({ sidebar }) =>

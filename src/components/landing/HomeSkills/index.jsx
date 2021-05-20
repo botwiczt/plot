@@ -10,6 +10,9 @@ import App from './App';
 // scroll down arrow does not invert
 // can click slightly beneath most images...
 
+// cursor is not visible in darkmode
+// banner height bug persists in mobile
+
 // IMPROVEMENTS
 // improve footer
 // increase size of lock and toggle

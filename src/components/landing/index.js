@@ -1,5 +1,4 @@
-export * from './Intro';
-export * from './Skills';
+export * from './Landing';
 export * from './HomeIntro';
 export * from './HomeSkills';
 export * from './AboutIntro';
