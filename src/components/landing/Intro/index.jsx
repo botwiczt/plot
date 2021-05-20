@@ -5,25 +5,26 @@ import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import render from 'assets/illustrations/render.png';
 import { Scroll } from './Scroll';
-import { Wrapper, IntroWrapper, Details, Thumbnail, ButtonGrow} from './styles';
-import Typed from 'react-typed';
-import 'react-typed/dist/animatedCursor.css';
+import { Wrapper, BodyWrapper, Details, Thumbnail, ButtonGrow} from './styles';
+import { Typing } from "typing-effect-reactjs";
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper>
-      <Header />
-      <IntroWrapper as={Container}>
+      <Header/>
+      <BodyWrapper as={Container}>
         <Details theme={theme}>
           <h1>we're creating a utopia.</h1>
-          <Typed
-                    strings={['welcome to plöt.']}
-                    typeSpeed={70}
-                    showCursor={false}
-                >
-                <h4></h4></Typed>
+
+          <Typing
+  text={[
+    "welcome to plöt.",
+  ]}
+  typeSpeed={80}
+  disableBlinkingOnEnd={5}
+/>
           <ButtonGrow><Button theme={theme} as={Link} href="/waitlist">
             join the waitlist →
           </Button></ButtonGrow>
@@ -32,7 +33,7 @@ export const Intro = () => {
           <img src={render} alt="plöt house" />
         </Thumbnail>
         <Scroll/>
-      </IntroWrapper>
+      </BodyWrapper>
     </Wrapper>
   );
 };

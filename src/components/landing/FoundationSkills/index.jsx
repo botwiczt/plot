@@ -51,7 +51,7 @@ export const FoundationSkills = () => {
           <p1>
           <ul>
             <li>
-              a firewall develops between the two sectors.
+              a partition develops between the two sectors.
             </li>
             <li>
               in both sectors, strict <font color="lightgreen">environmental</font> and <font color="lightblue">social</font> rules guide development.
@@ -69,7 +69,7 @@ export const FoundationSkills = () => {
           </a> is central to plötecon.
           </p1>
           <br/><br/><br/>
-          <p>the image above shows a firewall example.</p>
+          <p>the image above shows an example of the partition.</p>
         </Details>
         <Details theme={theme}>
         <Thumbnail theme={theme}>
