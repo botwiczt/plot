@@ -194,9 +194,24 @@ export const MathLine = styled.div`
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
   border-top: 1px solid #fff;
   @media (max-width: 960px) {
     width: 90%;
   }
+}
+`;
+
+
+export const BoxWrapper = styled.div`
+box-shadow: 0 0 5px #ccc;
+border-radius: 30px;
+padding-top: 50px;
+padding-bottom: 30px;
+margin-bottom: 40px;
+max-width: 1200px;
+width: 100%;
+margin: 50px auto;
+margin-top: 0px;
 }
 `;

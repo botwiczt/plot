@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, MathLine} from './styles';
+import { Wrapper, SkillsWrapper, Details, MathLine, BoxWrapper} from './styles';
 import { Dashboard } from './Dashboard';
+import App from './App';
 
 // BUGS
 // fix dashboard appearance on dark mode
@@ -28,6 +29,8 @@ export const HomeSkills = () => {
     <Wrapper id="about">
       <SkillsWrapper as={Container}>
         <Details theme={theme}>
+        <App/>
+        <BoxWrapper>
           <h1>save money, save the planet.</h1>
           <p>
           $36,000   average US income<br/>
@@ -37,6 +40,7 @@ export const HomeSkills = () => {
           <br/><br/>
           <b>&ensp;&ensp;more info coming soon...</b>
           </p>
+          </BoxWrapper>
         </Details>
       </SkillsWrapper>
     </Wrapper>
