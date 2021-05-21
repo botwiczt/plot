@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-`;
-
 export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
   padding-top: 1rem;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 960px) {
     flex-direction: column;
+  }
+`;
+
+export const MeThumbnail = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  width: 30%;
+  @media (max-width: 960px) {
+    width: 50%;
   }
 `;
 
@@ -24,36 +31,21 @@ export const Details = styled.div`
   }
 
   h1 {
-    margin-bottom: 1rem;
-    font-size: 30pt;
+    font-size: 20pt;
+    margin-top: -2.5rem;
+    margin-bottom: 0;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
-
   h2 {
-    margin-bottom: 1rem;
-    font-size:18pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-  }
-
-  p {
-    margin-bottom: 1rem;
-    font-size: 15pt;
-    font-weight: normal;
-    line-height: 2;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-
+    font-size: 20pt;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }

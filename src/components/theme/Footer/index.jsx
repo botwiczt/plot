@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details, Privacy } from './styles';
+import { Wrapper, Flex, Links, Details, Privacy, Creator } from './styles';
 import ToggleTheme from './ToggleTheme';
 import { ThemeContext } from 'providers/ThemeProvider';
 import social from './social.json';
 import lock from 'assets/illustrations/privacyicon.svg';
+import creator from 'assets/illustrations/creator.svg';
 
 export const Footer = () => {
 
@@ -22,8 +23,17 @@ export const Footer = () => {
             </a>
           ))}
         </Links>*/}
-        <ToggleTheme/>
-        <Link to="/privacy"><Privacy theme={theme}><img src={lock} alt="button to access privacy policy"/></Privacy></Link>
+            <ToggleTheme/>
+
+        <div class="tooltip">
+            <Link to="/privacy"><Privacy theme={theme}> <img src={lock} alt="button to access privacy policy"/></Privacy></Link>
+            <span class="tooltiptext">
+              privacy policy
+            </span>
+          </div>
+
+        <Link to="/creator"><Creator theme={theme}> <img src={creator} alt="button to access page about creator of plöt"/></Creator></Link>
+
         <Details theme={theme}>
           <span>
             © {new Date().getFullYear()} plöt co.  {/*| made with{' '}

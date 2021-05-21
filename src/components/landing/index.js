@@ -13,5 +13,6 @@ export * from './SubmittedSkills';
 export * from './FoundationIntro';
 export * from './FoundationSkills';
 export * from './Privacy';
+export * from './Creator';
 export * from './ReuseIntro';
 export * from './ReuseSkills';
