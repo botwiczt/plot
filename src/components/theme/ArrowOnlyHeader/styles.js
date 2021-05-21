@@ -23,17 +23,3 @@ export const NavButton = styled.img`
     width: 12vw;
   }
 `;
-
-export const Brand = styled.img`
-  position: absolute;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -4px;
-  left: 0;
-  right: 0;
-  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  @media (max-width: 960px) {
-    width: 30%;
-  }
-`;

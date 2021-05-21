@@ -1,26 +1,22 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container } from 'components/common';
-import { Wrapper, Brand, Wrapper2, NavButton } from './styles';
-import logo from 'assets/illustrations/logo.svg';
 import { Link } from 'gatsby';
-import back from 'assets/illustrations/leftarrow.svg';
+import { Container } from 'components/common';
+import { Wrapper, ArrowWrapper, NavButton, Brand } from './styles';
+import logo from 'assets/illustrations/logo.svg';
+import leftarrow from 'assets/illustrations/leftarrow.svg';
 
 export const GenericHeader = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper as={Container}>
-      <Wrapper2 theme={theme}>
-        <Link to="/" theme={theme}>
-          <NavButton theme={theme} src={back}/>
+      <ArrowWrapper>
+        <Link to="/">
+          <NavButton theme={theme} src={leftarrow}/>
         </Link>
-      </Wrapper2>
-      <Brand theme={theme}>
-        <img src={logo} alt="company logo" />
-      </Brand>
+      </ArrowWrapper>
+      <Brand theme={theme} src={logo} alt="plöt logo"/>
     </Wrapper>
   );
 };
-
-export default GenericHeader;
