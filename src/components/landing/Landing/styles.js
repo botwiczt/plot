@@ -116,11 +116,10 @@ export const ArrowImage = styled.img`
   }
 `;
 
-
 export const Content = styled.div`
 `;
 
-export const SkillsWrapper = styled.div`
+export const ContentBody = styled.div`
   padding: 4rem 0;
   display: flex;
   align-items: center;
@@ -143,7 +142,7 @@ export const ContentBodyLead = styled.div`
   }
 `;
 
-export const HeaderDetails = styled.div`
+export const ContentDetails = styled.div`
   flex: 1;
   padding-left: 2rem;
   text-align: center;
@@ -163,7 +162,7 @@ export const HeaderDetails = styled.div`
     }
   }
 
-  p {
+  h2 {
     margin-bottom: 1rem;
     font-size: 15pt;
     font-weight: normal;
@@ -174,28 +173,6 @@ export const HeaderDetails = styled.div`
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
-`;
-
-export const Details2 = styled.div`
-  flex: 1;
-  padding-left: 2rem;
-  text-align: center;
-
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
-  }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-  }
-
   p {
     margin-bottom: 2.5rem;
     font-size: 15pt;
@@ -208,93 +185,46 @@ export const Details2 = styled.div`
     }
   }
   u.dotting {
-  border-bottom: 1px dotted;
-  text-decoration: none;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: help;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 180px;
-  background-color: #444d56;
-  color: white;
-  text-align: center;
-  border-radius: 30px;
-  padding: 15px;
-  font-size: 1.1rem;
-  opacity: 0;
-  transition: all .3s ease-in-out;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -100px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 0.85;
-  transform: scale(1.1);
-}
-a.linkstyle {
-  text-decoration: underline;
-  color: lightblue;
-}
-`;
-
-export const ValueDetails = styled.div`
-  flex: 1;
-  padding-left: 2rem;
-
-  @media (max-width: 960px) {
-    padding-left: unset;
-    width: 100%;
+    border-bottom: 1px dotted;
+    text-decoration: none;
   }
 
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
-
-    @media (max-width: 960px) {
-      text-align: center;
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
   }
 
-  p {
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    font-size: 100pt;
-    font-weight: normal;
-    line-height: 0.4;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-    transform: translate(+20px);
-    white-space: nowrap;
-    cursor: pointer;
-  animation: 1s Zoom linear infinite,
-  1s Always ease alternate infinite;
-  }
-  @keyframes Zoom {
-      100% { background-position: 100vw ; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #444d56;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -100px;
   }
 
-  @keyframes Always {
-      100% { transform: scale(1.10);}
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.85;
+    transform: scale(1.1);
   }
-    @media (max-width: 960px) {
-      text-align: center;
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
+  a.linkstyle {
+    text-decoration: underline;
+    color: lightblue;
   }
 `;
 
-export const Thumbnail2 = styled.div`
+export const ContentThumbnailLeft = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
@@ -307,7 +237,7 @@ export const Thumbnail2 = styled.div`
   }
 `;
 
-export const ThumbnailWind = styled.div`
+export const ContentThumbnailRight = styled.div`
   flex: 1;
   margin-left: 2rem;
 

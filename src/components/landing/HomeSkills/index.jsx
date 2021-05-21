@@ -12,6 +12,7 @@ import App from './App';
 
 // cursor is not visible in darkmode
 // banner height bug persists in mobile
+// scroll down arrow animation is broken (visibility property can't be animated)
 
 // IMPROVEMENTS
 // improve footer

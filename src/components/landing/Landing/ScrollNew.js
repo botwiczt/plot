@@ -30,7 +30,7 @@ export const Scroll = () => {
   });
 
   return (
-    <ScrollVanish opacity={opacity} onScroll={() => onScroll(!opacity)} >
+    <ScrollVanish opacity={opacity} {/*onScroll={() => onScroll(!opacity)}*/} >
      <a href="#down" aria-label="scroll down"><ArrowImage theme={theme} src={downarrow}/></a>
     </ScrollVanish>
   );
