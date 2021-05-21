@@ -2633,6 +2633,11 @@
   dependencies:
     "babylon" "^6.18.0"
 
+"babel-jsx-utils@^1.1.0":
+  "integrity" "sha512-Mh1j/rw4xM9T3YICkw22aBQ78FhsHdsmlb9NEk4uVAFBOg+Ez9ZgXXHugoBPCZui3XLomk/7/JBBH4daJqTkQQ=="
+  "resolved" "https://registry.npmjs.org/babel-jsx-utils/-/babel-jsx-utils-1.1.0.tgz"
+  "version" "1.1.0"
+
 "babel-loader@^8.2.2":
   "integrity" "sha512-JvTd0/D889PQBtUXJ2PXaKU/pjZDMtHA9V2ecm+eNRmmBCMR09a+fmpGTNwnJtFmFl5Ei7Vy47LjBb+L0wQ99g=="
   "resolved" "https://registry.npmjs.org/babel-loader/-/babel-loader-8.2.2.tgz"
@@ -3395,7 +3400,7 @@
   optionalDependencies:
     "fsevents" "^1.2.7"
 
-"chokidar@^3.4.2", "chokidar@^3.5.1":
+"chokidar@^3.4.2", "chokidar@^3.4.3", "chokidar@^3.5.1":
   "integrity" "sha512-9+s+Od+W0VJJzawDma/gvBNQqkTiqYTWLuZoyAsivsI4AaWTCzHG06/TMjsf1cYe9Cb97UCEhjz7HvnPk2p/tw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.1.tgz"
   "version" "3.5.1"
@@ -5562,7 +5567,7 @@
   "resolved" "https://registry.npmjs.org/file-type/-/file-type-12.4.2.tgz"
   "version" "12.4.2"
 
-"file-type@^16.2.0":
+"file-type@^16.0.0", "file-type@^16.2.0":
   "integrity" "sha512-MDAkwha3wHg11Lp++2T3Gu347eC/DB4r7nYj6iZaf1l7UhGBh2746QKxg0BWC8w2dJsxUEmH8KvLueX+GthN2w=="
   "resolved" "https://registry.npmjs.org/file-type/-/file-type-16.4.0.tgz"
   "version" "16.4.0"
@@ -6003,6 +6008,24 @@
     "lodash" "^4.17.21"
     "micromatch" "^4.0.2"
 
+"gatsby-plugin-image@^1.5.0":
+  "integrity" "sha512-/tEy3/Hc0W60RUaOUuU+nHXrOqBwEeDmdHl7j8GJuHCm4LqlYzBtCAXM3ypeQgoMHQj/xKN91wEdIbX8BU8e9A=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "@babel/code-frame" "^7.12.13"
+    "@babel/parser" "^7.12.5"
+    "@babel/traverse" "^7.12.5"
+    "babel-jsx-utils" "^1.1.0"
+    "babel-plugin-remove-graphql-queries" "^3.5.0"
+    "camelcase" "^5.3.1"
+    "chokidar" "^3.5.1"
+    "common-tags" "^1.8.0"
+    "fs-extra" "^8.1.0"
+    "gatsby-core-utils" "^2.5.0"
+    "objectFitPolyfill" "^2.3.0"
+    "prop-types" "^15.7.2"
+
 "gatsby-plugin-manifest@^3.5.0":
   "integrity" "sha512-NtkjK9H0Vz3GkRj+UQM1xC0mKcaVcBsVL1odqnivN6S8erlgYJksf0WM4RnHIu2qlc1waNR8rqkLLrO9KBaDbA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.5.0.tgz"
@@ -6180,6 +6203,25 @@
     "ws" "^7.3.0"
     "xstate" "^4.9.1"
     "yoga-layout-prebuilt" "^1.9.6"
+
+"gatsby-source-filesystem@^3.0.0-next.0", "gatsby-source-filesystem@^3.5.0":
+  "integrity" "sha512-o0JGFGHwjqgy1IciifMoMek/ulpO/lvwhpAxxjpDl3vqzO6beoAdaLrLe6zRn403XXSA14TDP9KUNfePLlp1lg=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-3.5.0.tgz"
+  "version" "3.5.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "better-queue" "^3.8.10"
+    "chokidar" "^3.4.3"
+    "file-type" "^16.0.0"
+    "fs-extra" "^8.1.0"
+    "gatsby-core-utils" "^2.5.0"
+    "got" "^9.6.0"
+    "md5-file" "^5.0.0"
+    "mime" "^2.4.6"
+    "pretty-bytes" "^5.4.1"
+    "progress" "^2.0.3"
+    "valid-url" "^1.0.9"
+    "xstate" "^4.14.0"
 
 "gatsby-telemetry@^2.5.0":
   "integrity" "sha512-PbyYw74t/RLVbEWicjAdrCMttV1GSbuHZit0PsVPqqwNlL1LalJa/V7lcVMqqGrEbkB+fUoKkk1u2o+TDgvIng=="
@@ -9298,6 +9340,11 @@
     "es-abstract" "^1.18.0-next.2"
     "has" "^1.0.3"
 
+"objectFitPolyfill@^2.3.0":
+  "integrity" "sha512-8Quz071ZmGi0QWEG4xB3Bv5Lpw6K0Uca87FLoLMKMWjB6qIq9IyBegP3b/VLNxv2WYvIMGoeUQ+c6ibUkNa8TA=="
+  "resolved" "https://registry.npmjs.org/objectFitPolyfill/-/objectFitPolyfill-2.3.5.tgz"
+  "version" "2.3.5"
+
 "obuf@^1.0.0", "obuf@^1.1.2":
   "integrity" "sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg=="
   "resolved" "https://registry.npmjs.org/obuf/-/obuf-1.1.2.tgz"
@@ -10293,7 +10340,7 @@
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.3.0.tgz"
   "version" "2.3.0"
 
-"pretty-bytes@^5.1.0":
+"pretty-bytes@^5.1.0", "pretty-bytes@^5.4.1":
   "integrity" "sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg=="
   "resolved" "https://registry.npmjs.org/pretty-bytes/-/pretty-bytes-5.6.0.tgz"
   "version" "5.6.0"
@@ -12937,7 +12984,7 @@
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   "version" "2.3.0"
 
-"valid-url@1.0.9":
+"valid-url@^1.0.9", "valid-url@1.0.9":
   "integrity" "sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA="
   "resolved" "https://registry.npmjs.org/valid-url/-/valid-url-1.0.9.tgz"
   "version" "1.0.9"
@@ -13453,7 +13500,7 @@
     "commander" "^2.20.3"
     "cssfilter" "0.0.10"
 
-"xstate@^4.11.0", "xstate@^4.9.1":
+"xstate@^4.11.0", "xstate@^4.14.0", "xstate@^4.9.1":
   "integrity" "sha512-tnBh6ue9MiyoMkE2+w1IqfvJm4nBe3S4Ky/RLvlo9vka8FdO4WyyT3M7PA0pQoM/FZ9aJVWFOlsNw0Nc7E+4Bw=="
   "resolved" "https://registry.npmjs.org/xstate/-/xstate-4.19.1.tgz"
   "version" "4.19.1"
