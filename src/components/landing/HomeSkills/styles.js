@@ -81,66 +81,6 @@ a.linkstyle {
 }
 `;
 
-
-export const ModalStyle = styled.div`
-position: fixed;
-top: 0;
-left: 0;
-width:100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.6);
-}
-`;
-
-export const ModalStyleMain = styled.div`
-position:fixed;
-background: white;
-width: auto;
-padding-left: 60px;
-padding-right: 60px;
-padding-bottom:30px;
-height: auto;
-max-height: calc(100vh - 200px);
-overflow-y: auto;
-top:50%;
-left:50%;
-font-size:20px;
-line-height:40px;
-border: solid 15px #000000;
-border-radius: 40px;
-text-align:left;
-transform: translate(-50%,-50%);
-animation-name: animatetop;
-animation-duration: 1s;
-@keyframes animatetop {
-  from {top:-30%; opacity:0}
-  to {top:50%; opacity:1}
-}
-@media screen and (max-width: 768px) {
-    font-size:15px;
-    width: 300px;
-  }
-
-@media screen and (max-width: 575px) {
-    width: 250px;
-  }
-
-@media screen and (max-width: 400px) {
-    font-size:16px;
-    width: 190px;
-  }
-
-@media screen and (max-width: 370px) {
-    width: 160px;
-  }
-
-@media screen and (max-width: 320px) {
-    font-size:15px;
-    width: 150px;
-  }
-}
-`;
-
 export const CloseButton = styled.img`
 display: table;
 position: absolute;
@@ -153,15 +93,25 @@ padding-top: 5px;
 padding-bottom: 5px;
 padding-left: 15px;
 padding-right: 15px;
-color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
+filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
 :hover {
   -webkit-filter: brightness(2);
-     filter: brightness(2);
+  filter: brightness(2);
 }
 `;
 
 export const TitleColor = styled.h2`
 color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+text-align: center;
+@media (max-width: 590px) {
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  font-size: 1.35rem;
+}
+@media (max-width: 340px) {
+  font-size: 1.1rem;
+}
 `;
 
 export const TextColor = styled.h3`
@@ -170,6 +120,16 @@ margin-bottom: 2rem;
 font-size: 1.5rem;
 font-weight: normal;
 line-height: 2.2;
+text-align:left;
+@media (max-width: 590px) {
+  font-size: 1.3rem;
+}
+@media (max-width: 500px) {
+  font-size: 1.15rem;
+}
+@media (max-width: 340px) {
+  font-size: 1rem;
+}
 `;
 
 export const MathLine = styled.div`
@@ -183,7 +143,6 @@ export const MathLine = styled.div`
   }
 }
 `;
-
 
 export const BoxWrapper = styled.div`
 box-shadow: 0 0 5px #ccc;
