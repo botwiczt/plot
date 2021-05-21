@@ -24,9 +24,7 @@ export const BannerBody = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 1080px) {
-    padding-top: 6rem;
-  }
+
   @media (max-width: 960px) {
     flex-direction: column;
     padding: 6rem 0;
