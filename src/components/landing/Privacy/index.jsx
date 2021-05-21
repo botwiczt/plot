@@ -22,9 +22,11 @@ export const Privacy = () => {
 <br/>> we collect emails submitted through our waitlist.
 <br/>> we store collected emails and a collection timestamp on a secure server.
 <br/><br/>please re-enter your email below to request removal from the waitlist:
-<Deletion/>
+
 </b></p>
+<Deletion/>
       </Details>
+
       </SkillsWrapper>
     </Wrapper>
   );

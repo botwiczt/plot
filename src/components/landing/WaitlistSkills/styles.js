@@ -54,20 +54,6 @@ export const Details = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-  text-align: center;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 60%;
-  }
-`;
-
 export const RegisterButton = styled.button`
   width: auto;
   cursor: pointer;

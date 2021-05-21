@@ -25,7 +25,6 @@ export const RegisterButton = styled.button`
   }
   @media only screen and (max-width: 672px) {
       border-radius: 3px;
-      margin-top: 4%;
     }
 `;
 
