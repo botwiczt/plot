@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Modal } from './Modal';
-import { OpenButton, TitleColor, TextColor } from './styles';
+import { TitleColor, TextColor } from './styles';
+import { Button } from 'components/common';
+
 
 export class Dashboard extends Component {
   constructor() {
@@ -40,9 +42,9 @@ export class Dashboard extends Component {
           <span role="img" aria-label="tools emoji">🛠️</span>️ priority support<br/>
           </TextColor></TitleColor>
         </Modal>
-        <OpenButton onClick={this.showModal}>
+        <Button onClick={this.showModal}>
           what's included?
-        </OpenButton>
+        </Button>
       </main>
     );
   }

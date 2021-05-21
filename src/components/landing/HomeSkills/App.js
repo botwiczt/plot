@@ -3,7 +3,6 @@ import './App.css';
 import Colors from './Colors'
 import DetailsThumb from './DetailsThumb';
 import { Container, Button } from 'components/common';
-import { ButtonGrow} from './styles';
 import { Link } from "gatsby";
 import render from 'assets/illustrations/render.png';
 import darkrender from 'assets/illustrations/darkrender.png';
@@ -77,9 +76,9 @@ class App extends React.Component{
                 <div className="row">
                 <h4>{item.content}</h4>
                 </div>
-                <ButtonGrow><Button as={Link} href="/waitlist">
+                <Button as={Link} href="/waitlist">
                   join the waitlist →
-                </Button></ButtonGrow>
+                </Button>
                 <div className="row">
                 <h5>{item.disclaimer}</h5>
                 </div>

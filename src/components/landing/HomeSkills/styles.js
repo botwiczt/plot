@@ -14,35 +14,6 @@ export const SkillsWrapper = styled.div`
   }
 `;
 
-export const OpenButton = styled.div`
-display: inline;
-text-align: center;
-cursor: pointer;
-font-size: 1rem;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 15px;
-padding-right: 15px;
-background: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
-color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
-border: none;
-border-radius: 10px;
-:hover {
-  box-shadow: ${({ theme }) => (theme === 'dark' ? 'inset 0 0 100px 100px #444d56' : 'inset 0 0 100px 100px #444d56')};
-}
-`;
-
-export const ButtonGrow = styled.div`
-transition: all 0.5s ease;
-display: table;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 1.5rem;
-:hover {
-  transform: scale(1.15);
-}
-`;
-
 export const Details = styled.div`
   flex: 1;
   padding-left: 2rem;
@@ -170,22 +141,22 @@ animation-duration: 1s;
 }
 `;
 
-export const CloseButton = styled.h2`
+export const CloseButton = styled.img`
 display: table;
 position: absolute;
 text-align: center;
+right: 10px;
+top: 10px;
 cursor: pointer;
 font-size: 1.5rem;
 padding-top: 5px;
 padding-bottom: 5px;
 padding-left: 15px;
 padding-right: 15px;
-background: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 color: ${({ theme }) => (theme === 'dark' ? '#000' : '#fff')};
-border: none;
-border-radius: 10px;
 :hover {
-  box-shadow: inset 0 0 100px 100px #444d56;
+  -webkit-filter: brightness(2);
+     filter: brightness(2);
 }
 `;
 
@@ -205,7 +176,7 @@ export const MathLine = styled.div`
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   border-top: 1px solid #fff;
   @media (max-width: 960px) {
     width: 90%;

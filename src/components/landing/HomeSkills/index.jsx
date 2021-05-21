@@ -38,7 +38,7 @@ export const HomeSkills = () => {
           <h1>save money, save the planet.</h1>
           <p>
           $36,000   average US income<br/>
-          <b>-</b>&ensp;&ensp;&ensp;&ensp;&ensp; $24,000   yearly cost of plöt living <Dashboard/>
+          <b>-</b>&ensp;&ensp;&ensp;&ensp;&ensp; $24,000   yearly cost of plöt living </p><Dashboard/><p>
           <MathLine><hr/></MathLine>
           <font color="green">&ensp;&ensp;$12,000   discretionary money</font>
           <br/><br/>
