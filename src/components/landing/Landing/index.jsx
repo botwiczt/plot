@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
+import { StaticImage } from "gatsby-plugin-image";
 import Fade from 'react-reveal/Fade'
 import render from 'assets/illustrations/render.png';
 import walking from 'assets/illustrations/walking.svg';
@@ -12,6 +13,15 @@ import { Container, Button } from 'components/common';
 import { Typing } from "typing-effect-reactjs";
 import { Link } from "gatsby";
 import { Scroll } from './Scroll';
+
+function Thumbnail() {
+ return (
+   <StaticImage
+     src={"./render.png"}
+     alt="rendering of a 3D-printed plöt house with solar panels on the roof."
+   />
+ )
+}
 
 export const Landing = () => {
   const { theme } = useContext(ThemeContext);
@@ -33,7 +43,7 @@ export const Landing = () => {
             </Button>
           </BannerDetails>
           <BannerThumbnail>
-            <img src={render} alt="rendering of a 3D-printed plöt house with solar panels on the roof."/>
+            <Thumbnail/>
           </BannerThumbnail>
           <Scroll/>
         </BannerBody>
