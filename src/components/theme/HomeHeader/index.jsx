@@ -3,7 +3,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
 import { Wrapper, ArrowWrapper, NavButton, Brand } from './styles';
-import plothome from 'assets/illustrations/plothome.png';
+import plothome from 'assets/illustrations/plothome.svg';
 import leftarrow from 'assets/illustrations/leftarrow.svg';
 
 export const HomeHeader = () => {

@@ -3,7 +3,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
 import { Wrapper, ArrowWrapper, NavButton, Brand } from './styles';
-import plotstore from 'assets/illustrations/plotstore.png';
+import plotstore from 'assets/illustrations/plotstore.svg';
 import leftarrow from 'assets/illustrations/leftarrow.svg';
 
 export const StoreHeader = () => {
