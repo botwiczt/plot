@@ -8,13 +8,13 @@ export const Wrapper = styled.div`
 
 export const Flex = styled.div`
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  {/*align-items: flex-end;
+  justify-content: space-between;*/}
 
   @media (max-width: 680px) {
     flex-direction: column;
-    text-align: center;
-    align-items: center;
   }
 `;
 
@@ -37,12 +37,16 @@ export const Links = styled.div`
 `;
 
 export const Details = styled.div`
+@media (max-width: 680px) {
+  margin-top: -0.5rem;
+}
   h2,
   a,
   span {
     color: #212121;
     font-size: 1rem;
     font-weight: normal;
+    margin-left: 0.4rem;
     line-height: 0.4;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
   }
@@ -62,6 +66,7 @@ export const Privacy = styled.div`
     text-align: center;
   }
   @media (max-width: 680px) {
+    margin-top: 0.6rem;
     margin-bottom: 1.5rem;
   }
 

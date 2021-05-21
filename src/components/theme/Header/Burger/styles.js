@@ -34,9 +34,8 @@ export const Bar = styled.div`
   border-radius: 3px;
 	margin-bottom: .6rem;
   z-index: 999;
-	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91),
+	transition: transform 500ms cubic-bezier(0.6, 0.05, 0.3, 0.9),
 	opacity 500ms,
-	box-shadow 250ms,
 	background-color 500ms;
   background-color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')} !important;
 
@@ -48,9 +47,9 @@ export const Bar = styled.div`
     top &&
     sidebar &&
 		`
-		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
-		transform: translateY(8px) rotate(-135deg);
-    margin-top: 10px;
+  		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+  		transform: translateY(8px) rotate(-135deg);
+      margin-top: 10px;
 	`}
 
 	${({ bottom, sidebar, theme }) =>
