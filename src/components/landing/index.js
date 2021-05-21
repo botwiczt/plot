@@ -12,7 +12,6 @@ export * from './WaitlistSkills';
 export * from './SubmittedSkills';
 export * from './FoundationIntro';
 export * from './FoundationSkills';
-export * from './PrivacyIntro';
-export * from './PrivacySkills';
+export * from './Privacy';
 export * from './ReuseIntro';
 export * from './ReuseSkills';

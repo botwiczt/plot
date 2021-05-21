@@ -1,11 +1,10 @@
 import React from 'react';
 import { SidePageLayout, SEO } from 'components/common';
-import { PrivacyIntro, PrivacySkills } from 'components/landing';
+import { Privacy } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
     <SEO />
-    <PrivacyIntro />
-    <PrivacySkills />
+    <Privacy/>
   </SidePageLayout>
 );

@@ -68,7 +68,7 @@ const SModal = styled.div`
   }
 `;
 
-const SHeader = styled.div`
+const ModalHeader = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ const Modal = ({ isVisible, hideModal }) => {
           >
             <SModal theme={theme}>
               <CloseButton src={exit} onClick={hideModal} theme={theme} alt="close button"/>
-              <SHeader>
+              <ModalHeader>
                 <TitleColor theme={theme}><br/>
                 <b>base package includes:</b>
                 <br/><TextColor theme={theme}>
@@ -106,7 +106,7 @@ const Modal = ({ isVisible, hideModal }) => {
                 <span role="img" aria-label="sweating emoji">🥵</span>️ sauna access<br/>
                 <span role="img" aria-label="tools emoji">🛠️</span>️ priority support<br/>
                 </TextColor></TitleColor>
-              </SHeader>
+              </ModalHeader>
             </SModal>
           </ModalWrapper>
         </React.Fragment>,

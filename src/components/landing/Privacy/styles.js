@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+padding-top: 1rem;
 
 `;
-
-//AGAIN, removing background
-// background-image: url(${detailsIllustration});
-// background-size: contain;
-// background-position: left top;
-// background-repeat: no-repeat;
 
 export const SkillsWrapper = styled.div`
   padding: 4rem 0;
@@ -41,29 +36,29 @@ export const Details = styled.div`
     }
   }
 
-  p {
+  h2 {
     margin-bottom: 1rem;
-    font-size: 15pt;
-    font-weight: normal;
-    line-height: 2;
+    font-size:18pt;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
-`;
 
-export const Thumbnail = styled.div`
-  flex: 1;
-  text-align: center;
+  p {
+    margin-bottom: 1rem;
+    font-size: 15pt;
+    font-weight: normal;
+    line-height: 2;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 60%;
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
   }
 `;
