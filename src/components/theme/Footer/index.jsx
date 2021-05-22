@@ -35,11 +35,11 @@ export const Footer = () => {
         <Link to="/creator"><Creator theme={theme}> <img src={creator} alt="button to access page about creator of plöt"/></Creator></Link>
 
         <Details theme={theme}>
-          <span>
+          <span><b>
             © {new Date().getFullYear()} plöt co.  {/*| made with{' '}
             <span aria-label="love" role="img">
               💖
-            </span>*/}</span>
+            </span>*/}</b></span>
         </Details>
       </Flex>
     </Wrapper>
