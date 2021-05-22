@@ -4,7 +4,7 @@ import { Creator } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
+    <SEO/>
     <Creator/>
   </SidePageLayout>
 );

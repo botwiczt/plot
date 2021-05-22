@@ -4,8 +4,8 @@ import { AboutIntro, AboutSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <AboutIntro />
-    <AboutSkills />
+    <SEO/>
+    <AboutIntro/>
+    <AboutSkills/>
   </SidePageLayout>
 );

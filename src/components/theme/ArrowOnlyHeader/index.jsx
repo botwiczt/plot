@@ -12,7 +12,7 @@ export const ArrowOnlyHeader = () => {
     <Wrapper as={Container}>
       <ArrowWrapper>
         <Link to="/">
-          <NavButton theme={theme} src={leftarrow}/>
+          <NavButton theme={theme} src={leftarrow} alt="arrow to return to homepage"/>
         </Link>
       </ArrowWrapper>
     </Wrapper>

@@ -4,7 +4,7 @@ import { Privacy } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
+    <SEO/>
     <Privacy/>
   </SidePageLayout>
 );

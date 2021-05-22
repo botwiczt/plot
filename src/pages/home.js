@@ -4,8 +4,8 @@ import { HomeIntro, HomeSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <HomeIntro />
-    <HomeSkills />
+    <SEO/>
+    <HomeIntro/>
+    <HomeSkills/>
   </SidePageLayout>
 );

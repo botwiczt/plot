@@ -4,8 +4,8 @@ import { FoundationIntro, FoundationSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <FoundationIntro />
-    <FoundationSkills />
+    <SEO/>
+    <FoundationIntro/>
+    <FoundationSkills/>
   </SidePageLayout>
 );
