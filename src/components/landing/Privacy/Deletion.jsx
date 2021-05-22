@@ -4,12 +4,6 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { RegisterButton, Input} from '../Waitlist/styles';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  align-items: center;
-  text-align: center;
-  margin-top: 5px;
-`;
-
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value
 });
@@ -41,7 +35,7 @@ class Deletion extends Component {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
-          <Wrapper>
+          <div>
               <Input
                 type="text"
                 name="email"
@@ -55,7 +49,7 @@ class Deletion extends Component {
                 }
               />
           <RegisterButton type="submit">submit</RegisterButton>
-          </Wrapper>
+          </div>
         </form>
     );
   }

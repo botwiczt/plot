@@ -1,20 +1,21 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details } from './styles';
+import { Wrapper, Details } from './Waitlist/styles';
 
-export const SubmittedSkills = () => {
+export const Submitted = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about">
-      <SkillsWrapper as={Container}>
+    <Wrapper as={Container}>
       <Details theme={theme}>
       <h1>plöt waitlist</h1>
-      <p><b><span aria-label="fire" role="img">
-        🔥</span> thanks for submitting!</b></p>
+      <p>
+        <span aria-label="fire" role="img">
+          🔥
+        </span> thanks for submitting!
+      </p>
       </Details>
-      </SkillsWrapper>
     </Wrapper>
   );
 };

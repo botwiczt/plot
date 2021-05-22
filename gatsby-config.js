@@ -10,6 +10,7 @@ module.exports = {
     description: config.defaultDescription,
     author: config.author,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: `gatsby-plugin-sharp`,

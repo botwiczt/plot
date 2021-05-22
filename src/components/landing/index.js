@@ -1,3 +1,6 @@
+export * from './Waitlist';
+export * from './Submitted';
+export * from './SubmittedDeletion';
 export * from './Landing';
 export * from './Privacy';
 export * from './Creator';
@@ -10,9 +13,6 @@ export * from './SchoolIntro';
 export * from './SchoolSkills';
 export * from './StoreIntro';
 export * from './StoreSkills';
-export * from './Waitlist';
-export * from './SubmittedSkills';
-export * from './SubmittedDeletion';
 export * from './FoundationIntro';
 export * from './FoundationSkills';
 export * from './ReuseSkills';

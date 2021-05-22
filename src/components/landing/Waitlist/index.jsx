@@ -2,7 +2,7 @@ import React, { Component, useContext } from 'react';
 import { navigate } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { SkillsWrapper, Details, RegisterButton, Input} from './styles';
+import { Wrapper, Details, RegisterButton, Input} from './styles';
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value
@@ -58,14 +58,14 @@ export const Waitlist = () => {
 
   return (
     <div>
-      <SkillsWrapper as={Container}>
+      <Wrapper as={Container}>
       <Details theme={theme}>
       <h1>plöt waitlist</h1>
-      <p><b><span aria-label="pencil" role="img">
-        ✏️</span> enter your email for updates on developments!</b></p>
+      <p><span aria-label="pencil" role="img">
+        ✏️</span> enter your email for updates on developments!</p>
       <RegisterComponent/>
       </Details>
-      </SkillsWrapper>
+      </Wrapper>
     </div>
   );
 };

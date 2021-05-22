@@ -1,23 +1,11 @@
 import styled from 'styled-components';
 
-export const SkillsWrapper = styled.div`
-  padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+export const Wrapper = styled.div`
+  padding: 4rem 0;
 `;
 
 export const Details = styled.div`
-  flex: 1;
   text-align: center;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
 
   h1 {
     margin-bottom: 1rem;
@@ -31,8 +19,11 @@ export const Details = styled.div`
 
   p {
     margin-bottom: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 15pt;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 2;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 

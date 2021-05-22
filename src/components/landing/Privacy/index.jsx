@@ -2,32 +2,43 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { GenericHeader } from 'components/theme';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details } from './styles';
-import Deletion from './Deletion';
+import { Wrapper, Details } from './styles';
+import Deletion from './deletion';
 
 export const Privacy = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about">
-    <GenericHeader/>
-
-      <SkillsWrapper as={Container}>
-      <Details theme={theme}>
-      <h1>privacy policy:</h1>
-      <h2><b>last updated may 1st, 2021</b></h2><br/><br/><p><b>
-      at plöt, we regard privacy as a fundamental human right.
-<br/><br/>> we <u>do not</u> automatically collect any data.
-<br/>> we <u>do not</u> use analytical or tracking software.
-<br/>> we collect emails submitted through our waitlist.
-<br/>> we store collected emails and a collection timestamp on a secure server.
-<br/><br/>please re-enter your email below to request removal from the waitlist:
-
-</b></p>
-<Deletion/>
-      </Details>
-
-      </SkillsWrapper>
-    </Wrapper>
+    <div>
+      <GenericHeader/>
+      <Wrapper as={Container}>
+        <Details theme={theme}>
+          <h1>privacy policy:</h1>
+          <h2>
+            <b>
+              last updated may 1st, 2021
+            </b>
+          </h2>
+          <br/>
+          <br/>
+          <p>
+            at plöt, we regard privacy as a fundamental human right.
+          <br/>
+          <br/>
+            > we <u>do not</u> automatically collect any data.
+          <br/>
+            > we <u>do not</u> use analytical or tracking software.
+          <br/>
+            > we collect emails submitted through our waitlist.
+          <br/>
+            > we store collected emails and a collection timestamp on a secure server.
+          <br/>
+          <br/>
+            please re-enter your email below to request removal from the waitlist:
+          </p>
+          <Deletion/>
+        </Details>
+      </Wrapper>
+    </div>
   );
 };
