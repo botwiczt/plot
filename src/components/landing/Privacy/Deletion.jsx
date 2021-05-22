@@ -22,7 +22,7 @@ class Deletion extends Component {
     console.log(this.state);
     const data = new FormData(event.target);
     fetch(
-      "https://script.google.com/macros/s/AKfycbxoFCQkWmrK_F64X65l8zaFF4Q3tEuautcXDf8gRqf4Torc4JxuawEtVw/exec",
+      "https://script.google.com/macros/s/AKfycbx9Oq0mCAtBZVd7J9cNm9uixc1Gd4PUKoLVU052haW7yZvyy2z4h2Q5a51ZO78ojScZ/exec",
       { method: "POST", body: data }
     )
       .then(response => console.log("success!", response))
