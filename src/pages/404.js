@@ -6,7 +6,6 @@ import styled from "styled-components";
 
 const Center = styled.div`
   text-align: center;
-  margin-top: 4rem;
 `;
 
 export default () => {
@@ -18,9 +17,9 @@ export default () => {
     <SEO title="404: Not found" location="/404" />
     <GenericIntro/>
     <Center>
-    <h1>404: not found</h1>
-    <p><b>this page does not exist.</b></p>
-    <br/>
+      <h1>404: not found</h1>
+      <p><b>this page does not exist.</b></p>
+      <br/>
     </Center>
   </SidePageLayout>
 );

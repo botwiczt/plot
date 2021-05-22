@@ -15,7 +15,7 @@ export const Scroll = () => {
   const { theme } = useContext(ThemeContext);
 
   const [opacity, setOpacity] = useState(1);
-
+{/*useLayoutEffect???*/}
   useEffect(() => {
       if (typeof window !== "undefined") {
         window.onscroll = () => {

@@ -4,9 +4,9 @@ export * from './SubmittedDeletion';
 export * from './Reuse';
 export * from './Creator';
 export * from './Privacy';
+export * from './GenericIntro';
 
 export * from './Landing';
-export * from './GenericIntro';
 export * from './HomeIntro';
 export * from './HomeSkills';
 export * from './AboutIntro';
