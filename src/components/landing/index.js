@@ -1,9 +1,11 @@
 export * from './Waitlist';
 export * from './Submitted';
 export * from './SubmittedDeletion';
-export * from './Landing';
-export * from './Privacy';
+export * from './Reuse';
 export * from './Creator';
+export * from './Privacy';
+
+export * from './Landing';
 export * from './GenericIntro';
 export * from './HomeIntro';
 export * from './HomeSkills';
@@ -15,4 +17,3 @@ export * from './StoreIntro';
 export * from './StoreSkills';
 export * from './FoundationIntro';
 export * from './FoundationSkills';
-export * from './ReuseSkills';

@@ -6,9 +6,7 @@ import styled from "styled-components";
 
 const Center = styled.div`
   text-align: center;
-  @media (max-width: 960px) {
-    margin-top: 3rem;
-  }
+  margin-top: 4rem;
 `;
 
 export default () => {
@@ -21,7 +19,7 @@ export default () => {
     <GenericIntro/>
     <Center>
     <h1>404: not found</h1>
-    <p>this page does not exist.</p>
+    <p><b>this page does not exist.</b></p>
     <br/>
     </Center>
   </SidePageLayout>

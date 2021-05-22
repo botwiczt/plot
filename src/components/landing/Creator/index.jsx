@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { GenericHeader } from 'components/theme';
 import { Container } from 'components/common';
-import { MeThumbnail, SkillsWrapper, Details } from './styles';
+import { Wrapper, MeThumbnail, Details } from './styles';
 import { StaticImage } from "gatsby-plugin-image";
 
 function Me() {
@@ -20,16 +20,16 @@ export const Creator = () => {
   return (
     <div>
       <GenericHeader/>
-      <MeThumbnail>
-        <Me/>
-      </MeThumbnail>
-      <SkillsWrapper as={Container}>
+      <Wrapper as={Container}>
+        <MeThumbnail>
+          <Me/>
+        </MeThumbnail>
         <Details theme={theme}>
           <h1>
             created by</h1><h2>tomek botwicz.
           </h2>
         </Details>
-      </SkillsWrapper>
+      </Wrapper>
     </div>
   );
 };

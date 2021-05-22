@@ -1,38 +1,24 @@
 import styled from 'styled-components';
 
-export const SkillsWrapper = styled.div`
-  padding-top: 1rem;
+export const Wrapper = styled.div`
   padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
 `;
 
 export const MeThumbnail = styled.div`
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
-  width: 30%;
+  width: 40%;
   @media (max-width: 960px) {
-    width: 50%;
+    width: 60%;
   }
 `;
 
 export const Details = styled.div`
-  flex: 1;
   text-align: center;
-
-  @media (max-width: 960px) {
-    width: 100%;
-  }
 
   h1 {
     font-size: 20pt;
-    margin-top: -2.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 0;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
 

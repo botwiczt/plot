@@ -9,12 +9,12 @@ export const Submitted = () => {
   return (
     <Wrapper as={Container}>
       <Details theme={theme}>
-      <h1>plöt waitlist</h1>
-      <p>
-        <span aria-label="fire" role="img">
-          🔥
-        </span> thanks for submitting!
-      </p>
+        <h1>plöt waitlist</h1>
+        <p>
+          <span aria-label="fire" role="img">
+            🔥
+          </span> thanks for submitting!
+        </p>
       </Details>
     </Wrapper>
   );
