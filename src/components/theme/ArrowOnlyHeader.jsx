@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, ArrowWrapper, NavButton } from './styles';
+import { Wrapper, ArrowWrapper, NavButton } from './SubBrandStyles';
 import leftarrow from 'assets/illustrations/leftarrow.svg';
 
 export const ArrowOnlyHeader = () => {
