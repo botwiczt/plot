@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, ArrowWrapper, NavButton, Brand } from './styles';
+import { Wrapper, ArrowWrapper, NavButton, Brand } from './SubBrandStyles';
 import plothome from 'assets/illustrations/plothome.svg';
 import leftarrow from 'assets/illustrations/leftarrow.svg';
 

@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, ArrowWrapper, NavButton, Brand } from './styles';
-import plotstore from 'assets/illustrations/plotstore.svg';
+import { Wrapper, ArrowWrapper, NavButton, Brand } from './SubBrandStyles';
+import plotschool from 'assets/illustrations/plotschoolcap.png';
 import leftarrow from 'assets/illustrations/leftarrow.svg';
 
-export const StoreHeader = () => {
+export const SchoolHeader = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -16,7 +16,7 @@ export const StoreHeader = () => {
           <NavButton theme={theme} src={leftarrow}/>
         </Link>
       </ArrowWrapper>
-      <Brand theme={theme} src={plotstore} alt="plöt store logo"/>
+      <Brand theme={theme} src={plotschool} alt="plöt school logo"/>
     </Wrapper>
   );
 };

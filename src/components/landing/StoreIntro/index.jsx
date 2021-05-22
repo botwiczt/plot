@@ -10,7 +10,7 @@ export const StoreIntro = () => {
 
   return (
     <Wrapper>
-      <StoreHeader />
+      <StoreHeader/>
       <IntroWrapper as={Container}>
         <Details theme={theme}>
           <h4>local.<br/>zero waste.<br/>plant-based <span aria-label="plant" role="img">
