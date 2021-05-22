@@ -10,7 +10,7 @@ export * from './SchoolIntro';
 export * from './SchoolSkills';
 export * from './StoreIntro';
 export * from './StoreSkills';
-export * from './WaitlistSkills';
+export * from './Waitlist';
 export * from './SubmittedSkills';
 export * from './FoundationIntro';
 export * from './FoundationSkills';

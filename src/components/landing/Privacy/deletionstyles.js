@@ -23,8 +23,9 @@ export const RegisterButton = styled.button`
     box-shadow: inset 0 0 100px 100px #444d56;
     transform: scale(1.05);
   }
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
+  @media only screen and (max-width: 407px) {
+      border-radius: 10px;
+      margin-top: 4%;
     }
 `;
 
@@ -34,7 +35,7 @@ export const Input = styled.input`
   background: #DCDCDC;
   border: none;
   border-radius: 10px 0 0 10px;
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
+  @media only screen and (max-width: 407px) {
+      border-radius: 10px;
     }
 `;

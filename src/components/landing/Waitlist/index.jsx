@@ -2,7 +2,7 @@ import React, { Component, useContext } from 'react';
 import { navigate } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import { Wrapper, SkillsWrapper, Details, RegisterButton, Input} from './styles';
+import { SkillsWrapper, Details, RegisterButton, Input} from './styles';
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value
@@ -23,7 +23,7 @@ class RegisterComponent extends Component {
     console.log(this.state);
     const data = new FormData(event.target);
     fetch(
-      "https://script.google.com/macros/s/AKfycbxoFCQkWmrK_F64X65l8zaFF4Q3tEuautcXDf8gRqf4Torc4JxuawEtVw/exec",
+      "https://script.google.com/macros/s/AKfycbxhJ5H0LohP2yB6Rfpfl4Y_XqWcpZV3dGifTti2XIUu6WEdrp2ZMReLkE9QOY3hl5w1dg/exec",
       { method: "POST", body: data }
     )
       .then(response => console.log("success!", response))
@@ -53,11 +53,11 @@ class RegisterComponent extends Component {
   }
 }
 
-export const WaitlistSkills = () => {
+export const Waitlist = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about">
+    <div>
       <SkillsWrapper as={Container}>
       <Details theme={theme}>
       <h1>plöt waitlist</h1>
@@ -66,6 +66,6 @@ export const WaitlistSkills = () => {
       <RegisterComponent/>
       </Details>
       </SkillsWrapper>
-    </Wrapper>
+    </div>
   );
 };

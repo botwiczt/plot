@@ -1,17 +1,7 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-
-`;
-
-//AGAIN, removing background
-// background-image: url(${detailsIllustration});
-// background-size: contain;
-// background-position: left top;
-// background-repeat: no-repeat;
-
 export const SkillsWrapper = styled.div`
-  padding: 4rem 0;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,11 +13,9 @@ export const SkillsWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
-  padding-left: 2rem;
   text-align: center;
 
   @media (max-width: 960px) {
-    padding-left: unset;
     width: 100%;
   }
 
@@ -57,7 +45,7 @@ export const Details = styled.div`
 export const RegisterButton = styled.button`
   width: auto;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 15pt;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -71,19 +59,19 @@ export const RegisterButton = styled.button`
     box-shadow: inset 0 0 100px 100px #444d56;
     transform: scale(1.05);
   }
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
+  @media only screen and (max-width: 407px) {
+      border-radius: 10px;
       margin-top: 4%;
     }
 `;
 
 export const Input = styled.input`
-  font-size: 1.5rem;
+  font-size: 15pt;
   padding: 10px;
   background: #DCDCDC;
   border: none;
   border-radius: 10px 0 0 10px;
-  @media only screen and (max-width: 672px) {
-      border-radius: 3px;
+  @media only screen and (max-width: 407px) {
+      border-radius: 10px;
     }
 `;
