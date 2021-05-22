@@ -3,7 +3,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { GenericHeader } from 'components/theme';
 import { Container } from 'components/common';
 import { Wrapper, Details } from './styles';
-import Deletion from './deletion';
+import Deletion from './Deletion';
 
 export const Privacy = () => {
   const { theme } = useContext(ThemeContext);
