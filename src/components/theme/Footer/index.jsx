@@ -23,7 +23,12 @@ export const Footer = () => {
             </a>
           ))}
         </Links>*/}
+        <div class="tooltip">
             <ToggleTheme/>
+            <span class="tooltiptext">
+              toggle dark mode
+            </span>
+          </div>
 
         <div class="tooltip">
             <Link to="/privacy"><Privacy theme={theme}> <img src={lock} alt="button to access privacy policy"/></Privacy></Link>
@@ -32,7 +37,12 @@ export const Footer = () => {
             </span>
           </div>
 
-        <Link to="/creator"><Creator theme={theme}> <img src={creator} alt="button to access page about creator of plöt"/></Creator></Link>
+          <div class="tooltip">
+              <Link to="/creator"><Creator theme={theme}> <img src={creator} alt="button to access page about the creator of plöt"/></Creator></Link>
+              <span class="tooltiptext">
+                about the creator
+              </span>
+            </div>
 
         <Details theme={theme}>
           <span><b>

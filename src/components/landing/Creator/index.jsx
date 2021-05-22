@@ -26,7 +26,7 @@ export const Creator = () => {
       <SkillsWrapper as={Container}>
         <Details theme={theme}>
           <h1>
-            created by</h1><h2><b>tomek botwicz</b>.
+            created by</h1><h2>tomek botwicz.
           </h2>
         </Details>
       </SkillsWrapper>

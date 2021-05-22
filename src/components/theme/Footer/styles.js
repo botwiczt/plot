@@ -21,26 +21,32 @@ export const Flex = styled.div`
     position: relative;
     display: inline-block;
     cursor: help;
+    @media (max-width: 680px) {
+      cursor: default;
+    }
   }
 
   .tooltip .tooltiptext {
     visibility: hidden;
-    width: 110px;
+    white-space: nowrap;
     background-color: #444d56;
     color: white;
     text-align: center;
     border-radius: 30px;
-    padding: 10px;
-    font-size: 1.1rem;
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
     opacity: 0;
     transition: all .3s ease-in-out;
     position: absolute;
     z-index: 1;
-    top: -200%;
-    left: -220%;
+    width: 120px;
+    bottom: 150%;
+    left: 38.5%;
+    margin-left: -71.5px;
     @media (max-width: 680px) {
-      top: 0%;
-      left: 170%;
+      display: none;
     }
   }
 
@@ -94,7 +100,6 @@ export const Details = styled.div`
     color: #212121;
     font-size: 1rem;
     font-weight: normal;
-    margin-left: -0.6rem;
     line-height: 0.4;
     color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
   }
@@ -132,14 +137,13 @@ export const Creator = styled.div`
   transition: 0.3s all;
   cursor: pointer;
   margin-left: 0.4rem;
-  width: 50%;
+  margin-right: 0.4rem;
   @media (max-width: 960px) {
     text-align: center;
   }
   @media (max-width: 680px) {
     margin-top: -0.8rem;
     margin-bottom: 1.5rem;
-    margin-left: 0.9rem;
   }
 
   img {
