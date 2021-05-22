@@ -1,11 +1,11 @@
 import React from 'react';
 import { SidePageLayout, SEO } from 'components/common';
-import { WaitlistIntro, WaitlistSkills } from 'components/landing';
+import { GenericIntro, WaitlistSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <WaitlistIntro />
-    <WaitlistSkills />
+    <SEO/>
+    <GenericIntro/>
+    <WaitlistSkills/>
   </SidePageLayout>
 );

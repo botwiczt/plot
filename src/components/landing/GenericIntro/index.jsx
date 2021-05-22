@@ -2,20 +2,20 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { ArrowOnlyHeader } from 'components/theme';
 import { Container } from 'components/common';
+import { Wrapper, Thumbnail } from './styles';
 import logo from 'assets/illustrations/logo.svg';
-import { Wrapper, IntroWrapper, Thumbnail } from './styles';
 
-export const WaitlistIntro = () => {
+export const GenericIntro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper>
-      <ArrowOnlyHeader />
-      <IntroWrapper as={Container}>
+    <div>
+      <ArrowOnlyHeader/>
+      <Wrapper as={Container}>
         <Thumbnail theme={theme}>
-          <img src={logo} alt="company logo" />
+          <img src={logo} alt="plöt logo"/>
         </Thumbnail>
-      </IntroWrapper>
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 };

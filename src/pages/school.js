@@ -4,8 +4,8 @@ import { SchoolIntro, SchoolSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <SchoolIntro />
-    <SchoolSkills />
+    <SEO/>
+    <SchoolIntro/>
+    <SchoolSkills/>
   </SidePageLayout>
 );

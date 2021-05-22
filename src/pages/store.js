@@ -4,8 +4,8 @@ import { StoreIntro, StoreSkills } from 'components/landing';
 
 export default () => (
   <SidePageLayout>
-    <SEO />
-    <StoreIntro />
-    <StoreSkills />
+    <SEO/>
+    <StoreIntro/>
+    <StoreSkills/>
   </SidePageLayout>
 );

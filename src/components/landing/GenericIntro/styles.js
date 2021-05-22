@@ -1,14 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 1rem;
-`;
-
-export const IntroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding-bottom: 1rem;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -17,7 +13,6 @@ export const IntroWrapper = styled.div`
 export const Thumbnail = styled.div`
   flex: 1;
   transition: all 0.5s ease;
-  margin-left: 1rem;
   text-align: center;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   @media (max-width: 960px) {
@@ -26,7 +21,6 @@ export const Thumbnail = styled.div`
   @media (max-width: 600px) {
     margin-bottom: -10%;
   }
-
   img {
     width: 50%;
   }
