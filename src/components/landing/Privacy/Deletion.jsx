@@ -1,7 +1,14 @@
 import React, { Component, useContext } from 'react';
 import { navigate } from "gatsby";
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, RegisterButton, Input} from './deletionstyles';
+import { RegisterButton, Input} from '../Waitlist/styles';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+`;
 
 const updateByPropertyName = (propertyName, value) => () => ({
   [propertyName]: value

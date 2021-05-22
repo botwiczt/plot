@@ -203,7 +203,7 @@ export const ContentDetails = styled.div`
     text-align: center;
     border-radius: 30px;
     padding: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0;
     transition: all .3s ease-in-out;
     position: absolute;
