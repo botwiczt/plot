@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
-import { Wrapper, Flex, Links, Details, Privacy, Creator } from './styles';
+import { Wrapper, Flex, Links, Details, Privacy, Email, Creator } from './styles';
 import ToggleTheme from './ToggleTheme';
 import { ThemeContext } from 'providers/ThemeProvider';
 import social from './social.json';
 import lock from 'assets/illustrations/privacyicon.svg';
+import email from 'assets/illustrations/email.svg';
 import creator from 'assets/illustrations/creator.svg';
 
 export const Footer = () => {
@@ -34,6 +35,13 @@ export const Footer = () => {
             <Link to="/privacy"><Privacy theme={theme}> <img src={lock} alt="button to access privacy policy"/></Privacy></Link>
             <span class="tooltiptext">
               privacy policy
+            </span>
+          </div>
+
+        <div class="tooltip">
+            <a href="mailto:hello@plot.community"><Email theme={theme}> <img src={email} alt="button to email us"/></Email></a>
+            <span class="tooltiptextemail">
+              send us an email
             </span>
           </div>
 

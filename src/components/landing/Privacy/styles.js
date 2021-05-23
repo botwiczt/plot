@@ -3,9 +3,16 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   padding-top: 1rem;
   text-align: center;
+  margin-bottom: 3rem;
 `;
 
 export const Details = styled.div`
+
+  a {
+    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
+    border-bottom: 1px dotted;
+    text-decoration: none;
+  }
 
   h1 {
     margin-bottom: 1rem;
@@ -28,7 +35,7 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 15pt;
     font-weight: bold;
     line-height: 2;

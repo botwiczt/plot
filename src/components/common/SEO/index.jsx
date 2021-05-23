@@ -53,7 +53,7 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta property="og:url" content={`${url}${location}/?ref=www.plot.community`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

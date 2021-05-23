@@ -23,8 +23,8 @@ export const Privacy = () => {
           <br/>
           <p>
             at plöt, we regard privacy as a fundamental human right.
-          <br/>
-          <br/>
+          </p>
+          <p>
             > we <u>do not</u> automatically collect any data.
           <br/>
             > we <u>do not</u> use analytical or tracking software.
@@ -32,9 +32,12 @@ export const Privacy = () => {
             > we collect emails submitted through our waitlist.
           <br/>
             > we store collected emails and a collection timestamp on a secure server.
-          <br/>
-          <br/>
-            please re-enter your email below to request removal from the waitlist:
+          </p>
+          <p>
+            for any questions, email <a href="mailto:privacy@plot.community">privacy@plot.community.</a>
+          </p>
+          <p>
+            re-enter your email to be removed from the waitlist:
           </p>
           <Deletion/>
         </Details>

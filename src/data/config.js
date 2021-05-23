@@ -1,10 +1,10 @@
 module.exports = {
-  defaultTitle: 'plöt',
-  logo: 'https://plot.community/favicon/favicon-512.png',
+  defaultTitle: 'plöt | the future of living.',
+  logo: 'https://www.plot.community/favicon/favicon-512.png',
   author: 'Tomek Botwicz',
-  url: 'https://plot.community',
+  url: 'https://www.plot.community',
   legalName: 'Tomek Botwicz',
-  defaultDescription: 'the future of living.',
+  defaultDescription: 'Join our utopia. Join plöt. We are building an eco-friendly, community-centered society scaled across the world. Combining plötecon and plötpolity with plöt school and plöt store, we have a vision for tomorrow.',
   socialLinks: {
     twitter: '',
     github: '',
@@ -21,7 +21,7 @@ module.exports = {
   address: {
     city: 'City',
     region: 'Region',
-    country: 'Country',
+    country: 'United States',
     zipCode: 'ZipCode',
   },
   contact: {

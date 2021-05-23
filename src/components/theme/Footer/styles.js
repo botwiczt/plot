@@ -50,13 +50,43 @@ export const Flex = styled.div`
     }
   }
 
+  .tooltip .tooltiptextemail {
+    visibility: hidden;
+    white-space: nowrap;
+    background-color: #444d56;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 150%;
+    left: 38.5%;
+    margin-left: -71.5px;
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 0.85;
     transform: scale(1.1);
   }
 
-  .tooltip .tooltiptext::after {
+  .tooltip:hover .tooltiptextemail {
+    visibility: visible;
+    opacity: 0.85;
+    transform: scale(1.1);
+  }
+
+  {/*.tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -69,7 +99,7 @@ export const Flex = styled.div`
     border-color: transparent #444d56 transparent transparent;
     margin-left: -82px;
     margin-top: -23%;
-  }
+  }*/}
 `;
 
 export const Links = styled.div`
@@ -144,6 +174,28 @@ export const Creator = styled.div`
   @media (max-width: 680px) {
     margin-top: -0.8rem;
     margin-bottom: 1.5rem;
+  }
+
+  img {
+    margin-bottom: unset;
+  }
+`;
+
+export const Email = styled.div`
+  background: none;
+  border: none;
+  filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-left: 0.6rem;
+  margin-right: 0.2rem;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  @media (max-width: 680px) {
+    margin-top: -0.9rem;
+    margin-bottom: 1.4rem;
+    margin-left: 0.2rem;
   }
 
   img {

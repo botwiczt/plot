@@ -8,7 +8,7 @@ const ToggleTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <Wrapper type="button" onClick={toggleTheme} theme={theme}>
+    <Wrapper type="button" onClick={toggleTheme} theme={theme} alt="button to toggle dark mode">
       <img src={theme === 'light' ? moonIcon : sunIcon} alt={theme} />
     </Wrapper>
   );

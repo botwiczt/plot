@@ -6,24 +6,16 @@ import ModalApp from './ModalApp';
 import App from './App';
 
 // BUGS
-// fix dashboard appearance on dark mode
-// scroll down arrow does not invert
+// scroll down arrow does not invert *IMPORTANT*
 // can click slightly beneath most images...
-
 // cursor is not visible in darkmode
 // banner height bug persists in mobile
-// scroll down arrow animation is broken (visibility property can't be animated)
+// input box still seems to get weird around border-radius...
 
 // IMPROVEMENTS
-// improve footer
-// increase size of lock and toggle
-// add back cursor to typing text
 
-// fix scroll down arrow to be uninteractable when opacity = 0;
-// it is interactable now even though it is invisible.
-
-// FIX navbuttons: can active hover when slightly under button
-
+// RE-ADD footer hover-tail; removed because glitching for email but important for knowing location
+// fix navbuttons: can active hover when slightly under button
 // work on attribution of line on homepage, cap in store logo, icon on school page, and left back arrow
 
 export const HomeSkills = () => {
