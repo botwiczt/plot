@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details, Privacy, Email, Creator } from './styles';
-import ToggleTheme from './ToggleTheme';
 import { ThemeContext } from 'providers/ThemeProvider';
+import ToggleTheme from './ToggleTheme';
 import social from './social.json';
-import lock from 'assets/illustrations/privacyicon.svg';
+import lock from 'assets/illustrations/lock.svg';
 import email from 'assets/illustrations/email.svg';
 import creator from 'assets/illustrations/creator.svg';
 
