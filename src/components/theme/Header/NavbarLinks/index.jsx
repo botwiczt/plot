@@ -1,8 +1,7 @@
 import React, {useContext} from 'react';
 import { Link } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper } from './styles';
-import './navbar.css';
+import { Wrapper, NavHoverDiv } from './styles';
 import house from 'assets/illustrations/homeicon.svg';
 import school from 'assets/illustrations/schoolicon.svg';
 import store from 'assets/illustrations/storeicon.svg';
@@ -68,28 +67,28 @@ const NavbarLinks = ({ desktop }) => {
     <Wrapper desktop={desktop} theme={theme}>
 
     <Link to="/home" theme={theme}>
-          <div class="navhoverdiv">
+          <NavHoverDiv>
             <NavButton src={house} theme={theme}/>
             <div class="navoverlay">
               <NavHover theme={theme}>plöt │ home</NavHover>
             </div>
-          </div>
+          </NavHoverDiv>
           </Link>
     <Link to="/school" theme={theme}>
-          <div class="navhoverdiv">
+          <NavHoverDiv>
             <NavButton src={school} theme={theme}/>
             <div class="navoverlay">
               <NavHover theme={theme}>plöt │ school</NavHover>
             </div>
-          </div>
+          </NavHoverDiv>
           </Link>
     <Link to="/store" theme={theme}>
-          <div class="navhoverdiv">
+          <NavHoverDiv>
             <NavButton src={store} theme={theme}/>
             <div class="navoverlay">
               <NavHover theme={theme}>plöt │ store</NavHover>
             </div>
-          </div>
+          </NavHoverDiv>
           </Link>
 
       {/*<AnchorLink href="#contact">plöt store</AnchorLink>*/}

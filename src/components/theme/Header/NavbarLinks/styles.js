@@ -42,13 +42,20 @@ export const Wrapper = styled.div`
 					}
 			}
 	`}
+  .navoverlay {
+  display: block;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: .5s ease;
+  pointer-events: none;
+  }
 `;
 
-export const Brand = styled.a`
-  color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-  width: 15%;
-
-  @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+export const NavHoverDiv = styled.div`
+  position: relative;
+  :hover .navoverlay {
+    opacity: 1;
+    transform: scale(1.2);
   }
 `;

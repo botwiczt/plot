@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   a {
     color: #000;
     text-decoration: none;
@@ -45,35 +48,26 @@ export const Wrapper = styled.div`
 `;
 
 export const NavButton = styled.img`
+  flex: 1;
   text-align: center;
   width: 12vw;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
-  margin-top: 20%;
+  margin-top: 15%;
   cursor: pointer;
   border: 6px solid #000000;
+  border-radius: 30px;
   box-shadow: 5px 5px #000000;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 30px;
   transition: all 0.5s ease;
   :hover {
     background: #CCCCCC;
     transform: scale(1.2);
-    opacity: 0.45;
+    opacity: 0.5;
   }
-  @media only screen and (max-width: 1000px) {
-    box-shadow: 0px 0px;
-  }
-  @media (max-width: 600px) {
-    width: 20vw;
-    margin-top: 10%;
-  }
-  @media (max-width: 600px) {
-    width: 20vw;
-    margin-top: 10%;
-  }
+
   @media (max-width: 600px) {
     width: 15vw;
     margin-top: 0;
@@ -81,6 +75,7 @@ export const NavButton = styled.img`
 `;
 
 export const NavHover = styled.h1`
+  flex: 1;
   color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#000')};
   font-size: 1.5rem;
   margin-left: auto;

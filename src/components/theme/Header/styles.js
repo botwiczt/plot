@@ -13,7 +13,9 @@ export const Overlay = styled.div`
   height: 100%;
   display: none;
   transition: 0.4s;
-
+  @media (max-width: 600px) {
+    background: none;
+  }
   ${({ sidebar }) =>
     sidebar &&
     `
