@@ -16,6 +16,9 @@ export const Overlay = styled.div`
   @media (max-width: 600px) {
     background: none;
   }
+  @media (min-width: 960px) {
+    background: none;
+  }
   ${({ sidebar }) =>
     sidebar &&
     `
