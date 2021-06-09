@@ -12,7 +12,7 @@ module.exports = {
     instagram: '',
     youtube: '',
   },
-  themeColor: '#6b63ff',
+  themeColor: '#FFFFFF',
   backgroundColor: '#6b63ff',
   social: {
     facebook: '',

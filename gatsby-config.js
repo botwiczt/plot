@@ -39,7 +39,7 @@ module.exports = {
         short_name: 'plöt',
         start_url: '/',
         theme_color: config.themeColor,
-        background_color: '#FFF',
+        background_color: '#FFFFFF',
         display: 'minimal-ui',
         icon: './static/favicon/favicon-512.png',
       },
