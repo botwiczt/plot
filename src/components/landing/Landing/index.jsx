@@ -12,7 +12,7 @@ import { Wrapper, Banner, BannerBody, BannerDetails, BannerThumbnail, Content, C
 import { Container, Button } from 'components/common';
 import { Typing } from "typing-effect-reactjs";
 import { Link } from "gatsby";
-import { Scroll } from './Scroll';
+import { Scroll } from './ScrollNew';
 
 function Thumbnail() {
  return (

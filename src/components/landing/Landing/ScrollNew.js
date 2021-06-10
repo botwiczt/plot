@@ -3,35 +3,37 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import styled from "styled-components";
 import downarrow from 'assets/illustrations/downarrow.png';
 import { ArrowImage } from "./styles";
-
-const ScrollVanish = styled.div`
-z-index:200;
-position: fixed;
-bottom:0;
-transition: opacity 0.5s ease;
-`;
+import { debounce } from './debounce';  
 
 export const Scroll = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0); 
+  const [visible, setVisible] = useState(true);  
   const { theme } = useContext(ThemeContext);
 
-  const [opacity, setOpacity] = useState(1);
-{/*useLayoutEffect???*/}
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+    setPrevScrollPos(currentScrollPos);
+  }, 50);
+
   useEffect(() => {
-      if (typeof window !== "undefined") {
-        window.onscroll = () => {
-          let currentScrollPos = window.pageYOffset;
-          if (currentScrollPos > 0 ) {
-            this.setState({ opacity: "0" })
-          } else {
-            this.setState({ opacity: "1" })
-          }
-        }
-      }
-  });
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, [prevScrollPos, visible, handleScroll]);
+
+  const navbarStyles = {
+    position: 'fixed',
+    bottom: '0',
+    textAlign: 'center',
+    zIndex: '200',
+    transition: 'opacity 0.5s ease'
+  }
 
   return (
-    <ScrollVanish opacity={opacity} {/*onScroll={() => onScroll(!opacity)}*/} >
-     <a href="#down" aria-label="scroll down"><ArrowImage theme={theme} src={downarrow}/></a>
-    </ScrollVanish>
+    <a href="#down" aria-label="scroll down"><ArrowImage theme={theme} src={downarrow} style={{ ...navbarStyles, bottom: visible ? '5px' : '-100px' }}/></a>
   );
 };
