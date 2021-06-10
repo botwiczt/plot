@@ -6,7 +6,7 @@ import ModalApp from './ModalApp';
 import App from './App';
 
 // BUGS
-// scroll down arrow does not invert *IMPORTANT*
+// scroll down arrow FIXED but JS is very taxing; small bug with rapid scrolling up
 // can click slightly beneath most images...
 // cursor is not visible in darkmode
 // banner height bug persists in mobile
