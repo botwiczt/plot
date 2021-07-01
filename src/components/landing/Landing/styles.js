@@ -99,7 +99,7 @@ export const ArrowImage = styled.img`
   margin-right: auto;
   width: 6%;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   bottom: 0;
   left: 47%;
   filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
@@ -226,6 +226,7 @@ export const ContentDetails = styled.div`
 
 export const ContentThumbnailLeft = styled.div`
   flex: 1;
+  pointer-events: none;
 
   @media (max-width: 960px) {
     width: 80%;
@@ -240,6 +241,7 @@ export const ContentThumbnailLeft = styled.div`
 export const ContentThumbnailRight = styled.div`
   flex: 1;
   margin-left: 2rem;
+  pointer-events: none;
 
   @media (max-width: 960px) {
     width: 80%;
@@ -256,6 +258,7 @@ export const ContentThumbnailRight = styled.div`
 export const Line = styled.div`
 margin-top: -6%;
 text-align: center;
+pointer-events: none;
 filter: ${({ theme }) => (theme === 'dark' ? 'invert(1)' : 'invert(0)')};
   img {
     width: 35%;

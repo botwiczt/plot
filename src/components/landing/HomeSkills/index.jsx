@@ -6,17 +6,19 @@ import ModalApp from './ModalApp';
 import App from './App';
 
 // BUGS
-// scroll down arrow FIXED but JS is very taxing; small bug with rapid scrolling up
-// can click slightly beneath most images...
-// cursor is not visible in darkmode
-// banner height bug persists in mobile
-// input box still seems to get weird around border-radius...
+// *CRITICAL* ALL: small bug with rapid scrolling up on ScrollArrow
+// *CRITICAL* ALL: typing cursor is black on darkmode
+// ALL: can click slightly beneath most images...
+// MOBILE: input box still seems to get weird around border-radius...
+// MOBILE: laggier burger menu
 
 // IMPROVEMENTS
 
-// RE-ADD footer hover-tail; removed because glitching for email but important for knowing location
-// fix navbuttons: can active hover when slightly under button
-// work on attribution of line on homepage, cap in store logo, icon on school page, and left back arrow
+// MOBILE: add footer hovers
+// MOBILE: make header fill screen
+// ALL: ScrollArrow JavaScript is taxing, find alternative
+// ALL: fix hovering slightly under NavButtons
+// ALL: complete attribution of line on homepage, cap in store logo, icon on school page, and left back arrow
 
 export const HomeSkills = () => {
   const { theme } = useContext(ThemeContext);

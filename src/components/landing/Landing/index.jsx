@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { StaticImage } from "gatsby-plugin-image";
 import Fade from 'react-reveal/Fade'
-import render from 'assets/illustrations/render.png';
 import walking from 'assets/illustrations/walking.svg';
 import moving from 'assets/illustrations/moving.svg';
 import wind from 'assets/illustrations/wind.svg';
@@ -12,7 +11,9 @@ import { Wrapper, Banner, BannerBody, BannerDetails, BannerThumbnail, Content, C
 import { Container, Button } from 'components/common';
 import { Typing } from "typing-effect-reactjs";
 import { Link } from "gatsby";
-import { Scroll } from './ScrollNew';
+import { ArrowImage } from "./styles";
+import downarrow from 'assets/illustrations/downarrow.png';
+import { HideOn, HideScroll } from 'react-hide-on-scroll';
 
 function Thumbnail() {
  return (
@@ -30,7 +31,7 @@ export const Landing = () => {
     <Wrapper>
       <Banner>
         <Header/>
-        <BannerBody as={Container}>
+        <BannerBody as={Container} id="first">
           <BannerDetails theme={theme}>
             <h1>we're creating a utopia.</h1>
             <Typing
@@ -45,7 +46,9 @@ export const Landing = () => {
           <BannerThumbnail>
             <Thumbnail/>
           </BannerThumbnail>
-          <Scroll/>
+          <HideOn divID="first" showOnPageInit={true}>
+          <a href="#down" aria-label="scroll down"><ArrowImage theme={theme} src={downarrow}/></a>
+          </HideOn>
         </BannerBody>
       </Banner>
 
